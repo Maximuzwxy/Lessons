@@ -118,12 +118,19 @@
 # else:
 #     print('False')
 
-# path = "C:\\Users\\Alice\\Documents\\homework.txt"
-# print(path)
-# print(path.split("\\"))
+# hw = str(input())
+# if hw == hw[::-1]:
+#     print('True')
+# else:
+#     print('False')
+
+
+path = "C:\\Users\\Alice\\Documents\\homework.txt"
+print(path)
+print(path.split("\\"))
 
 s = input('s: ')
-s_encode = ''
+s_encode = []
 s_decode = ''
 for i in s:
     s_encode += chr(ord(i) + 3)

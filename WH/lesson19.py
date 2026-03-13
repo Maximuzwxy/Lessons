@@ -31,10 +31,11 @@
 # print(s.find('o'))
 # print(s.rfind('o'))
 
+# aa = '***'
 # lst = ['apple', 'banana', 'pear']
-# s = ','.join(lst)
+# s = aa.join(lst)
 # print(s)
-#
+
 # print(' and '.join(lst))
 #
 # b = 'Harry has a ballon'
@@ -73,6 +74,13 @@
 #
 # print(poem.istitle())
 # print(poem.islower())
+
+# a = input()
+# s = a.split()
+# print(s)
+# print(s[-1])
+
+
 
 # def last_word(s):
 #     lst = s.split()
@@ -159,20 +167,20 @@ def is_palindrome(s):
     else:
         return False
 
-# while True:
-#     s = input('s: ')
-#     if is_palindrome(s):
-#         print(True)
-#     else:
-#         ret = False
-#         for i in range(len(s)):
-#             lst = list(s)
-#             lst.pop(i)
-#             s1 = ''.join(list(lst))
-#             if is_palindrome(s1):
-#                 ret = True
-#                 break
-#         print(ret)
+while True:
+    s = input('s: ')
+    if is_palindrome(s):
+        print(True)
+    else:
+        ret = False
+        for i in range(len(s)):
+            lst = list(s)
+            lst.pop(i)
+            s1 = ''.join(list(lst))
+            if is_palindrome(s1):
+                ret = True
+                break
+        print(ret)
 
 
 # s = ['a', 'b']
