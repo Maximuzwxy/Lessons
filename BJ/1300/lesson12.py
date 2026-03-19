@@ -309,10 +309,10 @@ for i in range(n - 1):
 #         print(lst.index(i), lst.index(10-i))
 
 
-for i in range(3):
-    print('out', i)
-    for i in range(3):
-        print('inner', i)
+# for i in range(3):
+#     print('out', i)
+#     for i in range(3):
+#         print('inner', i)
 
 
 

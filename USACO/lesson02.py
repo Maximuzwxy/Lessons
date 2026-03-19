@@ -198,10 +198,34 @@ for i in range(5):
 
 
 
+# lst=[]
+# for i in range(5):
+#     rows=[]
+#     for j in range(5):
+#         rows.append(i*5+j+1)
+#     lst.append(rows)
+# print(lst)
+#
+# def rotatematrix(matrix):
+#     n=len(matrix)
+#     matrix1=[[0]*n for _ in range(n)]
+#     for i in range(n):
+#         for j in range(n):
+#             matrix1[j][n-i-1]=matrix[i][j]
+#     return matrix1
+# print(rotatematrix(lst))
 
 
+lst = []
+for i in range(5):
+    row = []
+    for j in range(5):
+        row.append(i * 5 + j + 1)
+    lst.append(row)
+print(lst)
 
-
+l = [[i * 5 + j + 1 for j in range(5)] for i in range(5)]
+print(l)
 
 
 

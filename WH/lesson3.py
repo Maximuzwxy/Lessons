@@ -32,14 +32,32 @@
 #     print(i)
 
 
-n = 5
+# a=int(input("input:"))
+# b=int(input("input:"))
+# print(a+b)
+# print(int(a*b))
 
-for i in range(n):
-    if n := n + 1:
-        print(i)
+# a=input("input:")
+# b=input("input:")
+# if a==b:
+#     print("a is equal to b")
+# elif a>b:
+#     print("a is greater than b")
+# elif a<b:
+#     print("a is less than b")
+# #
+# temperature=int(input("input an integer:"))
+# if int(temperature)<0:
+#     print("It's too cold")
+# elif 0 <= int(temperature) < 15:
+#     print("It's a bit cool")
+# elif 15 <= int(temperature) < 25:
+#     print("It's comfortable")
+# else:
+#     print("It's too hot")
 
-# for i in range(1, n + 1):
-#     print(i)
+# print('a', end='---')
+# print('b')
 
 
 

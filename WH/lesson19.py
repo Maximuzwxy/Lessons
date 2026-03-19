@@ -161,31 +161,22 @@ def compare_str(s1, s2):
 #     right -= 1
 # print(ret)
 
-def is_palindrome(s):
-    if s == s[::-1]:
-        return True
-    else:
-        return False
 
-while True:
-    s = input('s: ')
-    if is_palindrome(s):
-        print(True)
-    else:
-        ret = False
-        for i in range(len(s)):
-            lst = list(s)
-            lst.pop(i)
-            s1 = ''.join(list(lst))
-            if is_palindrome(s1):
-                ret = True
-                break
-        print(ret)
+# while True:
+#     s = input('s: ')
+#     if is_palindrome(s):
+#         print(True)
+#     else:
+#         ret = False
+#         for i in range(len(s)):
+#             lst = list(s)
+#             lst.pop(i)
+#             s1 = ''.join(list(lst))
+#             if s1 == s1[::-1]:
+#                 ret = True
+#         print(ret)
 
 
-# s = ['a', 'b']
-# a = s.split()
-# print(a)
 
 # s = 'abcedf'
 # print(' '.join(s))

@@ -38,13 +38,13 @@
 
 
 # the falling ball problem
-height = 100
-n = 0
-
-while height >= 0.5:
-    height /= 2
-    n += 1
-print(n, height)
+# height = 100
+# n = 0
+#
+# while height >= 0.5:
+#     height /= 2
+#     n += 1
+# print(n, height)
 
 
 # number reversal
@@ -60,30 +60,31 @@ print(n, height)
 
 # juice dilution
 # count = 0
-# cur_concentration = 100
-# target_concentration = int(input('target concentration: '))
+# cur = 100
+# target = int(input('target: '))
 #
-# while cur_concentration > target_concentration:
+# while cur > target:
 #     count += 1
-#     cur_concentration *= 0.9
+#     cur *= 0.9
 #
-# print(count, cur_concentration)
+# print(count, cur)
 
 
 # cow eating grass problem
-# cur_grass = 100
-# daily_consume = 3 * 4
-# daily_grow = 5
-# day = 0
-#
-# while True:
-#     cur_grass -= daily_consume
-#     day += 1
-#     if cur_grass <= 0:
-#         cur_grass += daily_consume
-#         break
-#     cur_grass += daily_grow
-# print(day, cur_grass)
+grass = 100
+consume = 12
+grow = 5
+day = 0
+
+while True:
+    grass -= consume
+    if grass < 0:
+        grass += consume
+        break
+    grass += grow
+    day += 1
+print(day, grass)
+
 
 
 
