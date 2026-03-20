@@ -125,19 +125,28 @@
 #     print('False')
 
 
-path = "C:\\Users\\Alice\\Documents\\homework.txt"
-print(path)
-print(path.split("\\"))
+# path = "C:\\Users\\Alice\\Documents\\homework.txt"
+# print(path)
+# print(path.split("\\"))
+#
+# s = input('s: ')
+# s_encode = []
+# s_decode = ''
+# for i in s:
+#     s_encode += chr(ord(i) + 3)
+#
+# print(s_encode)
+#
+# for i in s_encode:
+#     s_decode += chr(ord(i) - 3)
+#
+# print(s_decode)
 
-s = input('s: ')
-s_encode = []
-s_decode = ''
-for i in s:
-    s_encode += chr(ord(i) + 3)
 
-print(s_encode)
+a = ['a', 'b', 'a']
+print(a[::-1])
 
-for i in s_encode:
-    s_decode += chr(ord(i) - 3)
-
-print(s_decode)
+if a == a[::-1]:
+    print('a')
+else:
+    print('b')

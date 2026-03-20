@@ -161,23 +161,49 @@ def compare_str(s1, s2):
 #     right -= 1
 # print(ret)
 
-
-# while True:
-#     s = input('s: ')
-#     if is_palindrome(s):
-#         print(True)
-#     else:
-#         ret = False
-#         for i in range(len(s)):
-#             lst = list(s)
-#             lst.pop(i)
-#             s1 = ''.join(list(lst))
-#             if s1 == s1[::-1]:
-#                 ret = True
-#         print(ret)
+# 1. 写一个while循环
+# 2. 输入一个任意字符串s
+# 3. 判断s是不是满足回文，如果是，则输出True
+# 4. 如果s不满足，如果删除其中一个字母之后，可以满足回文，输出True，否则输出False
 
 
 
-# s = 'abcedf'
-# print(' '.join(s))
-# print(''.join(reversed(s)))
+while True:
+    s = input('s: ')
+    if s == s[::-1]:
+        print(True)
+    else:
+        ret = False
+        for i in range(len(s)):
+            lst = list(s)
+            lst.pop(i)
+            if lst == lst[::-1]:
+                ret = True
+                break
+        print(ret)
+
+
+
+def validPalindrome(s: str) -> bool:
+    i, j = 0, len(s) - 1
+    while i < j:
+        if s[i] != s[j]:
+            # 检查删除i或删除j后是否为回文
+            a, b = i + 1, j
+            while a < b and s[a] == s[b]:
+                a, b = a + 1, b - 1
+            if a >= b:
+                return True
+            a, b = i, j - 1
+            while a < b and s[a] == s[b]:
+                a, b = a + 1, b - 1
+            return a >= b
+        i, j = i + 1, j - 1
+    return True
+
+# 读取输入
+# s = input().strip()
+# print(validPalindrome(s))
+
+
+

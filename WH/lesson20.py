@@ -72,7 +72,7 @@
 # 2. 把@改成空格，并且把首位的@去掉
 # 3. 分别用replace和split实现
 
-# s = '@There@is@no@royal@road@to@learning.@'
+s = '@There@is@no@royal@road@to@learning.@'
 # s1 = s.replace('@', ' ')
 # print(s1)
 # s2 = s1.strip()
@@ -123,12 +123,6 @@
 #         print('you lose!')
 #         break
 
-# while True:
-#     s1, s2 = input('s: ').split()
-#     if s1[-1] == s2[0]:
-#         print('continue')
-#     else:
-#         break
 
 
 #######################################
