@@ -3,6 +3,18 @@
 # 3. Multiply each digit in the list by 2.
 # 4. Output the digits in the list in one line, separated by spaces.
 
+l1 = input().split()
+print(l1)
+
+# for i in range(len(l1)):
+#     l1[i] = int(l1[i])
+# print(l1)
+
+l2 = []
+for i in l1:
+    l2.append(int(i))
+print(l2)
+
 # s = input('input integers: ')
 # lst = s.split()
 # print(lst)
@@ -19,10 +31,12 @@
 # s1 = sep.join(lst1)
 # print(s1)
 
-# lst = list(map(int, input('input integers: ').split()))
-# print(lst)
-# lst1 = [str(i * 2) for i in lst]
-# print(' '.join(lst1))
+#####################
+
+lst = list(map(int, input('input integers: ').split()))
+print(lst)
+lst1 = [str(i * 2) for i in lst]
+print('_'.join(lst1))
 
 
 
@@ -119,7 +133,15 @@ def symmetric_difference(A, B):
 # s = 'ABBA'
 # print(sorted(s))
 
-s = {'A', 'B'}
-print(str(s))
+# s = {'A', 'B'}
+# print(str(s))
 
+# lst = [1.8, 2, 3]
+# a = list(map(str, lst))
+# print(list(a))
+
+# a = 'Austin'
+# a = {1, 2, 3}
+# b = list(a)
+# print(b)
 

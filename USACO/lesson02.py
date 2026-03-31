@@ -65,10 +65,10 @@
 lst = [[i * 5 + j + 1 for j in range(5)] for i in range(5)]
 # print(lst)
 
-for i in range(5):
-    for j in range(i, 5):
-        print(lst[i][j], end=' ')
-    print()
+# for i in range(5):
+#     for j in range(i, 5):
+#         print(lst[i][j], end=' ')
+#     print()
 
 # for i in range(5):
 #     for j in range(5):
@@ -216,20 +216,28 @@ for i in range(5):
 # print(rotatematrix(lst))
 
 
-lst = []
-for i in range(5):
-    row = []
-    for j in range(5):
-        row.append(i * 5 + j + 1)
-    lst.append(row)
-print(lst)
+# lst = []
+# for i in range(5):
+#     row = []
+#     for j in range(5):
+#         row.append(i * 5 + j + 1)
+#     lst.append(row)
+# print(lst)
+#
 
-l = [[i * 5 + j + 1 for j in range(5)] for i in range(5)]
+n = 5
+l = [[i * n + j + 1 for j in range(n)] for i in range(n)]
 print(l)
 
+m = [[0 for j in range(n)] for i in range(n)]
+print(m)
 
+for i in range(n):
+    for j in range(n):
+        m[j][n - 1 - i] = l[i][j]
 
-
+for i in m:
+    print(i)
 
 
 

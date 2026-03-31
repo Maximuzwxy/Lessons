@@ -84,10 +84,24 @@
 
 # n = int(input('n: '))
 # is_prime = True
-# for i in range(2, n):
+# for i in range(2, n // 2 + 1):
 #     if n % i == 0:
 #         is_prime = False
+#         break
 # print(is_prime)
+#
+#
+#
+# import math
+# is_prime = True
+# for i in range(2, int(math.sqrt(n)) + 1):
+#     if n % i == 0:
+#         is_prime = False
+#         break
+# print(is_prime)
+
+
+
 
 ######################################################
 # 练习1
@@ -101,23 +115,22 @@
 # For the output requirement, use print(i, end=' ') to display all results in a single line.
 # Count the number of all prime numbers from 1 to n, and print the result.
 
-import math
-n = int(input('n: '))
-total = 0
-
-for i in range(2, n + 1):
-    max_divisor = int(math.sqrt(i))
-    is_prime = True
-    for j in range(2, max_divisor + 1):
-        if i % j == 0:
-            is_prime = False
-            break
-    if is_prime:
-        total += 1
-        print(i, end=' ')
-
-print()
-print('prime count:', total)
+# import math
+# n = int(input('n: '))
+# total = 0
+#
+# for i in range(2, n + 1):
+#     is_prime = True
+#     for j in range(2, int(math.sqrt(i)) + 1):
+#         if i % j == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         total += 1
+#         print(i, end=' ')
+#
+# print()
+# print('prime count:', total)
 
 ######################################################
 
@@ -177,28 +190,28 @@ print('prime count:', total)
 # count: 3
 # sum: 42
 # product: 2058
-
-n = int(input('n: '))
-count = 0
-total = 0
-product = 1
-
-for i in range(1, n + 1):
-    if i % 7 == 0:
-        print(i)
-        count += 1
-        total += i
-        product *= i
-print('count:', count)
-print('sum:', total)
-print('product:', product)
-
-for i in range(7, n + 1, 7):
-    print(i)
-    count += 1
-    total += i
-    product *= i
-print('count:', count)
-print('sum:', total)
-print('product:', product)
+#
+# n = int(input('n: '))
+# count = 0
+# total = 0
+# product = 1
+#
+# for i in range(1, n + 1):
+#     if i % 7 == 0:
+#         print(i)
+#         count += 1
+#         total += i
+#         product *= i
+# print('count:', count)
+# print('sum:', total)
+# print('product:', product)
+#
+# for i in range(7, n + 1, 7):
+#     print(i)
+#     count += 1
+#     total += i
+#     product *= i
+# print('count:', count)
+# print('sum:', total)
+# print('product:', product)
 

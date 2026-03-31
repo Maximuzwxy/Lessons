@@ -155,5 +155,31 @@ s = set(lst)
 for i in s:
     if lst.count(i) > 1:
         print(f'{i} appears {lst.count(i)} times')
+        # print(a, b)
+
+a = 1
+b = 2
+c = 3
+print(a, b, c)
+
+print('a', 'b', 'c', a, b, c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a = 1
+b = 2
+print(f'a: {a}\nb: {b}')
+
 
 

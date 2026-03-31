@@ -94,7 +94,7 @@ def build_light(x, y, z):
     mc.setBlock(x, y + 1, z, 35, 10)
     # LIGHT
     mc.setBlock(x, y + 2, z, 35, RED)
-# build_light(lx, ly, lz)
+build_light(lx, ly, lz)
 
 # Task5: Change the light
 light_green = False

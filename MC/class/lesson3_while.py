@@ -13,11 +13,11 @@ time.sleep(3)
 x, y, z = player.getTilePos()
 
 # pillar
-# i = 0
-# while i <= 50:
-#     mc.setBlock(x, y + i, z, 41)
-#     i += 1
-#     time.sleep(0.1)
+i = 0
+while i <= 50:
+    mc.setBlock(x, y + i, z, 41)
+    i += 1
+    time.sleep(0.1)
 
 # bridge
 # i = 0

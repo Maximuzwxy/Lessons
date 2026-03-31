@@ -46,6 +46,8 @@ lst2 = [2, 3, 6, 6, 8, 9, 10, 16, 18, 19, 20, 21, 25]
 lst = []
 print(len(lst1), len(lst2))
 
+
+
 # solution 1
 while lst1 and lst2:
     if lst1[0] < lst2[0]:
