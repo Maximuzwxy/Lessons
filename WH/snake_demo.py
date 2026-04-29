@@ -1,3 +1,5 @@
+# pip install freegames
+
 import random
 import turtle as t
 from freegames import square, vector
@@ -31,7 +33,6 @@ def move():
             food.remove(head)
         elif head.x < -RADIUS or head.x > RADIUS - BLOCK or head.y < -RADIUS or head.y > RADIUS - BLOCK:
             game_over()
-            snake.pop()
         else:
             snake.pop()
 
@@ -44,13 +45,10 @@ def move():
 
 def on_change(x, y):
     global begin
-    if aim.x != -x or aim.y != -y:
-        aim.x = x
-        aim.y = y
-
-    if not begin:
-        begin = True
-        move()
+    if begin:
+        if aim.x != -x or aim.y != -y:
+            aim.x = x
+            aim.y = y
 
 def draw_food():
     for i in range(10 - len(food)):
@@ -66,23 +64,26 @@ def game_over():
     aim.x, aim.y = 0, 0
     t.penup()
     t.goto(0, 0)
+    t.pendown()
     t.pencolor('red')
     t.write('Game Over!', align='center', font=('Arial', 24, 'normal'))
     begin = False
 
 def restart():
+    global begin
+    begin = True
     t.clear()
     init_snake()
     food.clear()
     draw_food()
+    move()
 
 def show_score():
     t.penup()
-    t.goto(RADIUS - 75, RADIUS - 30)  # 根据画布大小调整位置
+    t.goto(RADIUS - 75, RADIUS - 30)  # locate by the size of canvas
     t.pendown()
     t.pencolor('orange')
     t.write(f'Score: {len(snake) - 1}', font=('Arial', 10, 'normal'))
-
 
 t.setup(RADIUS * 2, RADIUS * 2, 0, 0)
 t.hideturtle()
@@ -94,10 +95,6 @@ t.onkey(lambda: on_change(0, -BLOCK), 'Down')
 t.onkey(lambda: on_change(-BLOCK, 0), 'Left')
 t.onkey(lambda: on_change(BLOCK, 0), 'Right')
 t.onkey(restart, 'r')
-
-init_snake()
-draw_food()
-show_score()
 
 t.update()
 t.done()

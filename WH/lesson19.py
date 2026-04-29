@@ -75,52 +75,91 @@
 # print(poem.istitle())
 # print(poem.islower())
 
-# a = input()
-# s = a.split()
-# print(s)
-# print(s[-1])
 
 
-
-# def last_word(s):
-#     lst = s.split()
-#     if len(lst) == 0:
-#         return ''
-#     else:
-#         return lst[-1]
+# Exercise 1
+# Given a string, print the length of last word in the string.
+# If the last word does not exist, print 0.
 #
-# ss = input('str: ')
-# print(len(last_word(ss)))
-
-# def change(s):
-#     if s.isupper():
-#         return s.lower()
-#     else:
-#         return s.upper()
+# Example:
+# Input: "Hello World"
+# Output: 5
 #
-# ss = input('s: ')
-# print(change(ss))
+# input:
+# output: 0
 
-def compare_str(s1, s2):
-    ret = 0
-    if len(s1) != len(s2):
-        ret = 1
-    else:
-        if s1 == s2:
-            ret = 2
-        else:
-            if s1.upper() == s2.upper():
-                ret = 3
-            else:
-                ret = 4
+# s = input('str: ')
+#
+# lst = s.split()
+# if len(lst) == 0:
+#     print(0)
+# else:
+#     print(len(lst[-1]))
 
-    return ret
+
+# Exercise 2
+# Read a single letter from the keyboard, which can be either uppercase or lowercase.
+# If the letter is uppercase, output its corresponding lowercase letter.
+# If the letter is lowercase, output its corresponding uppercase letter.
+# For example:
+# the uppercase letter corresponding to 'a' is 'A', and the lowercase letter corresponding to 'M' is 'm'.
+# s = input('s: ')
+# if s.isupper():
+#     print(s.lower())
+# else:
+#     print(s.upper())
+
+
+
+# Exercise 3
+# Given two strings composed only of uppercase or lowercase letters,
+# their relationship falls into one of the following four cases:
+# 1. The two strings have different lengths.
+# For example: Beijing and Hebei.
+
+# 2. The two strings have the same length, and the characters at corresponding positions are completely identical (case-sensitive).
+# For example: Beijing and Beijing.
+
+# 3. The two strings have the same length, and the characters at corresponding positions are identical only when case is ignored (i.e., they do not satisfy case 2).
+# For example: beijing and BEijing.
+
+# 4. The two strings have the same length, but they are not identical even when case is ignored.
+# For example: Beijing and Nanjing.
+
+# Write a program to determine which of the four cases the relationship between the two input strings belongs to, and output the corresponding case number.
+# Input:
+# Two lines, each containing one string.
+# Output:
+# A single digit representing the relationship number of the two strings.
 
 # while True:
 #     s1 = input('s1: ')
 #     s2 = input('s2: ')
-#     print(compare_str(s1, s2))
+#
+#     ret = 0
+#     if len(s1) != len(s2):
+#         ret = 1
+#     else:
+#         if s1 == s2:
+#             ret = 2
+#         else:
+#             if s1.upper() == s2.upper():
+#                 ret = 3
+#             else:
+#                 ret = 4
+#
+#     print(ret)
 
+
+
+# Exercise 4
+# Input a string composed of lowercase letters (length ≤ 100).
+# Output the lowercase letter that appears most frequently.
+# Note: If multiple letters have the same highest frequency, output the one with the largest ASCII value.
+# Input
+# aaabbbbbbbbbcdxs
+# Output
+# b
 
 # while True:
 #     lst = [0] * 26
@@ -136,14 +175,21 @@ def compare_str(s1, s2):
 
 
 
-# palindrome
+# Exercise 5
+# Given a string, determine if it does not change either reading from left or right.
+# You can't use slice
+# Input:
+# malayalam
+# Output:
+# True
+#
+# Input:
+# hello
+# Output:
+# False
+
+# solution 1
 # s = input('s: ')
-
-# if s == s[::-1]:
-#     print(True)
-# else:
-#     print(False)
-
 # ret = True
 # for i in range(len(s) // 2):
 #     if s[i] != s[len(s) - i - 1]:
@@ -151,6 +197,8 @@ def compare_str(s1, s2):
 #         break
 # print(ret)
 
+# solution 2
+# s = input('s: ')
 # ret = True
 # left, right = 0, len(s) - 1
 # while left < right:
@@ -161,49 +209,27 @@ def compare_str(s1, s2):
 #     right -= 1
 # print(ret)
 
+
 # 1. 写一个while循环
 # 2. 输入一个任意字符串s
 # 3. 判断s是不是满足回文，如果是，则输出True
 # 4. 如果s不满足，如果删除其中一个字母之后，可以满足回文，输出True，否则输出False
 
+# while True:
+#     s = input('s: ')
+#     if s == s[::-1]:
+#         print(True)
+#     else:
+#         ret = False
+#         for i in range(len(s)):
+#             lst = list(s)
+#             lst.pop(i)
+#             if lst == lst[::-1]:
+#                 ret = True
+#                 break
+#         print(ret)
 
 
-while True:
-    s = input('s: ')
-    if s == s[::-1]:
-        print(True)
-    else:
-        ret = False
-        for i in range(len(s)):
-            lst = list(s)
-            lst.pop(i)
-            if lst == lst[::-1]:
-                ret = True
-                break
-        print(ret)
-
-
-
-def validPalindrome(s: str) -> bool:
-    i, j = 0, len(s) - 1
-    while i < j:
-        if s[i] != s[j]:
-            # 检查删除i或删除j后是否为回文
-            a, b = i + 1, j
-            while a < b and s[a] == s[b]:
-                a, b = a + 1, b - 1
-            if a >= b:
-                return True
-            a, b = i, j - 1
-            while a < b and s[a] == s[b]:
-                a, b = a + 1, b - 1
-            return a >= b
-        i, j = i + 1, j - 1
-    return True
-
-# 读取输入
-# s = input().strip()
-# print(validPalindrome(s))
 
 
 

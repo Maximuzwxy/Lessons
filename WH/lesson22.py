@@ -1,3 +1,5 @@
+import random
+
 # def change_int(a):
 #     a = 10
 # a = 1
@@ -10,11 +12,11 @@
 # lst = [1, 2, 3, 4]
 # change_list(lst)
 # print(lst)
-import random
 
 
 # def change1(lst):
 #     lst.append(0)
+#     # lst = [10, 20, 30]
 # l1 = [1, 2, 3]
 # change1(l1)
 # print(l1)
@@ -32,14 +34,21 @@ import random
 # print(my_sum(2, 3))
 # print('global variable is', total)
 
-# total = 0
+# total = 10
 # def my_sum(a, b):
 #     global total
-#     total = a + b
-#     print('global variable is', total)
+#     total += a + b
+#     # print('global variable is', total)
 #     return total
 # print(my_sum(2, 3))
 # print('global variable is', total)
+
+# total = 0
+# def add(a):
+#     global total
+#     total += a
+# add(12)
+# print(total)
 
 # def my_func(lst):
 #     for i in lst:
@@ -74,7 +83,7 @@ def my_min(array, start, end):
 # print(lst)
 
 # for i in range(len(lst) - 1):
-#     min_index = my_min(lst, i + 1, len(lst))
+#     min_index = my_min(lst, i, len(lst))
 #     lst[i], lst[min_index] = lst[min_index], lst[i]
 # print(lst)
 
@@ -94,22 +103,22 @@ l2 = [2, 4, 6, 8, 10, 5]
 #         break
 
 # for-else
-# for i in l1:
-#     for j in l2:
-#         if i == j:
-#             print(i)
-#             break
-#     else:
-#         continue
-#     break
+for i in l1:
+    for j in l2:
+        if i == j:
+            print(i)
+            break
+    else:
+        continue
+    break
 
-def find_match(lst1, lst2):
-    for i in lst1:
-        for j in lst2:
-            if i == j:
-                return i
-    return None
-
+# def find_match(lst1, lst2):
+#     for i in lst1:
+#         for j in lst2:
+#             if i == j:
+#                 return i
+#     return None
+#
 # print(find_match(l1, l2))
 
 

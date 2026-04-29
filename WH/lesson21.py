@@ -99,9 +99,9 @@ def count_num(lst, num):
 
     return count
 
-# lst1 = [random.randint(1, 5) for _ in range(10)]
-# print(lst1)
-# print(count_num(lst1, 1))
+lst1 = [random.randint(1, 5) for _ in range(10)]
+print(lst1)
+print(count_num(lst1, 1))
 
 
 

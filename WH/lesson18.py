@@ -1,3 +1,43 @@
+# binary
+# octal
+# decimal
+# hexadecimal
+# ordinal
+# character
+
+# c = 'a'
+# c = '你'
+# code = ord(c)
+# print(code)
+# print(chr(code))
+# print(hex(code), bin(code))
+#
+# c_8 = c.encode('utf-8')
+# print(c_8)
+#
+# for i in c_8:
+#     print(i, hex(i), bin(i))
+#
+# s_8 = c_8.decode('utf-8')
+# print(s_8)
+
+
+# 1. UTF-16 编码数据（小端/大端都能处理，这里按BE处理）
+# utf16_bytes = bytes.fromhex("2D30 2D63 2D53 2D4D 0021")
+# utf16_str = utf16_bytes.decode("utf-16-be")
+# print("UTF-16 decoded:", utf16_str)
+#
+# # 2. UTF-8 编码数据
+# utf8_bytes = bytes.fromhex("E2 B4 B0 E2 B5 A3 E2 B5 93 E2 B5 8D 21")
+# utf8_str = utf8_bytes.decode("utf-8")
+# print("UTF-8 decoded:", utf8_str)
+#
+# # 3. UTF-32 编码数据（按BE处理）
+# utf32_bytes = bytes.fromhex("00 00 2D 30 00 00 2D 63 00 00 2D 53 00 00 2D 4D 00 00 00 21")
+# utf32_str = utf32_bytes.decode("utf-32-be")
+# print("UTF-32 decoded:", utf32_str)
+
+
 # message = 'hello 你好'
 # print(message)
 #
@@ -13,8 +53,8 @@
 # r_msg_16 = s_msg_16.decode('utf-16')
 # print(r_msg_16)
 #
-# # utf-8 英文 1Byte 中文3Byte，灵活，绝对主流，web，文档，代码等等
-# # utf-16 2Byte
+# utf-8 英文 1Byte 中文3Byte，灵活，绝对主流，web，文档，代码等等
+# utf-16 2Byte
 #
 #
 # ########### decode error ###########
@@ -105,48 +145,5 @@
 
 
 
-# lst = [1, 2, 3, 4, 5]
-# print(id(lst))
-# lst[1:2] = [10]
-# print(id(lst))
-# print(lst)
-
-# homework
-# hw = str(input())
-# if hw[0:len(hw)-1] == hw[len(hw):0:-1]:
-#     print('True')
-# else:
-#     print('False')
-
-# hw = str(input())
-# if hw == hw[::-1]:
-#     print('True')
-# else:
-#     print('False')
 
 
-# path = "C:\\Users\\Alice\\Documents\\homework.txt"
-# print(path)
-# print(path.split("\\"))
-#
-# s = input('s: ')
-# s_encode = []
-# s_decode = ''
-# for i in s:
-#     s_encode += chr(ord(i) + 3)
-#
-# print(s_encode)
-#
-# for i in s_encode:
-#     s_decode += chr(ord(i) - 3)
-#
-# print(s_decode)
-
-
-a = ['a', 'b', 'a']
-print(a[::-1])
-
-if a == a[::-1]:
-    print('a')
-else:
-    print('b')

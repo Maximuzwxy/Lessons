@@ -1,3 +1,5 @@
+# pip install -i https://pypi.tuna.tsinghua.edu.cn/simple
+
 import random
 import turtle as t
 from freegames import square, vector
