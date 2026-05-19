@@ -39,5 +39,32 @@
 #     num += 1
 # print(num)
 
+# n = int(input('n: '))
+# i = 1
+# while i <= n:
+#     print('*' * i)
+#     i += 1
 
+
+
+# import random
+# a = random.randint(1, 100)
+# total = 0
+# print(a)
+# upper = 100
+# lower = 1
+# while True:
+#     guess = (upper + lower) // 2
+#     total += 1
+#
+#     if guess == a:
+#         print('right! exit')
+#         print('total is ', total)
+#         break
+#     elif guess < a:
+#         print(guess, 'try a larger one')
+#         lower = guess + 1
+#     else:
+#         print(guess, 'try a smaller one')
+#         upper = guess - 1
 

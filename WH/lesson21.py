@@ -80,10 +80,14 @@ def is_prime(n):
             return False
     return True
 
-# n = int(input('n: '))
-# for i in range(2, n + 1):
-#     if is_prime(i):
-#         print(i, end=' ')
+n = int(input('n: '))
+count = 0
+for i in range(2, n + 1):
+    if is_prime(i):
+        count += 1
+        print(i, end=' ')
+print()
+print(count)
 
 # count = 0
 # for i in range(2, 1001):

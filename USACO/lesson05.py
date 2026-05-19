@@ -202,6 +202,7 @@
 
 
 from collections import Counter
+
 # c = Counter('mississippi')
 # print(c)
 #
@@ -304,6 +305,15 @@ from collections import Counter
 # two_sum(l, t)
 
 # key = value in nums and value = index in nums
+def two_sum(nums, target):
+    d = {}
+    for i, v in enumerate(nums):
+        d[v] = i
+
+        if target - v in d and target - v != v:
+            print(d[target - v], i)
+
+
 # def two_sum(nums, target):
 #     d = {}
 #     for i in range(len(nums)):
@@ -317,9 +327,7 @@ from collections import Counter
 # t = 10
 # two_sum(l, t)
 
-a = {1, 2}
-b = {a, 3}
-print(b)
+
 
 
 

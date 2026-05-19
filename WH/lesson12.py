@@ -18,6 +18,15 @@
 #         lst3.append(i)
 # print(lst3)
 
+l1 = [7, 8, 4, 7, 3]
+l2 = [2, 7, 4, 1, 5]
+l3 = []
+for i in l1:
+    if i in l2 and i not in l3:
+        l3.append(i)
+print(l3)
+
+
 ################################
 
 # 列表推导式生成lst，包含1~10的7个随机数，打印lst
@@ -231,12 +240,12 @@
 # Given a list lst = [2, 3, 5, 7, 6, 8, 1, 9]
 # Find all combinations of two elements whose sum equals 10, and print the corresponding indices of these elements.
 
-lst = [2, 3, 5, 7, 6, 8, 1, 9]
-n = len(lst)
-for i in range(n - 1):
-    for j in range(i + 1, n):
-        if lst[i] + lst[j] == 10:
-            print(i, j)
+# lst = [2, 3, 5, 7, 6, 8, 1, 9]
+# n = len(lst)
+# for i in range(n - 1):
+#     for j in range(i + 1, n):
+#         if lst[i] + lst[j] == 10:
+#             print(i, j)
 
 ################################
 
@@ -309,10 +318,10 @@ for i in range(n - 1):
 #         print(lst.index(i), lst.index(10-i))
 
 
-for i in range(3):
-    print('out', i)
-    for i in range(3):
-        print('inner', i)
+# for i in range(3):
+#     print('out', i)
+#     for i in range(3):
+#         print('inner', i)
 
 
 

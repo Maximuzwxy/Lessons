@@ -1,80 +1,66 @@
-# solution 1 list
-def count_cross(lines):
-    cow_cur = [-1] * 11
+# solution 1 - list
+# def cross(nums):
+#     count = 0
+#     a = [-1] * 11
+#     for line in nums:
+#         index, side = list(map(int, line.split()))
+#         # print(index, side)
+#         if a[index] == -1:
+#             a[index] = side
+#         elif a[index] != side:
+#             a[index] = side
+#             count += 1
+#
+#     return count
+#
+# lst = []
+# ret = 0
+# try:
+#     with open('crossroad.in', 'r') as f:
+#         n = int(f.readline().strip())
+#         for i in range(n):
+#             lst.append(f.readline().strip())
+# except FileNotFoundError:
+#     n = int(input())
+#     lst = []
+#     for i in range(n):
+#         lst.append(input().strip())
+#
+# ret = cross(lst)
+# with open('crossroad.out', 'w') as f:
+#     f.write(f'{ret}')
+# print(ret)
+
+
+# solution 2 - dict
+def cross(nums):
     count = 0
-
-    for row in lines:
-        cow_id, side = list(map(int, row.split()))
-        if cow_cur[cow_id] == -1:
-            cow_cur[cow_id] = side
-        else:
-            if cow_cur[cow_id] != side:
-                count += 1
-                cow_cur[cow_id] = side
-
+    d = {}
+    for line in nums:
+        index, side = list(map(int, line.split()))
+        if index not in d:
+            d[index] = side
+        elif d[index] != side:
+            d[index] = side
+            count += 1
     return count
 
-num = 0
 lst = []
 ret = 0
+
 try:
     with open('crossroad.in', 'r') as f:
-        num = int(f.readline().strip())
-        for i in range(num):
+        n = int(f.readline().strip())
+        for i in range(n):
             lst.append(f.readline().strip())
-        ret = count_cross(lst)
 
 except FileNotFoundError:
-    num = int(input().strip())
-    for i in range(num):
+    n = int(input())
+    for i in range(n):
         lst.append(input().strip())
-    ret = count_cross(lst)
+
+ret = cross(lst)
 
 with open('crossroad.out', 'w') as f:
-    f.write(str(ret))
+    f.write(f'{ret}')
 print(ret)
-
-# solution 2 dict
-def count_cross(lst):
-    d = {}
-    cnt = 0
-    for cow_id, side in lst:
-        if cow_id not in d:
-            d[cow_id] = side
-        elif d[cow_id] != side:
-            cnt += 1
-            d[cow_id] = side
-    return cnt
-
-cow_lst = []
-num = 0
-count = 0
-
-try:
-    with open('crossroad.in', 'r') as f:
-        num = int(f.readline().strip())
-        for i in range(num):
-            cow_lst.append(list(map(int, f.readline().strip().split())))
-        count = count_cross(cow_lst)
-except FileNotFoundError:
-    num = int(input().strip())
-    for i in range(num):
-        cow_lst.append(list(map(int, input().strip().split())))
-    count = count_cross(cow_lst)
-
-with open('crossroad.out', 'w') as f:
-    f.write(str(count))
-print(count)
-
-
-
-
-
-
-
-
-
-
-
-
-

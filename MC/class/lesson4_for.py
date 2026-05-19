@@ -6,17 +6,20 @@ from mcpi import minecraft
 from mcpi import block
 from mcpi import entity
 
-mc = minecraft.Minecraft.create('192.168.66.207')
+# mc = minecraft.Minecraft.create('192.168.66.207')
+mc = minecraft.Minecraft.create('192.168.43.206')
 # mc = minecraft.Minecraft.create()
 
 # blocks = [block.STONE.id, block.GRASS.id, block.WOOD.id, block.GLASS.id, block.GOLD_BLOCK.id]
 
 time.sleep(3)
 
-x,y,z = mc.player.getTilePos()
+x, y, z = mc.player.getTilePos()
+mc.setBlock(x, y, z, 41)
+
 
 # 依次生成blocks
-blocks = [1, 2, 17, 20, 41, 57, 35]
+# blocks = [1, 2, 17, 20, 41, 57, 35]
 
 # for i in blocks:
 #     mc.setBlock(x, y, z, )
@@ -26,7 +29,7 @@ blocks = [1, 2, 17, 20, 41, 57, 35]
 # x方向生成block
 # for i in range(10):
 #     mc.setBlock(x + i, y, z, 41)
-#     time.sleep(1)
+#     time.sleep(0.2)
 
 # 每隔一个生成block
 # for i in range(20):
@@ -70,9 +73,10 @@ blocks = [1, 2, 17, 20, 41, 57, 35]
 #             time.sleep(0.1)
 
 
-# falling chicken in lava or water
-# for i in range(20):
+# chicken rocket
+# for i in range(30):
 #     mc.spawnEntity(x, y + i, z, entity.CHICKEN)
+#     mc.player.setPos(x, y + i + 2, z)
 #     time.sleep(0.1)
 
 # stairs
@@ -86,10 +90,10 @@ blocks = [1, 2, 17, 20, 41, 57, 35]
 #         time.sleep(0.1)
 
 # 实体楼梯
-for i in range(10):
-    for j in range(10 - i):
-        mc.setBlock(x + i + j, y + i, z, 41)
-        time.sleep(0.1)
+# for i in range(10):
+#     for j in range(10 - i):
+#         mc.setBlock(x + i + j, y + i, z, 41)
+#         time.sleep(0.1)
 
 # for i in range(10):
 #     for j in range(10):
@@ -113,9 +117,9 @@ for i in range(10):
 # pyramid(20)
 
 # setBlocks
-mc.setBlocks(x, y, z, x + 3, y, z, 41)
-mc.setBlocks(x, y, z, x + 3, y, z + 3, 41)
-mc.setBlocks(x, y, z, x + 3, y + 3, z + 3, 41)
+# mc.setBlocks(x, y, z, x + 3, y, z, 41)
+# mc.setBlocks(x, y, z, x + 3, y, z + 3, 41)
+# mc.setBlocks(x, y, z, x + 3, y + 3, z + 3, 41)
 
 # what will happen
 # mc.setBlocks(x-3, y-3, z-3, x+3, y+3, z+3, 2)

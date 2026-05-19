@@ -30,25 +30,26 @@
 #
 # print(s.find('o'))
 # print(s.rfind('o'))
+# print(s.rfind('Python'))
 
 # aa = '***'
 # lst = ['apple', 'banana', 'pear']
 # s = aa.join(lst)
 # print(s)
-
+#
 # print(' and '.join(lst))
 #
-# b = 'Harry has a ballon'
+# b = 'Ethan has a balloon'
 # print(','.join(b))
-#
 # s = 'abcde'
+#
 # print(' '.join(s[::-1]))
 # print(' '.join(reversed(s)))
 #
 # print(b.replace('has', 'had'))
 # print(b.replace('a', 'A'))
 
-# s = 'harry Hz Nx'
+# s = 'Ethan Felix Sylvia TM'
 # print(s.upper())
 # print(s.lower())
 # print(s.capitalize())
@@ -60,20 +61,20 @@
 # print(num.isalnum())
 # print(num.isalpha())
 # print(letter.isalpha())
-# print(' d  '.isspace())
+# print('    '.isspace())
 
-# movie = "2001: A SAMMY ODYSSEY"
-# book = "A Thousand Splendid Sharks"
-# poem = "sammy lived in a pretty how town"
-#
-# print(movie.islower())
-# print(movie.isupper())
-#
-# print(book.istitle())
-# print(book.isupper())
-#
-# print(poem.istitle())
-# print(poem.islower())
+movie = "2001: A SAMMY ODYSSEY"
+book = "A Thousand Splendid Sharks"
+poem = "sammy lived in a pretty how town"
+
+print(movie.islower())
+print(movie.isupper())
+
+print(book.istitle())
+print(book.isupper())
+
+print(poem.istitle())
+print(poem.islower())
 
 
 
@@ -168,10 +169,13 @@
 #     for i in s:
 #         index = ord(i) - ord('a')
 #         lst[index] += 1
-#     l = lst[::-1]
-#     print(ord('a'))
-#     max_c = chr(ord('a') + 25 - l.index(max(l)))
-#     print(max(l), max_c)
+#
+#     max_index = 0
+#     for i in range(len(lst)):
+#         if lst[i] >= lst[max_index]:
+#             max_index = i
+#
+#     print(max(lst), chr(ord('a') + max_index))
 
 
 

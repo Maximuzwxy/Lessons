@@ -4,7 +4,7 @@
 #
 # while i <= num:
 #     if num % i == 0:
-#         print(i)
+#         print(i, end=' ')
 #     i += 1
 
 # Harmonic series(调和级数)
@@ -23,7 +23,7 @@
 #
 # i = 1
 # while i * i <= n:
-#     print(i ** 2)
+#     print(i ** 2, end=' ')
 #     i += 1
 
 
@@ -71,45 +71,23 @@
 
 
 # cow eating grass problem
-grass = 100
-consume = 12
-grow = 5
-day = 0
-
-while True:
-    grass -= consume
-    if grass < 0:
-        grass += consume
-        break
-    grass += grow
-    day += 1
-print(day, grass)
-
-
-
-
-
-
-# # 输入处理：获取初始青草重量（正整数）
-# initial_grass = int(input("请输入牧场初始青草重量（公斤）："))
+# grass = 100
+# consume = 12
+# grow = 5
+# day = 0
 #
-# # 初始化变量
-# current_grass = initial_grass
-# daily_consume = 3 * 4
-# daily_grow = 5
-# days = 0
-#
-# # while 循环模拟过程
-# while current_grass >= daily_consume:
-#     current_grass -= daily_consume
-#     days += 1
-#     current_grass += daily_grow
-#
-# # 输出结果
-# print(f"牧场青草能让3头牛吃饱 {days} 天")
-# if current_grass > 0:
-#     print(f"含最后一天吃不饱，总共维持 {days + 1} 天")
-#     print(cur_grass)
+# while True:
+#     grass -= consume
+#     if grass < 0:
+#         break
+#     grass += grow
+#     day += 1
+# print(day, grass + consume)
+
+
+
+
+
 
 
 

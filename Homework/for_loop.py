@@ -1,20 +1,3 @@
-# 1. 通过input输入一个整数n，通过for循环，打印出0~n的所有偶数
-# 2. 任意输入一个字符串，通过for循环，计算字符串的长度
-
-######################################################
-
-# Exercise 1
-# 1. Get a positive integer n (n > 0) via the input() function.
-# 2. Use a for loop to calculate:
-#  the number of factors of n;
-#  the sum of all factors of n;
-#  then print these two values.
-#
-# Exercise 2
-# 1. Get a positive integer n (n > 0) via the input() function.
-# 2. Calculate the factorial of n and print the result.
-
-
 ######################################################
 # 练习1
 # 1. 输入任意整数n
@@ -147,6 +130,17 @@
 # n = int(input('n: '))
 # m = int(input('m: '))
 #
+
+
+
+
+
+
+
+
+
+
+
 # gcd = 1
 # for i in range(min(n, m), 0, -1):
 #     if n % i == 0 and m % i == 0:
@@ -155,6 +149,8 @@
 # lcm = int(n * m / gcd)
 # print('gcd: ', gcd)
 # print('lcm: ', lcm)
+
+######################################################
 
 # 使用input()输入一个正整数n
 # 1. 使用for循环以及%的方式，打印1~n中所有7的倍数，打印7的倍数的个数，打印所有7的倍数的和以及乘积
@@ -214,4 +210,32 @@
 # print('count:', count)
 # print('sum:', total)
 # print('product:', product)
+
+
+# Exercise 1
+# 任意输入一个正整数n，再输入一个正整数k，输出从-n到n范围内的以k为间隔的等差数列，k<n
+# Input positive integers n and k. Output the arithmetic sequence from -n to n with step k, k < n
+
+# n = int(input('n: '))
+# k = int(input('k: '))
+# for i in range(-n, n + 1, k):
+#     print(i, end=' ')
+
+
+# Exercise 2
+# 输入一个任意字符串，打印出每一个字符的索引和对应的当前的字符
+# Input an arbitrary string, then print the index and the corresponding character for each character in the string.
+# input:
+# s: abc
+#
+# output:
+# 0 a
+# 1 b
+# 2 c
+# s = input('s: ')
+# for i in range(len(s)):
+#     print(i, s[i])
+
+
+
 

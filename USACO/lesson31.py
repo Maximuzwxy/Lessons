@@ -358,8 +358,7 @@ class MathUtils:
 # print(str_tools.reverse_str('12345'))
 # print(str_tools.upper_str('abcde'))
 
-# 4. file
-# 5. Exception
+
 
 
 
