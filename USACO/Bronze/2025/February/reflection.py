@@ -2,6 +2,9 @@
 # Problem 1. Reflection
 # https://usaco.org/index.php?page=viewproblem2&cpid=1491
 # don't use counter!!!
+import sys
+# 150ms less with readline()
+input = sys.stdin.readline
 
 n, u = map(int, input().split())
 

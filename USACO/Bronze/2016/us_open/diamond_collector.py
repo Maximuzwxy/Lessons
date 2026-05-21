@@ -42,8 +42,6 @@ max_v = 0
 for i in range(n):
     count = 1
     for j in range(i + 1, n):
-        if i == j:
-            continue
         if diamonds[j] - diamonds[i] <= k:
             count += 1
     max_v = max(max_v, count)

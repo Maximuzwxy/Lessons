@@ -66,26 +66,26 @@ def my_min(array, start, end):
 
     return min_index
 
-# lst = [random.randint(1, 100) for _ in range(10)]
-# print(lst)
-# print(my_min(lst, 0, len(lst)))
+lst = [random.randint(1, 100) for _ in range(10)]
+print(lst)
+print(my_min(lst, 0, len(lst)))
 
 # selection sort
-# lst = [8, 3, 5, 6, 0, 9, 2, 7, 1, 4]
-# print(lst)
+lst = [8, 3, 5, 6, 0, 9, 2, 7, 1, 4]
+print(lst)
 
-# for i in range(len(lst) - 1):
-#     min_index = i
-#     for j in range(i + 1, len(lst)):
-#         if lst[j] < lst[min_index]:
-#             min_index = j
-#     lst[i], lst[min_index] = lst[min_index], lst[i]
-# print(lst)
+for i in range(len(lst) - 1):
+    min_index = i
+    for j in range(i + 1, len(lst)):
+        if lst[j] < lst[min_index]:
+            min_index = j
+    lst[i], lst[min_index] = lst[min_index], lst[i]
+print(lst)
 
-# for i in range(len(lst) - 1):
-#     min_index = my_min(lst, i, len(lst))
-#     lst[i], lst[min_index] = lst[min_index], lst[i]
-# print(lst)
+for i in range(len(lst) - 1):
+    min_index = my_min(lst, i, len(lst))
+    lst[i], lst[min_index] = lst[min_index], lst[i]
+print(lst)
 
 # 在2个列表中找到第一个一样的数
 l1 = [1, 2, 3, 4, 5]
@@ -112,14 +112,14 @@ for i in l1:
         continue
     break
 
-# def find_match(lst1, lst2):
-#     for i in lst1:
-#         for j in lst2:
-#             if i == j:
-#                 return i
-#     return None
-#
-# print(find_match(l1, l2))
+def find_match(lst1, lst2):
+    for i in lst1:
+        for j in lst2:
+            if i == j:
+                return i
+    return None
+
+print(find_match(l1, l2))
 
 
 
