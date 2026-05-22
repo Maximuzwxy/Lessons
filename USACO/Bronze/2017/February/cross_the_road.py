@@ -1,3 +1,7 @@
+# USACO 2017 February Contest, Bronze
+# Problem 1. Why Did the Cow Cross the Road
+# https://usaco.org/index.php?page=viewproblem2&cpid=711
+
 # solution 1 - list
 # def cross(nums):
 #     count = 0

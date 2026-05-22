@@ -1,3 +1,7 @@
+# USACO 2024 December Contest, Bronze
+# Problem 1. Roundabout Rounding
+# https://usaco.org/index.php?page=viewproblem2&cpid=1443
+
 # solution 1 Partially passed
 # def bessie(num, b):
 #     # Bessie's rounding to 10^b
