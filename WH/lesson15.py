@@ -602,11 +602,5 @@ t.done()
 
 
 
-# test env
-# import turtle as t
-# from freegames import square, vector
-# t.hideturtle()
-# t.tracer(False)
-# square(0, 0, 10, 'green')
-# t.done()
+
 

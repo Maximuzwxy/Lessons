@@ -63,12 +63,12 @@ def gen_random():
 # my_func('Harry')
 # my_func()
 
-# def my_func(x):
-#     return 5 * x
-#
-# print(my_func(3))
-# print(my_func(my_func(4)))
-# print(my_func((my_func(my_func(5)))))
+def my_func(x):
+    return 5 * x
+
+print(my_func(3))
+print(my_func(my_func(4)))
+print(my_func((my_func(my_func(5)))))
 
 import math
 def is_prime(n):
