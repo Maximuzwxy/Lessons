@@ -6,23 +6,23 @@
 # 1 8
 
 # combinations
-# n = int(input())
-# x = []
-# y = []
-# for i in range(n):
-#     a, b = map(int, input().split())
-#     x.append(a)
-#     y.append(b)
-#
-# max_dis = 0
-# for i in range(n - 1):
-#     for j in range(i + 1, n):
-#         dx = x[j] - x[i]
-#         dy = y[j] - y[i]
-#         dis = dx * dx + dy * dy
-#         print(i, j, dis)
-#         max_dis = max(max_dis, dis)
-# print(max_dis)
+n = int(input())
+x = []
+y = []
+for i in range(n):
+    a, b = map(int, input().split())
+    x.append(a)
+    y.append(b)
+
+max_dis = 0
+for i in range(n - 1):
+    for j in range(i + 1, n):
+        dx = x[j] - x[i]
+        dy = y[j] - y[i]
+        dis = dx * dx + dy * dy
+        print(i, j, dis)
+        max_dis = max(max_dis, dis)
+print(max_dis)
 
 # permutations
 # Output all the permutations of the elements in the following list

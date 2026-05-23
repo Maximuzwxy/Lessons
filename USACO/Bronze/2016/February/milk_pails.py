@@ -40,16 +40,16 @@
 # Solution 1: Brute Force Enumeration
 # Time: O(m^2), Space: O(1)
 # =============================================================================
-# import sys
-# sys.stdin = open('pails.in', 'r')
-# sys.stdout = open('pails.out', 'w')
+import sys
+sys.stdin = open('pails.in', 'r')
+sys.stdout = open('pails.out', 'w')
 
-# x, y, m = map(int, input().split())
+x, y, m = map(int, input().split())
 
-# a = m // x  # maximum times we can use pail X
-# b = m // y  # maximum times we can use pail Y
+a = m // x  # maximum times we can use pail X
+b = m // y  # maximum times we can use pail Y
 
-# max_v = 0
+max_v = 0
 
 # for i in range(0, a + 1):
 #     for j in range(0, b + 1):
@@ -57,12 +57,12 @@
 #         if p <= m:
 #             max_v = max(max_v, p)
 
-# # Optimization: for each i, compute max j directly (O(n) instead of O(n^2))
-# # for i in range(0, a + 1):
-# #     j = (m - x * i) // y  # maximum j such that x*i + y*j <= m
-# #     max_v = max(max_v, x * i + y * j)
+# Optimization: for each i, compute max j directly (O(n) instead of O(n^2))
+for i in range(0, a + 1):
+    j = (m - x * i) // y  # maximum j such that x*i + y*j <= m
+    max_v = max(max_v, x * i + y * j)
 
-# print(max_v)
+print(max_v)
 
 # =============================================================================
 # Solution 2: DP (Dynamic Programming) on Reachable States

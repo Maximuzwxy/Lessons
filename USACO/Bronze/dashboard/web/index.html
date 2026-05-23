@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USACO Bronze 题库</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.9;
+        }
+
+        .filters {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .filter-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .tag-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag-chip {
+            padding: 5px 12px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .tag-chip:hover {
+            background: #d0d0d0;
+        }
+
+        .tag-chip.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-card .label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .problem-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .problem-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .problem-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .problem-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .problem-meta {
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .problem-contest {
+            background: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .problem-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .problem-tag {
+            padding: 3px 10px;
+            background: #e8e8ff;
+            color: #555;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+
+        .problem-tag.math { background: #ffe8e8; color: #c44; }
+        .problem-tag.simulation { background: #e8ffe8; color: #4a4; }
+        .problem-tag.brute_force { background: #e8e8ff; color: #44a; }
+        .problem-tag.graph { background: #fff8e8; color: #a64; }
+        .problem-tag.sorting { background: #ffeff8; color: #a4a; }
+        .problem-tag.string { background: #e8ffff; color: #4aa; }
+        .problem-tag.bfs { background: #f8f8ff; color: #448; }
+        .problem-tag.dp { background: #fff0e8; color: #a64; }
+        .problem-tag.two_pointers { background: #e8fff0; color: #2a7; }
+        .problem-tag.greedy { background: #fff8f0; color: #a82; }
+        .problem-tag.geometry { background: #f0e8ff; color: #72a; }
+        .problem-tag.2d_grid { background: #e8f8ff; color: #28a; }
+
+        .problem-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .problem-link:hover {
+            text-decoration: underline;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .stats {
+                flex-wrap: wrap;
+            }
+            .stat-card {
+                flex: 1;
+                min-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>USACO Bronze 题库</h1>
+            <p>2015-2026 所有 Bronze 组题目分类整理</p>
+        </header>
+
+        <div class="filters">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label>年份</label>
+                    <select id="yearFilter">
+                        <option value="">全部年份</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>比赛</label>
+                    <select id="contestFilter">
+                        <option value="">全部比赛</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>搜索</label>
+                    <input type="text" id="searchFilter" placeholder="搜索题目名称...">
+                </div>
+            </div>
+            <div class="filter-row">
+                <div class="filter-group" style="flex: 100%;">
+                    <label>标签筛选</label>
+                    <div class="tag-filter" id="tagFilter"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number" id="totalCount">0</div>
+                <div class="label">总题目数</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="filteredCount">0</div>
+                <div class="label">筛选结果</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="contestCount">0</div>
+                <div class="label">比赛场次</div>
+            </div>
+        </div>
+
+        <div class="problem-list" id="problemList">
+            <div class="loading">加载中...</div>
+        </div>
+    </div>
+
+    <script>
+        let db = null;
+        let selectedTags = new Set();
+
+        const tagColors = {
+            'math': 'math',
+            'simulation': 'simulation',
+            'brute_force': 'brute_force',
+            'graph': 'graph',
+            'sorting': 'sorting',
+            'string': 'string',
+            'bfs': 'bfs',
+            'dfs': 'dfs',
+            'dp': 'dp',
+            'two_pointers': 'two_pointers',
+            'greedy': 'greedy',
+            'geometry': 'geometry',
+            '2d_grid': '2d_grid',
+            'prefix_sum': 'prefix_sum',
+            'recursion': 'recursion',
+            'combinatorics': 'brute_force',
+            'game': 'brute_force',
+            'interval': 'brute_force',
+            'tree': 'graph',
+            'array': 'brute_force',
+            'bitwise': 'math'
+        };
+
+        const tagNames = {
+            'math': '数学',
+            'simulation': '模拟法',
+            'brute_force': '暴力枚举',
+            'graph': '图论',
+            'sorting': '排序',
+            'string': '字符串',
+            'bfs': 'BFS',
+            'dfs': 'DFS',
+            'dp': '动态规划',
+            'two_pointers': '双指针',
+            'greedy': '贪心',
+            'geometry': '几何',
+            '2d_grid': '网格',
+            'prefix_sum': '前缀和',
+            'recursion': '递归',
+            'combinatorics': '组合',
+            'game': '博弈',
+            'interval': '区间',
+            'tree': '树',
+            'array': '数组',
+            'bitwise': '位运算'
+        };
+
+        async function loadData() {
+            try {
+                const response = await fetch('api/problems');
+                db = await response.json();
+                initFilters();
+                renderProblems();
+            } catch (error) {
+                document.getElementById('problemList').innerHTML =
+                    '<div class="no-results">加载失败，请确保服务器正在运行</div>';
+            }
+        }
+
+        function initFilters() {
+            // 年份
+            const years = [...new Set(db.problems.map(p => p.year))].sort();
+            const yearSelect = document.getElementById('yearFilter');
+            years.forEach(year => {
+                const opt = document.createElement('option');
+                opt.value = year;
+                opt.textContent = year;
+                yearSelect.appendChild(opt);
+            });
+
+            // 比赛
+            const contests = [...new Set(db.problems.map(p => p.contest))];
+            const contestSelect = document.getElementById('contestFilter');
+            contests.forEach(contest => {
+                const opt = document.createElement('option');
+                opt.value = contest;
+                opt.textContent = contest;
+                contestSelect.appendChild(opt);
+            });
+
+            // 标签
+            const allTags = new Set();
+            db.problems.forEach(p => p.tags.forEach(t => allTags.add(t)));
+
+            const tagFilter = document.getElementById('tagFilter');
+            [...allTags].sort().forEach(tag => {
+                const chip = document.createElement('span');
+                chip.className = 'tag-chip';
+                chip.dataset.tag = tag;
+                chip.textContent = tagNames[tag] || tag;
+                chip.onclick = () => toggleTag(tag);
+                tagFilter.appendChild(chip);
+            });
+
+            // 统计
+            document.getElementById('totalCount').textContent = db.problems.length;
+            document.getElementById('contestCount').textContent =
+                new Set(db.problems.map(p => `${p.year}-${p.contest}`)).size;
+        }
+
+        function toggleTag(tag) {
+            if (selectedTags.has(tag)) {
+                selectedTags.delete(tag);
+            } else {
+                selectedTags.add(tag);
+            }
+            updateTagChips();
+            renderProblems();
+        }
+
+        function updateTagChips() {
+            document.querySelectorAll('.tag-chip').forEach(chip => {
+                chip.classList.toggle('active', selectedTags.has(chip.dataset.tag));
+            });
+        }
+
+        function getFilteredProblems() {
+            const year = document.getElementById('yearFilter').value;
+            const contest = document.getElementById('contestFilter').value;
+            const search = document.getElementById('searchFilter').value.toLowerCase();
+
+            return db.problems.filter(p => {
+                if (year && p.year.toString() !== year) return false;
+                if (contest && p.contest !== contest) return false;
+                if (search && !p.name.toLowerCase().includes(search)) return false;
+                if (selectedTags.size > 0 && ![...selectedTags].some(t => p.tags.includes(t))) return false;
+                return true;
+            });
+        }
+
+        function renderProblems() {
+            const problems = getFilteredProblems();
+            document.getElementById('filteredCount').textContent = problems.length;
+
+            const list = document.getElementById('problemList');
+
+            if (problems.length === 0) {
+                list.innerHTML = '<div class="no-results">没有找到匹配的题目</div>';
+                return;
+            }
+
+            list.innerHTML = problems.map(p => `
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <div class="problem-title">${p.name}</div>
+                        <div class="problem-meta">
+                            <span class="problem-contest">${p.year} ${p.contest}</span>
+                            #${p.problem_num}
+                        </div>
+                    </div>
+                    <div class="problem-tags">
+                        ${p.tags.map(t => `<span class="problem-tag ${tagColors[t] || ''}">${tagNames[t] || t}</span>`).join('')}
+                    </div>
+                    ${p.usaco_url ? `<a href="${p.usaco_url}" target="_blank" class="problem-link">查看题目 →</a>` : ''}
+                </div>
+            `).join('');
+        }
+
+        // 事件监听
+        document.getElementById('yearFilter').addEventListener('change', renderProblems);
+        document.getElementById('contestFilter').addEventListener('change', renderProblems);
+        document.getElementById('searchFilter').addEventListener('input', renderProblems);
+
+        // 启动
+        loadData();
+    </script>
+</body>
+</html>

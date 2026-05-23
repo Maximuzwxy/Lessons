@@ -1,0 +1,2449 @@
+{
+  "metadata": {
+    "description": "USACO Bronze 题库数据库",
+    "version": "1.0",
+    "last_updated": "2026-05-21",
+    "total_problems": 129,
+    "contests": [
+      {
+        "id": "dec",
+        "name": "December Contest",
+        "name_zh": "十二月赛"
+      },
+      {
+        "id": "jan",
+        "name": "January Contest",
+        "name_zh": "一月赛"
+      },
+      {
+        "id": "feb",
+        "name": "February Contest",
+        "name_zh": "二月赛"
+      },
+      {
+        "id": "open",
+        "name": "US Open",
+        "name_zh": "美国公开赛"
+      }
+    ],
+    "tags": [
+      {
+        "id": "simulation",
+        "name": "Simulation",
+        "name_zh": "模拟法",
+        "description": "按照题目描述一步步模拟过程"
+      },
+      {
+        "id": "brute_force",
+        "name": "Brute Force",
+        "name_zh": "暴力枚举",
+        "description": "枚举所有可能性"
+      },
+      {
+        "id": "2d_grid",
+        "name": "2D Grid",
+        "name_zh": "二维网格",
+        "description": "处理矩阵/网格类问题"
+      },
+      {
+        "id": "recursion",
+        "name": "Recursion",
+        "name_zh": "递归",
+        "description": "使用递归思想"
+      },
+      {
+        "id": "bfs",
+        "name": "BFS",
+        "name_zh": "广度优先搜索",
+        "description": "广度优先遍历"
+      },
+      {
+        "id": "dfs",
+        "name": "DFS",
+        "name_zh": "深度优先搜索",
+        "description": "深度优先遍历"
+      },
+      {
+        "id": "two_pointers",
+        "name": "Two Pointers",
+        "name_zh": "双指针",
+        "description": "利用有序数组的双指针技巧"
+      },
+      {
+        "id": "sorting",
+        "name": "Sorting",
+        "name_zh": "排序",
+        "description": "需要排序处理"
+      },
+      {
+        "id": "prefix_sum",
+        "name": "Prefix Sum",
+        "name_zh": "前缀和",
+        "description": "计算前缀和优化"
+      },
+      {
+        "id": "greedy",
+        "name": "Greedy",
+        "name_zh": "贪心",
+        "description": "贪心选择"
+      },
+      {
+        "id": "dp",
+        "name": "DP",
+        "name_zh": "动态规划",
+        "description": "动态规划"
+      },
+      {
+        "id": "string",
+        "name": "String",
+        "name_zh": "字符串处理",
+        "description": "涉及字符串操作"
+      },
+      {
+        "id": "math",
+        "name": "Math",
+        "name_zh": "数学/数论",
+        "description": "涉及数学计算"
+      },
+      {
+        "id": "graph",
+        "name": "Graph",
+        "name_zh": "图论",
+        "description": "简单图论问题"
+      },
+      {
+        "id": "geometry",
+        "name": "Geometry",
+        "name_zh": "几何",
+        "description": "涉及几何计算"
+      }
+    ]
+  },
+  "problems": [
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Fence Painting",
+      "slug": "fence_painting",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "2d_grid",
+        "recursion",
+        "geometry"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Speeding Ticket",
+      "slug": "speeding_ticket",
+      "cpid": 568,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=568",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "prefix_sum"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Contaminated Milk",
+      "slug": "contaminated_milk",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Milk Pails",
+      "slug": "milk_pails",
+      "cpid": 615,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=615",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "dp"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Circular Barn",
+      "slug": "circular_barn",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "geometry"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Load Balancing",
+      "slug": "load_balancing",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Promotion Counting",
+      "slug": "promotion_counting",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Angry Cows",
+      "slug": "angry_cows",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Mowing the Field",
+      "slug": "mowing_the_field",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Diamond Collector",
+      "slug": "diamond_collector",
+      "cpid": 639,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=639",
+      "local_file": null,
+      "tags": [
+        "two_pointers",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Bull in a China Shop",
+      "slug": "bull_in_a_china_shop",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "2d_grid"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Field Reduction",
+      "slug": "field_reduction",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "geometry"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Square Pasture",
+      "slug": "square_pasture",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "geometry",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Block Game",
+      "slug": "block_game",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "The Cow-Signal",
+      "slug": "the_cow-signal",
+      "cpid": 665,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=665",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "2d_grid"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Why Did the Cow Cross the Road",
+      "slug": "why_did_the_cow_cross_the_road",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Why Did the Cow Cross the Road II",
+      "slug": "why_did_the_cow_cross_the_road_ii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Why Did the Cow Cross the Road III",
+      "slug": "why_did_the_cow_cross_the_road_iii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Don't Be Last!",
+      "slug": "dont_be_last",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Hoof Paper Scissors",
+      "slug": "hoof_paper_scissors",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Cow Tipping",
+      "slug": "cow_tipping",
+      "cpid": 689,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=689",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "The Lost Cow",
+      "slug": "the_lost_cow",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Bovine Genomics",
+      "slug": "bovine_genomics",
+      "cpid": 736,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=736",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "string"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Modern Art",
+      "slug": "modern_art",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "dp"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Blocked Billboard",
+      "slug": "blocked_billboard",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "2d_grid",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "The Bovine Shuffle",
+      "slug": "the_bovine_shuffle",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "array"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Milk Measurement",
+      "slug": "milk_measurement",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Teleportation",
+      "slug": "teleportation",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Hoofball",
+      "slug": "hoofball",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Taming the Herd",
+      "slug": "taming_the_herd",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "dp"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Blocked Billboard II",
+      "slug": "blocked_billboard_ii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "2d_grid",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Lifeguards",
+      "slug": "lifeguards",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "interval"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Out of Place",
+      "slug": "out_of_place",
+      "cpid": 785,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=785",
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Team Tic Tac Toe",
+      "slug": "team_tic_tac_toe",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation",
+        "game"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Milking Order",
+      "slug": "milking_order",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "graph",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Family Tree",
+      "slug": "family_tree",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "graph",
+        "dfs"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Mixing Milk",
+      "slug": "mixing_milk",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "The Bucket List",
+      "slug": "the_bucket_list",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Back and Forth",
+      "slug": "back_and_forth",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Sleepy Cow Herding",
+      "slug": "sleepy_cow_herding",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "two_pointers"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "The Great Revegetation",
+      "slug": "the_great_revegetation",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "graph",
+        "dfs",
+        "greedy"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Measuring Traffic",
+      "slug": "measuring_traffic",
+      "cpid": 917,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=917",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "prefix_sum"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Shell Game",
+      "slug": "shell_game",
+      "cpid": 891,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=891",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Sleepy Cow Sorting",
+      "slug": "sleepy_cow_sorting",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Guess the Animal",
+      "slug": "guess_the_animal",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Bucket Brigade",
+      "slug": "bucket_brigade",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "string"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Milk Factory",
+      "slug": "milk_factory",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "graph",
+        "tree"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Cow Evolution",
+      "slug": "cow_evolution",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "graph",
+        "tree",
+        "string"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Cow Gymnastics",
+      "slug": "cow_gymnastics",
+      "cpid": 963,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=963",
+      "local_file": null,
+      "tags": [
+        "two_pointers",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Where Am I?",
+      "slug": "where_am_i",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Livestock Lineup",
+      "slug": "livestock_lineup",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Triangles",
+      "slug": "triangles",
+      "cpid": 1011,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1011",
+      "local_file": null,
+      "tags": [
+        "geometry",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Mad Scientist",
+      "slug": "mad_scientist",
+      "cpid": 1012,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1012",
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Swapity Swap",
+      "slug": "swapity_swap",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Word Processor",
+      "slug": "word_processor",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Photoshoot",
+      "slug": "photoshoot",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "combinatorics"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Race",
+      "slug": "race",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "two_pointers",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Social Distancing I",
+      "slug": "social_distancing_i",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Social Distancing II",
+      "slug": "social_distancing_ii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "interval"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Cowntact Tracing",
+      "slug": "cowntact_tracing",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "bfs",
+        "graph"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Do you know your ABCs?",
+      "slug": "do_you_know_your_abcs",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Daisy Chains",
+      "slug": "daisy_chains",
+      "cpid": 1060,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1060",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "two_pointers"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Stuck in a Rut",
+      "slug": "stuck_in_a_rut",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "geometry",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Year of the Cow",
+      "slug": "year_of_the_cow",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Comfortable Cows",
+      "slug": "comfortable_cows",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Clockwise Fence",
+      "slug": "clockwise_fence",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "geometry",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Uddered but not Herd",
+      "slug": "uddered_but_not_herd",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "greedy"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Even More Odd Photos",
+      "slug": "even_more_odd_photos",
+      "cpid": 1084,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1084",
+      "local_file": null,
+      "tags": [
+        "math",
+        "combinatorics"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Just Stalling",
+      "slug": "just_stalling",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Acowdemia I",
+      "slug": "acowdemia_i",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Acowdemia II",
+      "slug": "acowdemia_ii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Acowdemia III",
+      "slug": "acowdemia_iii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Lonely Photo",
+      "slug": "lonely_photo",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Air Cowditioning",
+      "slug": "air_cowditioning",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "greedy"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Walking Home",
+      "slug": "walking_home",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "bfs",
+        "graph"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Sleeping in Class",
+      "slug": "sleeping_in_class",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Photoshoot 2",
+      "slug": "photoshoot_2",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Blocks",
+      "slug": "blocks",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "2d_grid",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Herdle",
+      "slug": "herdle",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Non-Transitive Dice",
+      "slug": "non-transitive_dice",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "game"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Drought",
+      "slug": "drought",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "dp"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Photoshoot",
+      "slug": "photoshoot",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "combinatorics"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Counting Liars",
+      "slug": "counting_liars",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Alchemy",
+      "slug": "alchemy",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Cow College",
+      "slug": "cow_college",
+      "cpid": 1251,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1251",
+      "local_file": null,
+      "tags": [
+        "math",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Feeding the Cows",
+      "slug": "feeding_the_cows",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "string"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Reverse Engineering",
+      "slug": "reverse_engineering",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "dp"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Hungry Cow",
+      "slug": "hungry_cow",
+      "cpid": 1299,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1299",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "prefix_sum"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Stamp Grid",
+      "slug": "stamp_grid",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "2d_grid",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Watching Mooloo",
+      "slug": "watching_mooloo",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "two_pointers"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Leaders",
+      "slug": "leaders",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Air Cowditioning II",
+      "slug": "air_cowditioning_ii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "greedy"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Moo Operations",
+      "slug": "moo_operations",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "string"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "FEB",
+      "slug": "feb",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Moo Language",
+      "slug": "moo_language",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Rotate and Shift",
+      "slug": "rotate_and_shift",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "2d_grid",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Candy Cane Feast",
+      "slug": "candy_cane_feast",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Cowntact Tracing 2",
+      "slug": "cowntact_tracing_2",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "bfs",
+        "graph"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "Farmer John Actually Farms",
+      "slug": "farmer_john_actually_farms",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "2d_grid"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Palindrome Game",
+      "slug": "palindrome_game",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Milk Exchange",
+      "slug": "milk_exchange",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Maximizing Productivity",
+      "slug": "maximizing_productivity",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "greedy"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Majority Opinion",
+      "slug": "majority_opinion",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Cannon Ball",
+      "slug": "cannon_ball",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "geometry"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Balancing Bacteria",
+      "slug": "balancing_bacteria",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "string"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Logical Moos",
+      "slug": "logical_moos",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "Walking Along a Fence",
+      "slug": "walking_along_a_fence",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "geometry"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "Farmer John's Favorite Permutation",
+      "slug": "farmer_johns_favorite_permutation",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "dp"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 1,
+      "name": "Roundabout Rounding",
+      "slug": "roundabout_rounding",
+      "cpid": 1443,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1443",
+      "local_file": null,
+      "tags": [
+        "math",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 2,
+      "name": "Farmer John's Cheese Block",
+      "slug": "farmer_johns_cheese_block",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "2d_grid"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "December",
+      "contest_id": "dec",
+      "problem_num": 3,
+      "name": "It's Mooin' Time",
+      "slug": "its_mooin_time",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "bfs",
+        "graph"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Reflection",
+      "slug": "reflection",
+      "cpid": 1491,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1491",
+      "local_file": null,
+      "tags": [
+        "2d_grid",
+        "geometry"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Making Mexes",
+      "slug": "making_mexes",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Printing Sequences",
+      "slug": "printing_sequences",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "dp"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Astral Superposition",
+      "slug": "astral_superposition",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "graph",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "It's Mooin' Time II",
+      "slug": "its_mooin_time_ii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "bfs",
+        "graph"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Cow Checkups",
+      "slug": "cow_checkups",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 1,
+      "name": "Hoof Paper Scissors Minus One",
+      "slug": "hoof_paper_scissors_minus_one",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "game"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 2,
+      "name": "More Cow Photos",
+      "slug": "more_cow_photos",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2024,
+      "year_season": "2024-25",
+      "contest": "US Open",
+      "contest_id": "open",
+      "problem_num": 3,
+      "name": "It's Mooin' Time III",
+      "slug": "its_mooin_time_iii",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "bfs",
+        "graph"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "First",
+      "contest_id": "first",
+      "problem_num": 1,
+      "name": "Chip Exchange",
+      "slug": "chip_exchange",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "First",
+      "contest_id": "first",
+      "problem_num": 2,
+      "name": "COW Splits",
+      "slug": "cow_splits",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "First",
+      "contest_id": "first",
+      "problem_num": 3,
+      "name": "Photoshoot",
+      "slug": "photoshoot",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "math",
+        "combinatorics"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "Second",
+      "contest_id": "second",
+      "problem_num": 1,
+      "name": "TBA",
+      "slug": "tba",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "Second",
+      "contest_id": "second",
+      "problem_num": 2,
+      "name": "TBA",
+      "slug": "tba",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "Second",
+      "contest_id": "second",
+      "problem_num": 3,
+      "name": "TBA",
+      "slug": "tba",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "Third",
+      "contest_id": "third",
+      "problem_num": 1,
+      "name": "TBA",
+      "slug": "tba",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "Third",
+      "contest_id": "third",
+      "problem_num": 2,
+      "name": "TBA",
+      "slug": "tba",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2026,
+      "year_season": "2026",
+      "contest": "Third",
+      "contest_id": "third",
+      "problem_num": 3,
+      "name": "TBA",
+      "slug": "tba",
+      "cpid": null,
+      "usaco_url": null,
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    }
+  ]
+}
