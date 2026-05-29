@@ -15,5 +15,11 @@ print(lst[1:9:2])
 # print(lst[(6:9:2))
 print(lst[6:9:-2])
 
+# for i in range(7, 1, -2):
+#     print(i)
+
+
+
+
 
 

@@ -1,5 +1,18 @@
 import random
 
+# a = 1
+# print(id(a))
+#
+# a += 1
+# print(id(a))
+
+# def change(a):
+#     print(id(a))
+#
+# a = 1
+# print(id(a))
+# change(a)
+
 # def change_int(a):
 #     a = 10
 # a = 1
@@ -122,6 +135,20 @@ def find_match(lst1, lst2):
 print(find_match(l1, l2))
 
 
+# total = 0  # Defined outside the function, this is a global variable
+#
+# # Create Function sum
+# def sum(arg1, arg2):  # Parameters arg1 and arg2 are local variables.
+#     # The function assigns a value to the variable 'total',
+#     # where 'total' is a local variable.
+#     total = arg1 + arg2
+#     print("local variables : ", total)
+#     return total
+#
+#
+# # Call the sum function
+# sum(10, 20)
+# print("global variables : ", total)
 
 
 

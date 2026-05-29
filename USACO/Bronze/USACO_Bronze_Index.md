@@ -1,6 +1,6 @@
 # USACO Bronze 题解目录
 
-共 21 个 Python 文件，其中 2 个缺少 USACO 题目链接。
+共 21 个 Python 文件
 
 ## 目录
 

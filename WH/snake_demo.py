@@ -44,7 +44,6 @@ def move():
         t.ontimer(move, 300 // len(snake))
 
 def on_change(x, y):
-    global begin
     if begin:
         if aim.x != -x or aim.y != -y:
             aim.x = x

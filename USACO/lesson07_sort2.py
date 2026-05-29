@@ -101,5 +101,14 @@ import random
 # quick_sort(nums, 0, len(nums) - 1)
 # print(nums)
 
+# USACO 2017 February Contest, Bronze
+# Problem 3. Why Did the Cow Cross the Road III
+# https://usaco.org/index.php?page=viewproblem2&cpid=713
+
+# USACO 2016 January Contest, Bronze
+# Problem 2. Angry Cows
+# https://usaco.org/index.php?page=viewproblem2&cpid=592
+
+
 
 
