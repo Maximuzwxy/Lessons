@@ -506,116 +506,110 @@ from freegames import square, vector
 
 # 11. score
 # CHANGE: Add score display, fix restart bug (multiple timers and arrow keys after game over)
-snake = []
-BLOCK = 12
-RADIUS = BLOCK * 25
-aim = vector(0, 0)
-begin = False
-food = []
-game_over_flag = False               # NEW: flag to prevent arrow keys after game over
-
-def init_snake():
-    snake.clear()
-    snake.append(vector(0, 0))
-
-    draw_snake()
-
-def draw_snake():
-    for i in snake:
-        square(i.x, i.y, BLOCK - 2, 'green')
-
-def move():
-    if begin:
-        t.clear()
-
-        head = vector(snake[0].x + aim.x, snake[0].y + aim.y)
-        snake.insert(0, head)
-
-        if head in food:
-            food.remove(head)
-        elif head.x < -RADIUS or head.x > RADIUS - BLOCK or head.y < -RADIUS or head.y > RADIUS - BLOCK:
-            game_over()
-            snake.pop()               # CHANGE: reset snake length after game over
-        else:
-            snake.pop()
-
-        draw_snake()
-        draw_food()
-        show_score()                  # NEW: update score display
-
-        t.update()
-        t.ontimer(move, 300 // len(snake))
-
-def on_change(x, y):
-    global begin, game_over_flag
-    if game_over_flag:                # NEW: ignore direction keys after game over
-        return
-    if aim.x != -x or aim.y != -y:
-        aim.x = x
-        aim.y = y
-
-    if not begin:
-        begin = True
-        move()
-
-def draw_food():
-    for i in range(10 - len(food)):
-        lst = random.sample(range(-RADIUS, RADIUS - BLOCK, BLOCK), 2)
-        x = vector(lst[0], lst[1])
-        if x not in snake:
-            food.append(x)
-    for j in food:
-        square(j.x, j.y, BLOCK - 2, 'blue')
-
-def game_over():
-    global begin, game_over_flag
-    aim.x, aim.y = 0, 0
-    t.penup()
-    t.goto(0, 0)
-    t.pendown()
-    t.pencolor('red')
-    t.write('Game Over!', align='center', font=('Arial', 24, 'normal'))
-    begin = False
-    game_over_flag = True             # NEW: set flag to block arrow keys
-
-def restart():
-    global begin, game_over_flag
-    begin = False                     # CHANGE: stop current movement (fix multiple timers bug)
-    t.clear()
-    init_snake()
-    food.clear()
-    draw_food()
-    show_score()                      # NEW: redraw score after restart
-    game_over_flag = False           # NEW: reset flag to allow arrow keys
-
-def show_score():                    # NEW: function to display score
-    t.penup()
-    t.goto(RADIUS - 75, RADIUS - 30)
-    t.pendown()
-    t.pencolor('orange')
-    t.write(f'Score: {len(snake) - 1}', font=('Arial', 10, 'normal'))
-
-
-t.setup(RADIUS * 2, RADIUS * 2, 0, 0)
-t.hideturtle()
-t.tracer(False)
-
-t.listen()
-t.onkey(lambda: on_change(0, BLOCK), 'Up')
-t.onkey(lambda: on_change(0, -BLOCK), 'Down')
-t.onkey(lambda: on_change(-BLOCK, 0), 'Left')
-t.onkey(lambda: on_change(BLOCK, 0), 'Right')
-t.onkey(restart, 'r')
-
-init_snake()
-draw_food()
-show_score()                         # NEW: show score initially
-
-t.update()
-t.done()
-
-
-
-
-
-
+# snake = []
+# BLOCK = 12
+# RADIUS = BLOCK * 25
+# aim = vector(0, 0)
+# begin = False
+# food = []
+# game_over_flag = False               # NEW: flag to prevent arrow keys after game over
+#
+# def init_snake():
+#     snake.clear()
+#     snake.append(vector(0, 0))
+#
+#     draw_snake()
+#
+# def draw_snake():
+#     for i in snake:
+#         square(i.x, i.y, BLOCK - 2, 'green')
+#
+# def move():
+#     if begin:
+#         t.clear()
+#
+#         head = vector(snake[0].x + aim.x, snake[0].y + aim.y)
+#         snake.insert(0, head)
+#
+#         if head in food:
+#             food.remove(head)
+#         elif head.x < -RADIUS or head.x > RADIUS - BLOCK or head.y < -RADIUS or head.y > RADIUS - BLOCK:
+#             game_over()
+#             snake.pop()               # CHANGE: reset snake length after game over
+#         else:
+#             snake.pop()
+#
+#         draw_snake()
+#         draw_food()
+#         show_score()                  # NEW: update score display
+#
+#         t.update()
+#         t.ontimer(move, 300 // len(snake))
+#
+# def on_change(x, y):
+#     global begin, game_over_flag
+#     if game_over_flag:                # NEW: ignore direction keys after game over
+#         return
+#     if aim.x != -x or aim.y != -y:
+#         aim.x = x
+#         aim.y = y
+#
+#     if not begin:
+#         begin = True
+#         move()
+#
+# def draw_food():
+#     for i in range(10 - len(food)):
+#         lst = random.sample(range(-RADIUS, RADIUS - BLOCK, BLOCK), 2)
+#         x = vector(lst[0], lst[1])
+#         if x not in snake:
+#             food.append(x)
+#     for j in food:
+#         square(j.x, j.y, BLOCK - 2, 'blue')
+#
+# def game_over():
+#     global begin, game_over_flag
+#     aim.x, aim.y = 0, 0
+#     t.penup()
+#     t.goto(0, 0)
+#     t.pendown()
+#     t.pencolor('red')
+#     t.write('Game Over!', align='center', font=('Arial', 24, 'normal'))
+#     begin = False
+#     game_over_flag = True             # NEW: set flag to block arrow keys
+#
+# def restart():
+#     global begin, game_over_flag
+#     begin = False                     # CHANGE: stop current movement (fix multiple timers bug)
+#     t.clear()
+#     init_snake()
+#     food.clear()
+#     draw_food()
+#     show_score()                      # NEW: redraw score after restart
+#     game_over_flag = False           # NEW: reset flag to allow arrow keys
+#
+# def show_score():                    # NEW: function to display score
+#     t.penup()
+#     t.goto(RADIUS - 75, RADIUS - 30)
+#     t.pendown()
+#     t.pencolor('orange')
+#     t.write(f'Score: {len(snake) - 1}', font=('Arial', 10, 'normal'))
+#
+#
+# t.setup(RADIUS * 2, RADIUS * 2, 0, 0)
+# t.hideturtle()
+# t.tracer(False)
+#
+# t.listen()
+# t.onkey(lambda: on_change(0, BLOCK), 'Up')
+# t.onkey(lambda: on_change(0, -BLOCK), 'Down')
+# t.onkey(lambda: on_change(-BLOCK, 0), 'Left')
+# t.onkey(lambda: on_change(BLOCK, 0), 'Right')
+# t.onkey(restart, 'r')
+#
+# init_snake()
+# draw_food()
+# show_score()                         # NEW: show score initially
+#
+# t.update()
+# t.done()
