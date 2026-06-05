@@ -18,7 +18,7 @@
 #     if a[i] != b[i] and flag:
 #         count += 1
 #         flag = False
-#     else:
+#     elif a[i] == b[i]:
 #         flag = True
 #
 # print(count)
