@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USACO 比赛指南 - 铜级</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;font-family:"Microsoft YaHei","PingFang SC",sans-serif;background:#16213e;color:#eee}
+main{width:100%;height:100%;position:relative}
+
+/* ====== Slide ====== */
+.slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;align-items:center;padding:70px 80px 100px;opacity:0;transition:opacity .4s}
+.slide.on{display:flex;opacity:1}
+.slide-wrap{width:100%;max-width:960px}
+
+/* ====== Title Bar ====== */
+.slide h2{font-size:2em;color:#e8b830;border-bottom:3px solid #e8b830;padding-bottom:10px;margin-bottom:28px}
+
+/* ====== Content ====== */
+.slide p,.slide li{font-size:1.08em;line-height:1.8}
+.slide li{margin:4px 0}
+.slide ul{padding-left:24px}
+.slide h3{font-size:1.16em;color:#7ec8e3;margin:18px 0 8px}
+
+.row{display:flex;gap:20px}
+.col{flex:1}
+
+/* ====== Cards ====== */
+.card{background:#1e1e3a;border:1px solid #3a3a5c;border-radius:10px;padding:18px 20px}
+.card h4{color:#e8b830;margin-bottom:8px;font-size:1.05em}
+
+/* ====== Table ====== */
+table{width:100%;border-collapse:collapse;margin:12px 0}
+th,td{border:1px solid #3a3a5c;padding:10px 16px;text-align:left}
+th{background:#2a2a4a;color:#e8b830;font-weight:600}
+td{background:#1e1e3a}
+.w1{width:140px}
+.w2{width:100px}
+.w3{width:110px}
+
+/* ====== Tags ====== */
+.lv{display:inline-block;padding:4px 14px;border-radius:14px;font-size:.85em;font-weight:600;margin:3px}
+.lv-b{background:#cd7f32;color:#fff}
+.lv-s{background:#888;color:#fff}
+.lv-g{background:#e8b830;color:#1a1a2e}
+.lv-p{background:#b8c0ff;color:#1a1a2e}
+
+.st{display:inline-block;padding:2px 10px;border-radius:10px;font-size:.78em;margin:2px}
+.st-b{background:#2a4a6a;color:#7ec8e3}
+.st-o{background:#5a3a1a;color:#f0a050}
+
+/* ====== Highlight ====== */
+.hl{background:#2a2a4a;border-left:4px solid #e8b830;padding:14px 20px;margin:14px 0;border-radius:0 8px 8px 0;font-size:1.05em;line-height:1.75}
+
+/* ====== Cover ====== */
+.cover{text-align:center;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)}
+.cover .ico{font-size:3.4em;margin-bottom:16px}
+.cover h1{font-size:2.8em;color:#e8b830;margin-bottom:12px}
+.cover h2{font-size:1.5em;color:#cd7f32;font-weight:400;border:none;margin-bottom:0;padding-bottom:0}
+.cover .sub{color:#aaa;margin-top:24px;font-size:1.05em}
+
+/* ====== Nav ====== */
+nav{position:fixed;bottom:0;left:0;right:0;height:60px;display:flex;align-items:center;justify-content:center;gap:14px;background:rgba(22,33,62,.96);border-top:1px solid #2a2a4a;z-index:99}
+nav button{padding:8px 24px;border-radius:8px;border:1px solid #3a3a5c;background:#0f3460;color:#eee;font-size:.95em;cursor:pointer;transition:.2s}
+nav button:hover{background:#e8b830;color:#1a1a2e;border-color:#e8b830}
+nav span{color:#999;font-size:.85em}
+
+/* ====== Responsive ====== */
+@media(max-width:800px){
+.slide{padding:40px 32px 80px}
+.slide h2{font-size:1.4em}
+.slide p,.slide li{font-size:.9em}
+.row{flex-direction:column;gap:12px}
+.w1{width:100px}.w2{width:70px}.w3{width:80px}
+.cover h1{font-size:2em}
+}
+</style>
+</head>
+<body>
+<main>
+
+<!-- ====== 0: Cover ====== -->
+<div class="slide on cover">
+<div class="ico">🏅</div>
+<h1>USACO 比赛指南</h1>
+<h2>铜级 (Bronze) 竞赛详解</h2>
+<div class="sub">醋溜科技 · 美国计算机奥林匹克竞赛</div>
+</div>
+
+<!-- ====== 1: What ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>一、USACO 是什么？</h2>
+<p><strong>USACO</strong>（美国计算机奥林匹克竞赛）是面向<strong>全球中学生</strong>的顶级算法编程竞赛，由美国官方组织运营。</p>
+<div class="hl">不仅是衡量<strong>计算思维与问题解决能力</strong>的权威标尺，更是全球计算机科学预备人才的<strong>核心竞技场</strong>。赛事体系与题目设计直接对标<strong>国际信息学奥林匹克（IOI）</strong>。</div>
+<h3>性质总结</h3>
+<p>一项以<strong>算法为核心</strong>的在线编程竞技——以效率和正确性为评判标准。</p>
+<h3>四个递进级别</h3>
+<p>
+<span class="lv lv-b">Bronze 铜级</span>
+<span class="lv lv-s">Silver 银级</span>
+<span class="lv lv-g">Gold 金级</span>
+<span class="lv lv-p">Platinum 铂金级</span>
+</p>
+</div>
+</div>
+
+<!-- ====== 2: Value ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>二、参赛价值</h2>
+<div class="row">
+<div class="col card"><h4>🎓 升学 / 学术</h4><ul><li>顶尖大学申请的<strong>"硬通货"</strong></li><li>向 MIT、斯坦福、藤校证明学术能力</li><li>系统学习数据结构到高级算法的完整体系</li></ul></div>
+<div class="col card"><h4>💼 职业 / 技能</h4><ul><li>对标 Google、Meta 等技术面试核心内容</li><li>培养严谨的代码调试习惯</li><li>精准把控时间与空间复杂度</li></ul></div>
+</div>
+<div class="row" style="margin-top:16px">
+<div class="col card"><h4>🌍 个人发展</h4><ul><li>有机会进入 USACO 夏令营 (CAMP)</li><li>与全美最优秀同龄人交流</li><li>通往国际信息学奥林匹克 (IOI)</li></ul></div>
+<div class="col card"><h4>⚡ 关键资源</h4><ul><li><strong>USACO Guide</strong> (usaco.guide) — 最推荐</li><li>Codeforces / AtCoder — 实战训练</li><li>LeetCode — 基础算法巩固</li></ul></div>
+</div>
+</div>
+</div>
+
+<!-- ====== 3: Format ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>三、赛制与流程</h2>
+<div class="row">
+<div class="col">
+<h3>赛季安排（每年）</h3>
+<table>
+<tr><th>月份</th><th>比赛</th></tr>
+<tr><td>12月</td><td>第一场月赛</td></tr>
+<tr><td>1月</td><td>第二场月赛</td></tr>
+<tr><td>2月</td><td>第三场月赛</td></tr>
+<tr><td>3月</td><td>US Open（美国公开赛，难度最高）</td></tr>
+</table>
+</div>
+<div class="col">
+<h3>比赛形式</h3>
+<ul>
+<li><strong>线上进行</strong>——周五至周一（3-4天窗口）</li>
+<li>任选<strong>连续4小时</strong>完成比赛</li>
+<li>每场<strong>3-4道编程题</strong>，每题含多个测试用例</li>
+<li><strong>满分（或接近满分）即可晋级</strong></li>
+</ul>
+<h3>重要改革 (2024-2025)</h3>
+<div class="hl"><strong>认证成绩 (Verified Contest)：</strong>金级和铂金级选手需在特定时段参赛，以获得认证标记，对大学申请更具公信力。</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ====== 4: Levels ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>四、竞赛级别详解</h2>
+<div class="row">
+<div class="col card"><h4><span class="lv lv-b">Bronze 铜级</span></h4><p>基础语法 · 模拟法 · 完全搜索 · 贪心算法</p></div>
+<div class="col card"><h4><span class="lv lv-s">Silver 银级</span></h4><p>基础数据结构 · 二分查找 · 简单图论 · DP 入门</p></div>
+</div>
+<div class="row" style="margin-top:16px">
+<div class="col card"><h4><span class="lv lv-g">Gold 金级</span></h4><p>高级数据结构 · 复杂动态规划 · 图论算法 · 数学</p></div>
+<div class="col card"><h4><span class="lv lv-p">Platinum 铂金级</span></h4><p>IOI 级别 —— 高级优化 · 计算几何 · 网络流</p></div>
+</div>
+<div class="hl" style="margin-top:16px"><strong>备赛建议：</strong>语言首选 C++ · 铜→银→金→铂逐级突破 · "三分学，七分练"</div>
+</div>
+</div>
+
+<!-- ====== 5: Bronze Intro ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>五、USACO 铜级课程介绍</h2>
+<p>专为<strong>已掌握基础编程语法但缺乏算法训练</strong>的学生设计。通过<strong>30次课</strong>系统培养算法思维和编程实战能力，帮助学员顺利通过铜级竞赛并晋级银级。</p>
+<div class="hl">课程覆盖<strong>数据结构 · 排序 · 模拟 · 暴力枚举 · 贪心 · DFS/BFS · 图论入门</strong>，结合理论讲解、实战演练与历年真题强化。</div>
+<table>
+<tr><th class="w2">模块</th><th>内容</th><th class="w3">课时</th></tr>
+<tr><td>模块一</td><td>编程基础与算法入门</td><td>~5 课时</td></tr>
+<tr><td>模块二</td><td>核心基础算法</td><td>~8 课时</td></tr>
+<tr><td>模块三</td><td>数据结构与搜索算法</td><td>~10 课时</td></tr>
+<tr><td>模块四</td><td>真题综合强化</td><td>~7 课时</td></tr>
+</table>
+</div>
+</div>
+
+<!-- ====== 6: Module 1 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>模块一：编程基础与算法入门（5 课时）</h2>
+<table>
+<tr><th class="w1">课次</th><th>核心主题</th><th class="w2">标签</th></tr>
+<tr><td>Lesson 1</td><td>列表 (List) 与元组 (Tuple)</td><td><span class="st st-b">数据结构</span></td></tr>
+<tr><td>Lesson 2</td><td>集合 (Set) 及其应用</td><td><span class="st st-b">数据结构</span></td></tr>
+<tr><td>Lesson 3</td><td>字典 (Dict) / 映射及其应用</td><td><span class="st st-b">数据结构</span></td></tr>
+<tr><td>Lesson 4</td><td>算法复杂度分析</td><td><span class="st st-o">理论</span></td></tr>
+</table>
+<h3>学习目标</h3>
+<ul><li>熟练掌握 Python 核心数据结构的使用</li><li>理解大 O 符号，能分析时间与空间复杂度</li><li>为后续算法学习打下坚实基础</li></ul>
+</div>
+</div>
+
+<!-- ====== 7: Module 2 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>模块二：核心基础算法（8 课时）</h2>
+<table>
+<tr><th class="w1">课次</th><th>核心主题</th><th class="w2">标签</th></tr>
+<tr><td>Lesson 5-6</td><td>排序专题 (Sorting)</td><td><span class="st st-b">排序</span></td></tr>
+<tr><td>Lesson 7-8</td><td>模拟法 (Simulation)</td><td><span class="st st-b">模拟</span></td></tr>
+<tr><td>Lesson 9-10</td><td>完全搜索 / 暴力枚举 (Brute Force)</td><td><span class="st st-o">枚举</span></td></tr>
+<tr><td>Lesson 11-13</td><td>贪心算法 (Greedy Algorithm)</td><td><span class="st st-o">贪心</span></td></tr>
+</table>
+<h3>学习目标</h3>
+<ul><li>掌握排序的基本思想与常见实现方式</li><li>学会"按题目描述一步步操作"的模拟思维</li><li>理解暴力枚举的适用场景与优化方向</li><li>初步掌握贪心策略的设计与正确性验证</li></ul>
+</div>
+</div>
+
+<!-- ====== 8: Module 3 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>模块三：数据结构与搜索算法（10 课时）</h2>
+<table>
+<tr><th class="w1">课次</th><th>核心主题</th><th class="w2">标签</th></tr>
+<tr><td>Lesson 14-15</td><td>特设问题选讲</td><td><span class="st st-o">综合</span></td></tr>
+<tr><td>Lesson 16-17</td><td>二维网格问题 (2D Grid)</td><td><span class="st st-b">网格</span></td></tr>
+<tr><td>Lesson 18-19</td><td>图论基础 (Graph Basics)</td><td><span class="st st-b">图论</span></td></tr>
+<tr><td>Lesson 20-21</td><td>深度优先搜索 (DFS)</td><td><span class="st st-o">DFS</span></td></tr>
+<tr><td>Lesson 22-23</td><td>广度优先搜索 (BFS)</td><td><span class="st st-o">BFS</span></td></tr>
+</table>
+<h3>学习目标</h3>
+<ul><li>掌握二维数组操作与网格遍历技巧</li><li>理解图的基本概念（节点、边、邻接表等）</li><li>熟练掌握 DFS 和 BFS 的实现方式与应用场景</li></ul>
+</div>
+</div>
+
+<!-- ====== 9: Module 4 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>模块四：真题综合强化（7 课时）</h2>
+<table>
+<tr><th class="w1">课次</th><th>核心主题</th><th class="w2">标签</th></tr>
+<tr><td>Lesson 26-30</td><td>历年真题综合训练与解析</td><td><span class="st st-o">实战</span></td></tr>
+</table>
+<h3>学习目标</h3>
+<ul><li>限时模拟真实比赛环境，锻炼时间管理</li><li>综合运用各类算法解决混合型问题</li></ul>
+<h3>常见进阶技巧</h3>
+<p>
+<span class="st st-b">双指针</span>
+<span class="st st-b">前缀和</span>
+<span class="st st-b">递归</span>
+<span class="st st-b">字符串处理</span>
+<span class="st st-b">基础几何</span>
+</p>
+<h3>铜级核心能力总结</h3>
+<div class="hl">
+<ul><li>独立分析问题并设计算法方案</li><li>熟练实现排序、模拟、暴力枚举、贪心算法</li><li>掌握 DFS / BFS 处理图论和网格问题</li><li>控制时间与空间复杂度，避免超时</li></ul>
+</div>
+</div>
+</div>
+
+<!-- ====== 10: Strategy ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>备赛策略与建议</h2>
+<div class="row">
+<div class="col card">
+<h4>👨‍🏫 给教师</h4>
+<ul><li>以 USACO Guide 为蓝本设计教学大纲</li><li>强调"算法思维"而非单纯语法</li><li>定期组织模拟赛，还原真实比赛环境</li><li>关注"认证成绩"新规，指导高年级学生合理安排时间</li></ul>
+</div>
+<div class="col card">
+<h4>🎓 给学生</h4>
+<ul><li>C++ 是绝对主流语言（效率高、资源丰富）</li><li>铜→银→金→铂，逐级突破，切忌跳级</li><li>"三分学，七分练"——学完算法立即刷题</li><li>尽早参加首场铜级比赛，消除神秘感</li></ul>
+</div>
+</div>
+<div class="hl" style="margin-top:20px"><strong>USACO 不仅是一系列考试，更是一个培养顶尖计算思维与问题解决能力的完整体系。</strong>无论目标是短期升学还是长期职业发展，深入参与都将获得远超预期的回报。</div>
+</div>
+</div>
+
+<!-- ====== Nav ====== -->
+<nav>
+<button onclick="prev()">← 上一页</button>
+<span id="pi">1 / 11</span>
+<button onclick="next()">下一页 →</button>
+</nav>
+</main>
+
+<script>
+let c=0;const s=document.querySelectorAll('.slide'),t=s.length;
+function show(i){s.forEach(x=>x.classList.remove('on'));s[i].classList.add('on');document.getElementById('pi').textContent=(i+1)+' / '+t;c=i}
+function next(){show((c+1)%t)}function prev(){show((c-1+t)%t)}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()});
+let ts=0;document.addEventListener('touchstart',e=>{ts=e.touches[0].clientX});document.addEventListener('touchend',e=>{if(ts-e.changedTouches[0].clientX>40)next();else if(e.changedTouches[0].clientX-ts>40)prev()});
+show(0);
+</script>
+</body>
+</html>
