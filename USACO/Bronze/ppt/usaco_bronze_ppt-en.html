@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USACO Guide - Bronze</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;background:#16213e;color:#eee}
+main{width:100%;height:100%;position:relative}
+
+/* ====== Slide ====== */
+.slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;align-items:center;padding:70px 80px 100px;opacity:0;transition:opacity .4s}
+.slide.on{display:flex;opacity:1}
+.slide-wrap{width:100%;max-width:960px}
+
+/* ====== Title Bar ====== */
+.slide h2{font-size:2em;color:#e8b830;border-bottom:3px solid #e8b830;padding-bottom:10px;margin-bottom:28px}
+
+/* ====== Content ====== */
+.slide p,.slide li{font-size:1.08em;line-height:1.8}
+.slide li{margin:4px 0}
+.slide ul{padding-left:24px}
+.slide h3{font-size:1.16em;color:#7ec8e3;margin:18px 0 8px}
+
+.row{display:flex;gap:20px}
+.col{flex:1}
+
+/* ====== Cards ====== */
+.card{background:#1e1e3a;border:1px solid #3a3a5c;border-radius:10px;padding:18px 20px}
+.card h4{color:#e8b830;margin-bottom:8px;font-size:1.05em}
+
+/* ====== Table ====== */
+table{width:100%;border-collapse:collapse;margin:12px 0}
+th,td{border:1px solid #3a3a5c;padding:10px 16px;text-align:center}
+th{background:#2a2a4a;color:#e8b830;font-weight:600}
+td{background:#1e1e3a}
+.w1{width:138px}
+.w2{width:138px}
+.w3{width:138px}
+
+/* ====== Tags ====== */
+.lv{display:inline-block;padding:4px 14px;border-radius:14px;font-size:.85em;font-weight:600;margin:3px}
+.lv-b{background:#cd7f32;color:#fff}
+.lv-s{background:#888;color:#fff}
+.lv-g{background:#e8b830;color:#1a1a2e}
+.lv-p{background:#b8c0ff;color:#1a1a2e}
+
+.st{display:inline-block;padding:2px 10px;border-radius:10px;font-size:.78em;margin:2px}
+.st-b{background:#2a4a6a;color:#7ec8e3}
+.st-o{background:#5a3a1a;color:#f0a050}
+
+/* ====== Highlight ====== */
+.hl{background:#2a2a4a;border-left:4px solid #e8b830;padding:14px 20px;margin:14px 0;border-radius:0 8px 8px 0;font-size:1.05em;line-height:1.75}
+
+/* ====== Cover ====== */
+.cover{text-align:center;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)}
+.cover .ico{font-size:3.4em;margin-bottom:16px}
+.cover h1{font-size:2.8em;color:#e8b830;margin-bottom:12px}
+.cover h2{font-size:1.5em;color:#cd7f32;font-weight:400;border:none;margin-bottom:0;padding-bottom:0}
+.cover .sub{color:#aaa;margin-top:24px;font-size:1.05em}
+
+/* ====== Nav ====== */
+nav{position:fixed;bottom:0;left:0;right:0;height:60px;display:flex;align-items:center;justify-content:center;gap:14px;background:rgba(22,33,62,.96);border-top:1px solid #2a2a4a;z-index:99}
+nav button{padding:8px 24px;border-radius:8px;border:1px solid #3a3a5c;background:#0f3460;color:#eee;font-size:.95em;cursor:pointer;transition:.2s}
+nav button:hover{background:#e8b830;color:#1a1a2e;border-color:#e8b830}
+nav span{color:#999;font-size:.85em}
+
+/* ====== Responsive ====== */
+@media(max-width:800px){
+.slide{padding:40px 32px 80px}
+.slide h2{font-size:1.4em}
+.slide p,.slide li{font-size:.9em}
+.row{flex-direction:column;gap:12px}
+.w1{width:100px}.w2{width:80px}.w3{width:80px}
+.cover h1{font-size:2em}
+}
+</style>
+</head>
+<body>
+<main>
+
+<!-- ====== 0: Cover ====== -->
+<div class="slide on cover">
+<div class="ico">🏅</div>
+<h1>USACO Competition Guide</h1>
+<h2>Bronze Division Overview</h2>
+<div class="sub">Culiu Technology · USA Computing Olympiad</div>
+</div>
+
+<!-- ====== 1: What ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>1. What is USACO?</h2>
+<p><strong>USACO</strong> (USA Computing Olympiad) is a premier algorithmic programming competition open to <strong>students worldwide</strong>, operated by the official US organization.</p>
+<div class="hl">It is not only the authoritative benchmark for <strong>computational thinking and problem-solving ability</strong>, but also the <strong>core arena</strong> for future computer science talent. The contest structure and problem design directly align with the <strong>International Olympiad in Informatics (IOI)</strong>.</div>
+<h3>In Summary</h3>
+<p>An <strong>algorithm-centric</strong> online programming competition — judged by correctness and efficiency.</p>
+<h3>Four Progressive Levels</h3>
+<p>
+<span class="lv lv-b">Bronze</span>
+<span class="lv lv-s">Silver</span>
+<span class="lv lv-g">Gold</span>
+<span class="lv lv-p">Platinum</span>
+</p>
+</div>
+</div>
+
+<!-- ====== 2: Value ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>2. Why Participate?</h2>
+<div class="row">
+<div class="col card"><h4>🎓 College Admissions</h4><ul><li>A <strong>"gold standard"</strong> credential for top university applications</li><li>Demonstrate ability to MIT, Stanford, Ivy League schools</li><li>Systematically master data structures through advanced algorithms</li></ul></div>
+<div class="col card"><h4>💼 Career / Skills</h4><ul><li>Aligns with Google, Meta technical interview content</li><li>Develop rigorous code debugging habits</li><li>Precise mastery of time and space complexity</li></ul></div>
+</div>
+<div class="row" style="margin-top:16px">
+<div class="col card"><h4>🌍 Personal Growth</h4><ul><li>Opportunity to enter the USACO Summer Camp</li><li>Connect with the brightest peers across the US</li><li>Pathway to the International Olympiad in Informatics (IOI)</li></ul></div>
+<div class="col card"><h4>⚡ Key Resources</h4><ul><li><strong>USACO Guide</strong> (usaco.guide) — Top recommendation</li><li>Codeforces / AtCoder — Real contest practice</li><li>LeetCode — Fundamental algorithm review</li></ul></div>
+</div>
+</div>
+</div>
+
+<!-- ====== 3: Format ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>3. Contest Format & Schedule</h2>
+<div class="row">
+<div class="col">
+<h3>Season Schedule (Annual)</h3>
+<table>
+<tr><th>Month</th><th>Contest</th></tr>
+<tr><td>December</td><td>First Monthly Contest</td></tr>
+<tr><td>January</td><td>Second Monthly Contest</td></tr>
+<tr><td>February</td><td>Third Monthly Contest</td></tr>
+<tr><td>March</td><td>US Open (highest difficulty)</td></tr>
+</table>
+</div>
+<div class="col">
+<h3>Competition Format</h3>
+<ul>
+<li><strong>Online</strong> — Friday to Monday (3–4 day window)</li>
+<li>Choose any <strong>continuous 4-hour</strong> block</li>
+<li>Each contest: <strong>3–4 problems</strong> with multiple test cases</li>
+<li><strong>Full score (or near full) → promotion</strong></li>
+</ul>
+<h3>Key Reform (2024–2025)</h3>
+<div class="hl"><strong>Verified Contest:</strong> Gold and Platinum participants must start during a specific time window to receive the "verified" designation, adding credibility for college applications.</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ====== 4: Levels ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>4. Division Breakdown</h2>
+<div class="row">
+<div class="col card"><h4><span class="lv lv-b">Bronze</span></h4><p>Basic syntax · Simulation · Complete Search · Greedy</p></div>
+<div class="col card"><h4><span class="lv lv-s">Silver</span></h4><p>Core data structures · Binary Search · Basic graphs · Intro DP</p></div>
+</div>
+<div class="row" style="margin-top:16px">
+<div class="col card"><h4><span class="lv lv-g">Gold</span></h4><p>Advanced data structures · Complex DP · Graph algorithms · Math</p></div>
+<div class="col card"><h4><span class="lv lv-p">Platinum</span></h4><p>IOI level — Advanced optimization · Computational geometry · Network flow</p></div>
+</div>
+<div class="hl" style="margin-top:16px"><strong>Advice:</strong> Language of choice: C++ / Python · Bronze → Silver → Gold → Platinum, advance step by step · "30% learning, 70% practicing"</div>
+</div>
+</div>
+
+<!-- ====== 5: Bronze Intro ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>5. USACO Bronze Course Overview</h2>
+<p>Designed for students who have <strong>mastered basic programming syntax but lack algorithm training</strong>. Through <strong>30 lessons</strong>, systematically cultivates algorithmic thinking and practical coding skills to help students pass the Bronze contest and advance to Silver.</p>
+<div class="hl">Covers <strong>Data Structures · Sorting · Simulation · Brute Force · Greedy · DFS/BFS · Graph Theory</strong>, combining theory lectures, hands-on practice, and past contest problem drills.</div>
+<table>
+<tr><th class="w2">Module</th><th>Content</th><th class="w3">Lessons</th></tr>
+<tr><td>Module 1</td><td>Programming Fundamentals & Algorithm Basics</td><td>~5</td></tr>
+<tr><td>Module 2</td><td>Core Fundamental Algorithms</td><td>~8</td></tr>
+<tr><td>Module 3</td><td>Data Structures & Search Algorithms</td><td>~10</td></tr>
+<tr><td>Module 4</td><td>Contest Problem Intensive Training</td><td>~7</td></tr>
+</table>
+</div>
+</div>
+
+<!-- ====== 6: Module 1 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>Module 1: Programming Fundamentals (5 Lessons)</h2>
+<table>
+<tr><th class="w1">Lesson</th><th>Core Topic</th><th class="w2">Tag</th></tr>
+<tr><td>Lesson 1</td><td>Lists & Tuples</td><td><span class="st st-b">Data Structure</span></td></tr>
+<tr><td>Lesson 2</td><td>Sets & Applications</td><td><span class="st st-b">Data Structure</span></td></tr>
+<tr><td>Lesson 3</td><td>Dictionaries / Maps & Applications</td><td><span class="st st-b">Data Structure</span></td></tr>
+<tr><td>Lesson 4</td><td>Algorithm Complexity Analysis</td><td><span class="st st-o">Theory</span></td></tr>
+</table>
+<h3>Learning Objectives</h3>
+<ul><li>Proficiently use Python core data structures</li><li>Understand Big O notation; analyze time and space complexity</li><li>Build a solid foundation for further algorithm study</li></ul>
+</div>
+</div>
+
+<!-- ====== 7: Module 2 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>Module 2: Core Algorithms (8 Lessons)</h2>
+<table>
+<tr><th class="w1">Lesson</th><th>Core Topic</th><th class="w2">Tag</th></tr>
+<tr><td>Lesson 5-6</td><td>Sorting</td><td><span class="st st-b">Sorting</span></td></tr>
+<tr><td>Lesson 7-8</td><td>Simulation</td><td><span class="st st-b">Simulation</span></td></tr>
+<tr><td>Lesson 9-10</td><td>Complete Search / Brute Force</td><td><span class="st st-o">Enumeration</span></td></tr>
+<tr><td>Lesson 11-13</td><td>Greedy Algorithm</td><td><span class="st st-o">Greedy</span></td></tr>
+</table>
+<h3>Learning Objectives</h3>
+<ul><li>Master sorting fundamentals and common implementations</li><li>Develop "follow the problem description step by step" simulation thinking</li><li>Understand when to use brute force and how to optimize</li><li>Begin designing and verifying greedy strategies</li></ul>
+</div>
+</div>
+
+<!-- ====== 8: Module 3 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>Module 3: Data Structures & Search (10 Lessons)</h2>
+<table>
+<tr><th class="w1">Lesson</th><th>Core Topic</th><th class="w2">Tag</th></tr>
+<tr><td>Lesson 14-15</td><td>Ad Hoc Problem Workshop</td><td><span class="st st-o">Mixed</span></td></tr>
+<tr><td>Lesson 16-17</td><td>2D Grid Problems</td><td><span class="st st-b">Grid</span></td></tr>
+<tr><td>Lesson 18-19</td><td>Graph Theory Basics</td><td><span class="st st-b">Graph</span></td></tr>
+<tr><td>Lesson 20-21</td><td>Depth-First Search (DFS)</td><td><span class="st st-o">DFS</span></td></tr>
+<tr><td>Lesson 22-23</td><td>Breadth-First Search (BFS)</td><td><span class="st st-o">BFS</span></td></tr>
+</table>
+<h3>Learning Objectives</h3>
+<ul><li>Master 2D array operations and grid traversal techniques</li><li>Understand basic graph concepts (nodes, edges, adjacency lists)</li><li>Proficiently implement and apply DFS and BFS</li></ul>
+</div>
+</div>
+
+<!-- ====== 9: Module 4 ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>Module 4: Contest Training (7 Lessons)</h2>
+<table>
+<tr><th class="w1">Lesson</th><th>Core Topic</th><th class="w2">Tag</th></tr>
+<tr><td>Lesson 26-30</td><td>Past Contest Problem Training & Analysis</td><td><span class="st st-o">Practice</span></td></tr>
+</table>
+<h3>Learning Objectives</h3>
+<ul><li>Simulate real contest conditions with time limits</li><li>Apply multiple algorithms to solve mixed-type problems</li></ul>
+<h3>Advanced Techniques</h3>
+<p>
+<span class="st st-b">Two Pointers</span>
+<span class="st st-b">Prefix Sum</span>
+<span class="st st-b">Recursion</span>
+<span class="st st-b">Strings</span>
+<span class="st st-b">Basic Geometry</span>
+</p>
+<h3>Bronze Core Competencies</h3>
+<div class="hl">
+<ul><li>Independently analyze problems and design algorithmic solutions</li><li>Proficiently implement sorting, simulation, brute force, and greedy algorithms</li><li>Apply DFS / BFS for graph and grid problems</li><li>Control time and space complexity to avoid TLE</li></ul>
+</div>
+</div>
+</div>
+
+<!-- ====== 10: Strategy ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>Preparation Strategy & Advice</h2>
+<div class="row">
+<div class="col card">
+<h4>👨‍🏫 For Teachers</h4>
+<ul><li>Use USACO Guide as the curriculum blueprint</li><li>Emphasize "algorithmic thinking" over syntax</li><li>Regularly organize mock contests under real conditions</li><li>Monitor the "verified contest" policy for upper-division students</li></ul>
+</div>
+<div class="col card">
+<h4>🎓 For Students</h4>
+<ul><li>C++ / Python are the mainstream languages (fast, resource-rich)</li><li>Bronze → Silver → Gold → Platinum — never skip a level</li><li>"30% learning, 70% practicing" — drill problems immediately after learning an algorithm</li><li>Take the first Bronze contest early to demystify the experience</li></ul>
+</div>
+</div>
+<div class="hl" style="margin-top:20px"><strong>USACO is more than a series of exams — it is a complete system for cultivating elite computational thinking and problem-solving ability.</strong> Whether your goal is short-term college admission or long-term career development, deep participation will yield returns far beyond expectations.</div>
+</div>
+</div>
+
+<!-- ====== 11: Practice ====== -->
+<div class="slide">
+<div class="slide-wrap">
+<h2>Recommended Bronze Practice Problems</h2>
+<p style="margin-bottom:16px">The following problems cover core Bronze algorithm types. Click the links to view the original problems on the USACO website.</p>
+<table>
+<tr><th class="w2">Algorithm</th><th>Problem</th><th>Year · Contest · No.</th><th class="w3">Link</th></tr>
+<tr>
+<td><span class="st st-b">Simulation</span></td>
+<td>The Cow-Signal</td>
+<td>2016 · December · P3</td>
+<td><a href="https://usaco.org/index.php?page=viewproblem2&cpid=665" target="_blank" style="color:#7ec8e3">cpid=665 →</a></td>
+</tr>
+<tr>
+<td><span class="st st-o">Complete Search</span></td>
+<td>Milk Pails</td>
+<td>2016 · February · P1</td>
+<td><a href="https://usaco.org/index.php?page=viewproblem2&cpid=615" target="_blank" style="color:#7ec8e3">cpid=615 →</a></td>
+</tr>
+<tr>
+<td><span class="st st-o">Geometry · Combinatorics</span></td>
+<td>Triangles</td>
+<td>2020 · February · P1</td>
+<td><a href="https://usaco.org/index.php?page=viewproblem2&cpid=1011" target="_blank" style="color:#7ec8e3">cpid=1011 →</a></td>
+</tr>
+<tr>
+<td><span class="st st-o">Greedy</span></td>
+<td>Cow College</td>
+<td>2022 · December · P1</td>
+<td><a href="https://usaco.org/index.php?page=viewproblem2&cpid=1251" target="_blank" style="color:#7ec8e3">cpid=1251 →</a></td>
+</tr>
+<tr>
+<td><span class="st st-b">2D Grid</span></td>
+<td>Reflection</td>
+<td>2025 · February · P1</td>
+<td><a href="https://usaco.org/index.php?page=viewproblem2&cpid=1491" target="_blank" style="color:#7ec8e3">cpid=1491 →</a></td>
+</tr>
+</table>
+</div>
+</div>
+
+<!-- ====== Nav ====== -->
+<nav>
+<button onclick="prev()">← Prev</button>
+<span id="pi">1 / 12</span>
+<button onclick="next()">Next →</button>
+</nav>
+</main>
+
+<script>
+let c=0;const s=document.querySelectorAll('.slide'),t=s.length;
+function show(i){s.forEach(x=>x.classList.remove('on'));s[i].classList.add('on');document.getElementById('pi').textContent=(i+1)+' / '+t;c=i}
+function next(){show((c+1)%t)}function prev(){show((c-1+t)%t)}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()});
+let ts=0;document.addEventListener('touchstart',e=>{ts=e.touches[0].clientX});document.addEventListener('touchend',e=>{if(ts-e.changedTouches[0].clientX>40)next();else if(e.changedTouches[0].clientX-ts>40)prev()});
+show(0);
+</script>
+</body>
+</html>

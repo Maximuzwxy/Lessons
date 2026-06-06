@@ -43,18 +43,23 @@
 # for k, v in d.items():
 #     print(k, v)
 
-# n = 6
-# data = [[0, 4], [1, 0], [1, 2],
-#         [1, 3], [2, 1], [3, 4],
-#         [4, 1], [4, 5], [5, 4]]
-#
-# d = {i:[] for i in range(n)}
-#
-# for i, j in data:
-#     d[i].append(j)
-#
-# for k, v in d.items():
-#     print(k, v)
+n = 6
+data = [[0, 4], [1, 0], [1, 2],
+        [1, 3], [2, 1], [3, 4],
+        [4, 1], [4, 5], [5, 4]]
+
+d = {i:[] for i in range(n)}
+
+for i, j in data:
+    d[i].append(j)
+    d[j].append(i)
+
+# for i in range(len(data)):
+#     d[data[i][0]].append(data[i][1])
+#     d[data[i][1]].append(data[i][0])
+
+for k, v in d.items():
+    print(k, v)
 
 
 

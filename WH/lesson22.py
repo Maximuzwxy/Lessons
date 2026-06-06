@@ -1,35 +1,53 @@
 import random
 
 # a = 1
-# print(id(a))
+# print(id(a), a)
 #
-# a += 1
-# print(id(a))
+# a = a + 1
+# print(id(a), a)
 
-# def change(a):
-#     print(id(a))
+s = [1, 2]
+# print(id(s))
+# s.append(3)
+# print(s)
+# print(id(s))
+
+# print(id(s1))
+# s1.pop()
+# print(s)
+
+
+
+
+# def my_print(x):
+#     print(id(x))
 #
 # a = 1
 # print(id(a))
-# change(a)
+# my_print(a)
 
-# def change_int(a):
-#     a = 10
+def change_int(x):
+    aa = x + 1
+    print(aa)
+
 # a = 1
 # change_int(a)
 # print(a)
-#
+
 # def change_list(lst):
 #     lst.append(5)
 #
 # lst = [1, 2, 3, 4]
+# print(id(lst))
 # change_list(lst)
 # print(lst)
+# print(id(lst))
+
 
 
 # def change1(lst):
 #     lst.append(0)
-#     # lst = [10, 20, 30]
+#     lst = [10, 20, 30]
 # l1 = [1, 2, 3]
 # change1(l1)
 # print(l1)
@@ -79,26 +97,25 @@ def my_min(array, start, end):
 
     return min_index
 
-lst = [random.randint(1, 100) for _ in range(10)]
-print(lst)
-print(my_min(lst, 0, len(lst)))
+# lst = [random.randint(1, 100) for _ in range(10)]
+# print(lst)
+# print(my_min(lst, 0, len(lst)))
 
 # selection sort
-lst = [8, 3, 5, 6, 0, 9, 2, 7, 1, 4]
-print(lst)
-
-for i in range(len(lst) - 1):
-    min_index = i
-    for j in range(i + 1, len(lst)):
-        if lst[j] < lst[min_index]:
-            min_index = j
-    lst[i], lst[min_index] = lst[min_index], lst[i]
-print(lst)
-
-for i in range(len(lst) - 1):
-    min_index = my_min(lst, i, len(lst))
-    lst[i], lst[min_index] = lst[min_index], lst[i]
-print(lst)
+# lst = [8, 3, 5, 6, 0, 9, 2, 7, 1, 4]
+#
+# for i in range(len(lst) - 1):
+#     min_index = i
+#     for j in range(i + 1, len(lst)):
+#         if lst[j] < lst[min_index]:
+#             min_index = j
+#     lst[i], lst[min_index] = lst[min_index], lst[i]
+# print(lst)
+#
+# for i in range(len(lst) - 1):
+#     min_index = my_min(lst, i, len(lst))
+#     lst[i], lst[min_index] = lst[min_index], lst[i]
+# print(lst)
 
 # 在2个列表中找到第一个一样的数
 l1 = [1, 2, 3, 4, 5]
@@ -116,14 +133,14 @@ l2 = [2, 4, 6, 8, 10, 5]
 #         break
 
 # for-else
-for i in l1:
-    for j in l2:
-        if i == j:
-            print(i)
-            break
-    else:
-        continue
-    break
+# for i in l1:
+#     for j in l2:
+#         if i == j:
+#             print(i)
+#             break
+#     else:
+#         continue
+#     break
 
 def find_match(lst1, lst2):
     for i in lst1:

@@ -76,26 +76,26 @@ def get_area(a, b, c):
     Calculate area of triangle where one side is horizontal, one is vertical.
     The triangle's base is horizontal (same y) and height is vertical (same x).
     """
-    x = y = 0
+    dx = dy = 0
 
     # Find the horizontal distance (two points with same y-coordinate)
     if a[1] == b[1]:
-        x = abs(a[0] - b[0])
+        dx = abs(a[0] - b[0])
     elif a[1] == c[1]:
-        x = abs(a[0] - c[0])
+        dx = abs(a[0] - c[0])
     elif b[1] == c[1]:
-        x = abs(b[0] - c[0])
+        dx = abs(b[0] - c[0])
 
     # Find the vertical distance (two points with same x-coordinate)
     if a[0] == b[0]:
-        y = abs(a[1] - b[1])
+        dy = abs(a[1] - b[1])
     elif a[0] == c[0]:
-        y = abs(a[1] - c[1])
+        dy = abs(a[1] - c[1])
     elif b[0] == c[0]:
-        y = abs(b[1] - c[1])
+        dy = abs(b[1] - c[1])
 
     # Area = base × height / 2, but we return 2 × area (to avoid fractions)
-    return x * y
+    return dx * dy
 
 max_area = 0
 
