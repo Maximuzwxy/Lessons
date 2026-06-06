@@ -51,16 +51,16 @@ b = m // y  # maximum times we can use pail Y
 
 max_v = 0
 
-# for i in range(0, a + 1):
-#     for j in range(0, b + 1):
-#         p = x * i + y * j  # total milk from using i of X and j of Y
-#         if p <= m:
-#             max_v = max(max_v, p)
+for i in range(0, a + 1):
+    for j in range(0, b + 1):
+        p = x * i + y * j  # total milk from using i of X and j of Y
+        if p <= m:
+            max_v = max(max_v, p)
 
 # Optimization: for each i, compute max j directly (O(n) instead of O(n^2))
-for i in range(0, a + 1):
-    j = (m - x * i) // y  # maximum j such that x*i + y*j <= m
-    max_v = max(max_v, x * i + y * j)
+# for i in range(0, a + 1):
+#     j = (m - x * i) // y  # maximum j such that x*i + y*j <= m
+#     max_v = max(max_v, x * i + y * j)
 
 print(max_v)
 

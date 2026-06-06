@@ -85,32 +85,32 @@ Time: O(N log N)   Space: O(N)
 # print(max_t, tuition)
 
 # =============================================================================
-# Solution 2 - Array Indexing (Timeout)
+# Solution 2 - Array Indexing
 # Time: O(max_c_i), Space: O(max_c_i)
 # =============================================================================
-# n = int(input())
-# max_cow = 1000001
-# cows = [0] * max_cow
-# origin = list(map(int, input().split()))
-#
-# for i in origin:
-#     cows[i] += 1
-#
-# max_t = tuition = 0
-# past = 0
-# for j in range(max_cow):
-#     total = 0
-#     if cows[j] != 0:
-#         total = (n - past) * j
-#         past += cows[j]
-#
-#     if total > max_t:
-#         max_t = total
-#         tuition = j
-#     elif total == max_t:
-#         tuition = min(tuition, j)
-#
-# print(max_t, tuition)
+n = int(input())
+max_cow = 1000001
+cows = [0] * max_cow
+origin = list(map(int, input().split()))
+
+for i in origin:
+    cows[i] += 1
+
+max_t = tuition = 0
+past = 0
+for j in range(max_cow):
+    total = 0
+    if cows[j] != 0:
+        total = (n - past) * j
+        past += cows[j]
+
+    if total > max_t:
+        max_t = total
+        tuition = j
+    elif total == max_t:
+        tuition = min(tuition, j)
+
+print(max_t, tuition)
 
 # =============================================================================
 # Solution 3 - Greedy + Sorting (Optimal)
