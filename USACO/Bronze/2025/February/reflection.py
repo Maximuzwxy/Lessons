@@ -68,7 +68,7 @@ Time: O(N² + U)   Space: O(N²)
 
 import sys
 # Use readline for better performance with large input
-input = sys.stdin.readline
+# input = sys.stdin.readline
 
 n, u = map(int, input().split())
 

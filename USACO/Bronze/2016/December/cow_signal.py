@@ -48,8 +48,8 @@ Time: O(M × N × K²)   Space: O(M × N × K²)
 
 import sys
 
-# sys.stdin = open('cowsignal.in', 'r')
-# sys.stdout = open('cowsignal.out', 'w')
+sys.stdin = open('cowsignal.in', 'r')
+sys.stdout = open('cowsignal.out', 'w')
 
 m, n, k = map(int, input().split())
 origin = []
