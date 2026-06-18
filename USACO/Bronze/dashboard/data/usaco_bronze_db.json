@@ -128,8 +128,8 @@
       "problem_num": 1,
       "name": "Fence Painting",
       "slug": "fence_painting",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 567,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=567",
       "local_file": null,
       "tags": [
         "simulation",
@@ -166,8 +166,61 @@
       "problem_num": 3,
       "name": "Contaminated Milk",
       "slug": "contaminated_milk",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 569,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=569",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Promotion Counting",
+      "slug": "promotion_counting",
+      "cpid": 591,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=591",
+      "local_file": null,
+      "tags": [
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Angry Cows",
+      "slug": "angry_cows",
+      "cpid": 592,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=592",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2015,
+      "year_season": "2015-16",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Mowing the Field",
+      "slug": "mowing_the_field",
+      "cpid": 593,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=593",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -202,8 +255,8 @@
       "problem_num": 2,
       "name": "Circular Barn",
       "slug": "circular_barn",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 616,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=616",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -220,64 +273,11 @@
       "problem_num": 3,
       "name": "Load Balancing",
       "slug": "load_balancing",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 617,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=617",
       "local_file": null,
       "tags": [
         "brute_force"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2015,
-      "year_season": "2015-16",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 1,
-      "name": "Promotion Counting",
-      "slug": "promotion_counting",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "math"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2015,
-      "year_season": "2015-16",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 2,
-      "name": "Angry Cows",
-      "slug": "angry_cows",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "brute_force",
-        "simulation"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2015,
-      "year_season": "2015-16",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 3,
-      "name": "Mowing the Field",
-      "slug": "mowing_the_field",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "brute_force",
-        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -308,8 +308,8 @@
       "problem_num": 2,
       "name": "Bull in a China Shop",
       "slug": "bull_in_a_china_shop",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 640,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=640",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -326,8 +326,8 @@
       "problem_num": 3,
       "name": "Field Reduction",
       "slug": "field_reduction",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 641,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=641",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -344,8 +344,8 @@
       "problem_num": 1,
       "name": "Square Pasture",
       "slug": "square_pasture",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 663,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=663",
       "local_file": null,
       "tags": [
         "geometry",
@@ -362,8 +362,8 @@
       "problem_num": 2,
       "name": "Block Game",
       "slug": "block_game",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 664,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=664",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -393,67 +393,13 @@
     {
       "year": 2016,
       "year_season": "2016-17",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 1,
-      "name": "Why Did the Cow Cross the Road",
-      "slug": "why_did_the_cow_cross_the_road",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "simulation",
-        "brute_force"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2016,
-      "year_season": "2016-17",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 2,
-      "name": "Why Did the Cow Cross the Road II",
-      "slug": "why_did_the_cow_cross_the_road_ii",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "simulation",
-        "brute_force"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2016,
-      "year_season": "2016-17",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 3,
-      "name": "Why Did the Cow Cross the Road III",
-      "slug": "why_did_the_cow_cross_the_road_iii",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "simulation",
-        "brute_force"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2016,
-      "year_season": "2016-17",
       "contest": "January",
       "contest_id": "jan",
       "problem_num": 1,
       "name": "Don't Be Last!",
       "slug": "dont_be_last",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 687,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=687",
       "local_file": null,
       "tags": [
         "sorting",
@@ -468,10 +414,10 @@
       "contest": "January",
       "contest_id": "jan",
       "problem_num": 2,
-      "name": "Hoof Paper Scissors",
+      "name": "Hoof, Paper, Scissors",
       "slug": "hoof_paper_scissors",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 688,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=688",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -501,13 +447,67 @@
     {
       "year": 2016,
       "year_season": "2016-17",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Why Did the Cow Cross the Road",
+      "slug": "why_did_the_cow_cross_the_road",
+      "cpid": 711,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=711",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Why Did the Cow Cross the Road II",
+      "slug": "why_did_the_cow_cross_the_road_ii",
+      "cpid": 712,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=712",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Why Did the Cow Cross the Road III",
+      "slug": "why_did_the_cow_cross_the_road_iii",
+      "cpid": 713,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=713",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2016,
+      "year_season": "2016-17",
       "contest": "US Open",
       "contest_id": "open",
       "problem_num": 1,
       "name": "The Lost Cow",
       "slug": "the_lost_cow",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 735,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=735",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -542,12 +542,12 @@
       "problem_num": 3,
       "name": "Modern Art",
       "slug": "modern_art",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 737,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=737",
       "local_file": null,
       "tags": [
         "brute_force",
-        "dp"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -560,8 +560,8 @@
       "problem_num": 1,
       "name": "Blocked Billboard",
       "slug": "blocked_billboard",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 759,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=759",
       "local_file": null,
       "tags": [
         "2d_grid",
@@ -578,8 +578,8 @@
       "problem_num": 2,
       "name": "The Bovine Shuffle",
       "slug": "the_bovine_shuffle",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 760,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=760",
       "local_file": null,
       "tags": [
         "simulation",
@@ -596,66 +596,12 @@
       "problem_num": 3,
       "name": "Milk Measurement",
       "slug": "milk_measurement",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 761,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=761",
       "local_file": null,
       "tags": [
         "brute_force",
         "simulation"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2017,
-      "year_season": "2017-18",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 1,
-      "name": "Teleportation",
-      "slug": "teleportation",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "brute_force",
-        "simulation"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2017,
-      "year_season": "2017-18",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 2,
-      "name": "Hoofball",
-      "slug": "hoofball",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "brute_force",
-        "simulation"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2017,
-      "year_season": "2017-18",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 3,
-      "name": "Taming the Herd",
-      "slug": "taming_the_herd",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "brute_force",
-        "dp"
       ],
       "difficulty": null,
       "notes": null
@@ -668,8 +614,8 @@
       "problem_num": 1,
       "name": "Blocked Billboard II",
       "slug": "blocked_billboard_ii",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 783,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=783",
       "local_file": null,
       "tags": [
         "2d_grid",
@@ -686,8 +632,8 @@
       "problem_num": 2,
       "name": "Lifeguards",
       "slug": "lifeguards",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 784,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=784",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -717,13 +663,67 @@
     {
       "year": 2017,
       "year_season": "2017-18",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Teleportation",
+      "slug": "teleportation",
+      "cpid": 807,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=807",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Hoofball",
+      "slug": "hoofball",
+      "cpid": 808,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=808",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Taming the Herd",
+      "slug": "taming_the_herd",
+      "cpid": 809,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=809",
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2017,
+      "year_season": "2017-18",
       "contest": "US Open",
       "contest_id": "open",
       "problem_num": 1,
       "name": "Team Tic Tac Toe",
       "slug": "team_tic_tac_toe",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 831,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=831",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -741,12 +741,12 @@
       "problem_num": 2,
       "name": "Milking Order",
       "slug": "milking_order",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 832,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=832",
       "local_file": null,
       "tags": [
-        "graph",
-        "sorting"
+        "brute_force",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -759,12 +759,12 @@
       "problem_num": 3,
       "name": "Family Tree",
       "slug": "family_tree",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 833,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=833",
       "local_file": null,
       "tags": [
-        "graph",
-        "dfs"
+        "brute_force",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -777,8 +777,8 @@
       "problem_num": 1,
       "name": "Mixing Milk",
       "slug": "mixing_milk",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 855,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=855",
       "local_file": null,
       "tags": [
         "greedy",
@@ -795,8 +795,8 @@
       "problem_num": 2,
       "name": "The Bucket List",
       "slug": "the_bucket_list",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 856,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=856",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -813,67 +813,12 @@
       "problem_num": 3,
       "name": "Back and Forth",
       "slug": "back_and_forth",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 857,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=857",
       "local_file": null,
       "tags": [
         "brute_force",
         "simulation"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2018,
-      "year_season": "2018-19",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 1,
-      "name": "Sleepy Cow Herding",
-      "slug": "sleepy_cow_herding",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "greedy",
-        "two_pointers"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2018,
-      "year_season": "2018-19",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 2,
-      "name": "The Great Revegetation",
-      "slug": "the_great_revegetation",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "graph",
-        "dfs",
-        "greedy"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2018,
-      "year_season": "2018-19",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 3,
-      "name": "Measuring Traffic",
-      "slug": "measuring_traffic",
-      "cpid": 917,
-      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=917",
-      "local_file": null,
-      "tags": [
-        "simulation",
-        "prefix_sum"
       ],
       "difficulty": null,
       "notes": null
@@ -904,8 +849,8 @@
       "problem_num": 2,
       "name": "Sleepy Cow Sorting",
       "slug": "sleepy_cow_sorting",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 892,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=892",
       "local_file": null,
       "tags": [
         "sorting",
@@ -922,12 +867,66 @@
       "problem_num": 3,
       "name": "Guess the Animal",
       "slug": "guess_the_animal",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 893,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=893",
       "local_file": null,
       "tags": [
         "string",
         "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Sleepy Cow Herding",
+      "slug": "sleepy_cow_herding",
+      "cpid": 915,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=915",
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "two_pointers"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "The Great Revegetation",
+      "slug": "the_great_revegetation",
+      "cpid": 916,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=916",
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2018,
+      "year_season": "2018-19",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Measuring Traffic",
+      "slug": "measuring_traffic",
+      "cpid": 917,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=917",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "prefix_sum"
       ],
       "difficulty": null,
       "notes": null
@@ -940,8 +939,8 @@
       "problem_num": 1,
       "name": "Bucket Brigade",
       "slug": "bucket_brigade",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 939,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=939",
       "local_file": null,
       "tags": [
         "simulation",
@@ -958,12 +957,12 @@
       "problem_num": 2,
       "name": "Milk Factory",
       "slug": "milk_factory",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 940,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=940",
       "local_file": null,
       "tags": [
         "graph",
-        "tree"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -976,13 +975,12 @@
       "problem_num": 3,
       "name": "Cow Evolution",
       "slug": "cow_evolution",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 941,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=941",
       "local_file": null,
       "tags": [
-        "graph",
-        "tree",
-        "string"
+        "brute_force",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -1013,8 +1011,8 @@
       "problem_num": 2,
       "name": "Where Am I?",
       "slug": "where_am_i",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 964,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=964",
       "local_file": null,
       "tags": [
         "string",
@@ -1031,12 +1029,66 @@
       "problem_num": 3,
       "name": "Livestock Lineup",
       "slug": "livestock_lineup",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 965,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=965",
       "local_file": null,
       "tags": [
         "brute_force",
         "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Word Processor",
+      "slug": "word_processor",
+      "cpid": 987,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=987",
+      "local_file": null,
+      "tags": [
+        "string",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Photoshoot",
+      "slug": "photoshoot",
+      "cpid": 988,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=988",
+      "local_file": null,
+      "tags": [
+        "math",
+        "combinatorics"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2019,
+      "year_season": "2019-20",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Race",
+      "slug": "race",
+      "cpid": 989,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=989",
+      "local_file": null,
+      "tags": [
+        "two_pointers",
+        "math"
       ],
       "difficulty": null,
       "notes": null
@@ -1053,8 +1105,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1011",
       "local_file": null,
       "tags": [
-        "geometry",
-        "math"
+        "brute_force",
+        "geometry"
       ],
       "difficulty": null,
       "notes": null
@@ -1085,66 +1137,12 @@
       "problem_num": 3,
       "name": "Swapity Swap",
       "slug": "swapity_swap",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1013,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1013",
       "local_file": null,
       "tags": [
         "simulation",
         "sorting"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2019,
-      "year_season": "2019-20",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 1,
-      "name": "Word Processor",
-      "slug": "word_processor",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "string",
-        "simulation"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2019,
-      "year_season": "2019-20",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 2,
-      "name": "Photoshoot",
-      "slug": "photoshoot",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "math",
-        "combinatorics"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2019,
-      "year_season": "2019-20",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 3,
-      "name": "Race",
-      "slug": "race",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "two_pointers",
-        "math"
       ],
       "difficulty": null,
       "notes": null
@@ -1157,8 +1155,8 @@
       "problem_num": 1,
       "name": "Social Distancing I",
       "slug": "social_distancing_i",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1035,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1035",
       "local_file": null,
       "tags": [
         "greedy",
@@ -1175,8 +1173,8 @@
       "problem_num": 2,
       "name": "Social Distancing II",
       "slug": "social_distancing_ii",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1036,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1036",
       "local_file": null,
       "tags": [
         "greedy",
@@ -1193,12 +1191,12 @@
       "problem_num": 3,
       "name": "Cowntact Tracing",
       "slug": "cowntact_tracing",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1037,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1037",
       "local_file": null,
       "tags": [
-        "bfs",
-        "graph"
+        "brute_force",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -1211,8 +1209,8 @@
       "problem_num": 1,
       "name": "Do you know your ABCs?",
       "slug": "do_you_know_your_abcs",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1059,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1059",
       "local_file": null,
       "tags": [
         "math",
@@ -1247,66 +1245,12 @@
       "problem_num": 3,
       "name": "Stuck in a Rut",
       "slug": "stuck_in_a_rut",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1061,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1061",
       "local_file": null,
       "tags": [
         "geometry",
         "simulation"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2020,
-      "year_season": "2020-21",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 1,
-      "name": "Year of the Cow",
-      "slug": "year_of_the_cow",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "string",
-        "math"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2020,
-      "year_season": "2020-21",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 2,
-      "name": "Comfortable Cows",
-      "slug": "comfortable_cows",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "simulation",
-        "math"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2020,
-      "year_season": "2020-21",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 3,
-      "name": "Clockwise Fence",
-      "slug": "clockwise_fence",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "geometry",
-        "math"
       ],
       "difficulty": null,
       "notes": null
@@ -1319,8 +1263,8 @@
       "problem_num": 1,
       "name": "Uddered but not Herd",
       "slug": "uddered_but_not_herd",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1083,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1083",
       "local_file": null,
       "tags": [
         "string",
@@ -1355,12 +1299,66 @@
       "problem_num": 3,
       "name": "Just Stalling",
       "slug": "just_stalling",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1085,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1085",
       "local_file": null,
       "tags": [
         "brute_force",
         "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Year of the Cow",
+      "slug": "year_of_the_cow",
+      "cpid": 1107,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1107",
+      "local_file": null,
+      "tags": [
+        "string",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Comfortable Cows",
+      "slug": "comfortable_cows",
+      "cpid": 1108,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1108",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2020,
+      "year_season": "2020-21",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Clockwise Fence",
+      "slug": "clockwise_fence",
+      "cpid": 1109,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1109",
+      "local_file": null,
+      "tags": [
+        "geometry",
+        "math"
       ],
       "difficulty": null,
       "notes": null
@@ -1373,8 +1371,8 @@
       "problem_num": 1,
       "name": "Acowdemia I",
       "slug": "acowdemia_i",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1131,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1131",
       "local_file": null,
       "tags": [
         "sorting",
@@ -1391,8 +1389,8 @@
       "problem_num": 2,
       "name": "Acowdemia II",
       "slug": "acowdemia_ii",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1132,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1132",
       "local_file": null,
       "tags": [
         "sorting",
@@ -1409,8 +1407,8 @@
       "problem_num": 3,
       "name": "Acowdemia III",
       "slug": "acowdemia_iii",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1133,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1133",
       "local_file": null,
       "tags": [
         "sorting",
@@ -1427,8 +1425,8 @@
       "problem_num": 1,
       "name": "Lonely Photo",
       "slug": "lonely_photo",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1155,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1155",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -1443,10 +1441,10 @@
       "contest": "December",
       "contest_id": "dec",
       "problem_num": 2,
-      "name": "Air Cowditioning",
+      "name": "Air Cownditioning",
       "slug": "air_cowditioning",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1156,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1156",
       "local_file": null,
       "tags": [
         "sorting",
@@ -1463,66 +1461,12 @@
       "problem_num": 3,
       "name": "Walking Home",
       "slug": "walking_home",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1157,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1157",
       "local_file": null,
       "tags": [
-        "bfs",
-        "graph"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2021,
-      "year_season": "2021-22",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 1,
-      "name": "Sleeping in Class",
-      "slug": "sleeping_in_class",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "simulation",
-        "math"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2021,
-      "year_season": "2021-22",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 2,
-      "name": "Photoshoot 2",
-      "slug": "photoshoot_2",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "math",
-        "sorting"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2021,
-      "year_season": "2021-22",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 3,
-      "name": "Blocks",
-      "slug": "blocks",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "2d_grid",
-        "brute_force"
+        "brute_force",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -1535,8 +1479,8 @@
       "problem_num": 1,
       "name": "Herdle",
       "slug": "herdle",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1179,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1179",
       "local_file": null,
       "tags": [
         "string",
@@ -1553,8 +1497,8 @@
       "problem_num": 2,
       "name": "Non-Transitive Dice",
       "slug": "non-transitive_dice",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1180,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1180",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -1571,12 +1515,65 @@
       "problem_num": 3,
       "name": "Drought",
       "slug": "drought",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1181,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1181",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "dp"
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Sleeping in Class",
+      "slug": "sleeping_in_class",
+      "cpid": 1203,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1203",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Photoshoot 2",
+      "slug": "photoshoot_2",
+      "cpid": 1204,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1204",
+      "local_file": null,
+      "tags": [
+        "math",
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2021,
+      "year_season": "2021-22",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Blocks",
+      "slug": "blocks",
+      "cpid": 1205,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1205",
+      "local_file": null,
+      "tags": [
+        "2d_grid",
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -1589,8 +1586,8 @@
       "problem_num": 1,
       "name": "Photoshoot",
       "slug": "photoshoot",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1227,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1227",
       "local_file": null,
       "tags": [
         "math",
@@ -1607,8 +1604,8 @@
       "problem_num": 2,
       "name": "Counting Liars",
       "slug": "counting_liars",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1228,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1228",
       "local_file": null,
       "tags": [
         "sorting",
@@ -1625,8 +1622,8 @@
       "problem_num": 3,
       "name": "Alchemy",
       "slug": "alchemy",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1229,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1229",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -1661,8 +1658,8 @@
       "problem_num": 2,
       "name": "Feeding the Cows",
       "slug": "feeding_the_cows",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1252,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1252",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -1679,12 +1676,65 @@
       "problem_num": 3,
       "name": "Reverse Engineering",
       "slug": "reverse_engineering",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1253,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1253",
+      "local_file": null,
+      "tags": [
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Leaders",
+      "slug": "leaders",
+      "cpid": 1275,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1275",
       "local_file": null,
       "tags": [
         "brute_force",
-        "dp"
+        "sorting"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "Air Cownditioning II",
+      "slug": "air_cowditioning_ii",
+      "cpid": 1276,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1276",
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "greedy"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2022,
+      "year_season": "2022-23",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Moo Operations",
+      "slug": "moo_operations",
+      "cpid": 1277,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1277",
+      "local_file": null,
+      "tags": [
+        "math",
+        "string"
       ],
       "difficulty": null,
       "notes": null
@@ -1715,8 +1765,8 @@
       "problem_num": 2,
       "name": "Stamp Grid",
       "slug": "stamp_grid",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1300,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1300",
       "local_file": null,
       "tags": [
         "2d_grid",
@@ -1733,66 +1783,12 @@
       "problem_num": 3,
       "name": "Watching Mooloo",
       "slug": "watching_mooloo",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1301,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1301",
       "local_file": null,
       "tags": [
         "math",
         "two_pointers"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2022,
-      "year_season": "2022-23",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 1,
-      "name": "Leaders",
-      "slug": "leaders",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "brute_force",
-        "sorting"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2022,
-      "year_season": "2022-23",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 2,
-      "name": "Air Cowditioning II",
-      "slug": "air_cowditioning_ii",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "sorting",
-        "greedy"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2022,
-      "year_season": "2022-23",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 3,
-      "name": "Moo Operations",
-      "slug": "moo_operations",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "math",
-        "string"
       ],
       "difficulty": null,
       "notes": null
@@ -1805,8 +1801,8 @@
       "problem_num": 1,
       "name": "FEB",
       "slug": "feb",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1323,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1323",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -1823,8 +1819,8 @@
       "problem_num": 2,
       "name": "Moo Language",
       "slug": "moo_language",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1324,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1324",
       "local_file": null,
       "tags": [
         "string",
@@ -1841,8 +1837,8 @@
       "problem_num": 3,
       "name": "Rotate and Shift",
       "slug": "rotate_and_shift",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1325,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1325",
       "local_file": null,
       "tags": [
         "2d_grid",
@@ -1859,8 +1855,8 @@
       "problem_num": 1,
       "name": "Candy Cane Feast",
       "slug": "candy_cane_feast",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1365,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1365",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -1877,12 +1873,12 @@
       "problem_num": 2,
       "name": "Cowntact Tracing 2",
       "slug": "cowntact_tracing_2",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1366,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1366",
       "local_file": null,
       "tags": [
-        "bfs",
-        "graph"
+        "simulation",
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -1895,66 +1891,12 @@
       "problem_num": 3,
       "name": "Farmer John Actually Farms",
       "slug": "farmer_john_actually_farms",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1367,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1367",
       "local_file": null,
       "tags": [
         "brute_force",
         "2d_grid"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2023,
-      "year_season": "2023-24",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 1,
-      "name": "Palindrome Game",
-      "slug": "palindrome_game",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "string",
-        "brute_force"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2023,
-      "year_season": "2023-24",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 2,
-      "name": "Milk Exchange",
-      "slug": "milk_exchange",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "simulation",
-        "brute_force"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2023,
-      "year_season": "2023-24",
-      "contest": "February",
-      "contest_id": "feb",
-      "problem_num": 3,
-      "name": "Maximizing Productivity",
-      "slug": "maximizing_productivity",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "sorting",
-        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -1967,8 +1909,8 @@
       "problem_num": 1,
       "name": "Majority Opinion",
       "slug": "majority_opinion",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1371,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1371",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -1983,10 +1925,10 @@
       "contest": "January",
       "contest_id": "jan",
       "problem_num": 2,
-      "name": "Cannon Ball",
+      "name": "Cannonball",
       "slug": "cannon_ball",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1372,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1372",
       "local_file": null,
       "tags": [
         "math",
@@ -2003,12 +1945,66 @@
       "problem_num": 3,
       "name": "Balancing Bacteria",
       "slug": "balancing_bacteria",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1373,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1373",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "string"
+        "prefix_sum",
+        "greedy"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 1,
+      "name": "Palindrome Game",
+      "slug": "palindrome_game",
+      "cpid": 1395,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1395",
+      "local_file": null,
+      "tags": [
+        "string",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 2,
+      "name": "Milk Exchange",
+      "slug": "milk_exchange",
+      "cpid": 1396,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1396",
+      "local_file": null,
+      "tags": [
+        "simulation",
+        "brute_force"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2023,
+      "year_season": "2023-24",
+      "contest": "February",
+      "contest_id": "feb",
+      "problem_num": 3,
+      "name": "Maximizing Productivity",
+      "slug": "maximizing_productivity",
+      "cpid": 1397,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1397",
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -2021,8 +2017,8 @@
       "problem_num": 1,
       "name": "Logical Moos",
       "slug": "logical_moos",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1419,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1419",
       "local_file": null,
       "tags": [
         "string",
@@ -2039,11 +2035,11 @@
       "problem_num": 2,
       "name": "Walking Along a Fence",
       "slug": "walking_along_a_fence",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1420,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1420",
       "local_file": null,
       "tags": [
-        "math",
+        "simulation",
         "geometry"
       ],
       "difficulty": null,
@@ -2057,12 +2053,11 @@
       "problem_num": 3,
       "name": "Farmer John's Favorite Permutation",
       "slug": "farmer_johns_favorite_permutation",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1421,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1421",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "dp"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -2093,8 +2088,8 @@
       "problem_num": 2,
       "name": "Farmer John's Cheese Block",
       "slug": "farmer_johns_cheese_block",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1444,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1444",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -2111,18 +2106,72 @@
       "problem_num": 3,
       "name": "It's Mooin' Time",
       "slug": "its_mooin_time",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1445,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1445",
       "local_file": null,
       "tags": [
-        "bfs",
-        "graph"
+        "brute_force",
+        "string"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2024,
+      "year": 2025,
+      "year_season": "2024-25",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 1,
+      "name": "Astral Superposition",
+      "slug": "astral_superposition",
+      "cpid": 1467,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1467",
+      "local_file": null,
+      "tags": [
+        "greedy",
+        "simulation"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2025,
+      "year_season": "2024-25",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 2,
+      "name": "It's Mooin' Time II",
+      "slug": "its_mooin_time_ii",
+      "cpid": 1468,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1468",
+      "local_file": null,
+      "tags": [
+        "brute_force",
+        "string"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2025,
+      "year_season": "2024-25",
+      "contest": "January",
+      "contest_id": "jan",
+      "problem_num": 3,
+      "name": "Cow Checkups",
+      "slug": "cow_checkups",
+      "cpid": 1469,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1469",
+      "local_file": null,
+      "tags": [
+        "sorting",
+        "math"
+      ],
+      "difficulty": null,
+      "notes": null
+    },
+    {
+      "year": 2025,
       "year_season": "2024-25",
       "contest": "February",
       "contest_id": "feb",
@@ -2140,15 +2189,15 @@
       "notes": null
     },
     {
-      "year": 2024,
+      "year": 2025,
       "year_season": "2024-25",
       "contest": "February",
       "contest_id": "feb",
       "problem_num": 2,
       "name": "Making Mexes",
       "slug": "making_mexes",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1492,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1492",
       "local_file": null,
       "tags": [
         "math",
@@ -2158,87 +2207,33 @@
       "notes": null
     },
     {
-      "year": 2024,
+      "year": 2025,
       "year_season": "2024-25",
       "contest": "February",
       "contest_id": "feb",
       "problem_num": 3,
       "name": "Printing Sequences",
       "slug": "printing_sequences",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1493,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1493",
       "local_file": null,
       "tags": [
         "brute_force",
-        "dp"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2024,
-      "year_season": "2024-25",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 1,
-      "name": "Astral Superposition",
-      "slug": "astral_superposition",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "graph",
-        "math"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2024,
-      "year_season": "2024-25",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 2,
-      "name": "It's Mooin' Time II",
-      "slug": "its_mooin_time_ii",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "bfs",
-        "graph"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2024,
-      "year_season": "2024-25",
-      "contest": "January",
-      "contest_id": "jan",
-      "problem_num": 3,
-      "name": "Cow Checkups",
-      "slug": "cow_checkups",
-      "cpid": null,
-      "usaco_url": null,
-      "local_file": null,
-      "tags": [
-        "sorting",
-        "math"
-      ],
-      "difficulty": null,
-      "notes": null
-    },
-    {
-      "year": 2024,
+      "year": 2025,
       "year_season": "2024-25",
       "contest": "US Open",
       "contest_id": "open",
       "problem_num": 1,
       "name": "Hoof Paper Scissors Minus One",
       "slug": "hoof_paper_scissors_minus_one",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1515,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1515",
       "local_file": null,
       "tags": [
         "brute_force",
@@ -2248,37 +2243,37 @@
       "notes": null
     },
     {
-      "year": 2024,
+      "year": 2025,
       "year_season": "2024-25",
       "contest": "US Open",
       "contest_id": "open",
       "problem_num": 2,
       "name": "More Cow Photos",
       "slug": "more_cow_photos",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1516,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1516",
       "local_file": null,
       "tags": [
-        "string",
-        "brute_force"
+        "math",
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2024,
+      "year": 2025,
       "year_season": "2024-25",
       "contest": "US Open",
       "contest_id": "open",
       "problem_num": 3,
       "name": "It's Mooin' Time III",
       "slug": "its_mooin_time_iii",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1517,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1517",
       "local_file": null,
       "tags": [
-        "bfs",
-        "graph"
+        "two_pointers",
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -2291,12 +2286,12 @@
       "problem_num": 1,
       "name": "Chip Exchange",
       "slug": "chip_exchange",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1539,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1539",
       "local_file": null,
       "tags": [
         "math",
-        "brute_force"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -2309,12 +2304,12 @@
       "problem_num": 2,
       "name": "COW Splits",
       "slug": "cow_splits",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1540,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1540",
       "local_file": null,
       "tags": [
-        "math",
-        "brute_force"
+        "brute_force",
+        "string"
       ],
       "difficulty": null,
       "notes": null
@@ -2327,8 +2322,8 @@
       "problem_num": 3,
       "name": "Photoshoot",
       "slug": "photoshoot",
-      "cpid": null,
-      "usaco_url": null,
+      "cpid": 1541,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1541",
       "local_file": null,
       "tags": [
         "math",
@@ -2343,10 +2338,10 @@
       "contest": "Second",
       "contest_id": "second",
       "problem_num": 1,
-      "name": "TBA",
-      "slug": "tba",
-      "cpid": null,
-      "usaco_url": null,
+      "name": "It's Mooin' Time IV",
+      "slug": "its_mooin_time_iv",
+      "cpid": 1563,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1563",
       "local_file": null,
       "tags": [
         "simulation",
@@ -2361,10 +2356,10 @@
       "contest": "Second",
       "contest_id": "second",
       "problem_num": 2,
-      "name": "TBA",
-      "slug": "tba",
-      "cpid": null,
-      "usaco_url": null,
+      "name": "Moo Hunt",
+      "slug": "moo_hunt",
+      "cpid": 1564,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1564",
       "local_file": null,
       "tags": [
         "simulation",
@@ -2379,10 +2374,10 @@
       "contest": "Second",
       "contest_id": "second",
       "problem_num": 3,
-      "name": "TBA",
-      "slug": "tba",
-      "cpid": null,
-      "usaco_url": null,
+      "name": "Purchasing Milk",
+      "slug": "purchasing_milk",
+      "cpid": 1565,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1565",
       "local_file": null,
       "tags": [
         "simulation",
@@ -2397,10 +2392,10 @@
       "contest": "Third",
       "contest_id": "third",
       "problem_num": 1,
-      "name": "TBA",
-      "slug": "tba",
-      "cpid": null,
-      "usaco_url": null,
+      "name": "Make All Distinct",
+      "slug": "make_all_distinct",
+      "cpid": 1587,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1587",
       "local_file": null,
       "tags": [
         "simulation",
@@ -2415,10 +2410,10 @@
       "contest": "Third",
       "contest_id": "third",
       "problem_num": 2,
-      "name": "TBA",
-      "slug": "tba",
-      "cpid": null,
-      "usaco_url": null,
+      "name": "Strange Function",
+      "slug": "strange_function",
+      "cpid": 1588,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1588",
       "local_file": null,
       "tags": [
         "simulation",
@@ -2433,10 +2428,10 @@
       "contest": "Third",
       "contest_id": "third",
       "problem_num": 3,
-      "name": "TBA",
-      "slug": "tba",
-      "cpid": null,
-      "usaco_url": null,
+      "name": "Swap to Win",
+      "slug": "swap_to_win",
+      "cpid": 1589,
+      "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1589",
       "local_file": null,
       "tags": [
         "simulation",
