@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USACO Bronze 学习路径</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 280px;
+  min-width: 280px;
+  background: #1a1a2e;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-header {
+  padding: 24px 20px;
+  background: #16213e;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.sidebar-header h2 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+.sidebar-header a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+
+.sidebar-header a:hover { text-decoration: underline; }
+
+.sidebar-nav {
+  flex: 1;
+  padding: 12px 0;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.93em;
+  transition: all 0.15s;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-nav a:hover {
+  background: #1f1f3a;
+  color: #ddd;
+  border-left-color: #667eea;
+}
+
+.sidebar-nav a.active {
+  background: #1f1f3a;
+  color: #fff;
+  border-left-color: #667eea;
+  font-weight: 600;
+}
+
+.sidebar-nav .module-idx {
+  display: inline-block;
+  width: 24px;
+  color: #667eea;
+  font-size: 0.8em;
+}
+
+/* ===== Main Content ===== */
+.main {
+  margin-left: 280px;
+  flex: 1;
+  padding: 30px;
+  max-width: 1100px;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.page-header h1 { font-size: 1.8em; margin-bottom: 6px; }
+.page-header p { opacity: 0.9; font-size: 0.95em; }
+
+/* Module Section */
+.module-section {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  scroll-margin-top: 20px;
+}
+
+.module-header {
+  padding: 24px 28px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.module-header h2 {
+  font-size: 1.3em;
+  color: #333;
+}
+
+.module-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.freq-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.module-body { padding: 28px; }
+
+.module-desc {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f8f9ff;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+/* Focus Problems */
+.focus-section {
+  margin-bottom: 24px;
+}
+
+.focus-section h3, .practice-section h3 {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.focus-problems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.focus-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: #f0f0ff;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.15s;
+  font-weight: 500;
+}
+
+.focus-card:hover {
+  background: #e0e0ff;
+  transform: translateY(-1px);
+}
+
+.focus-card .focus-icon {
+  font-size: 1.3em;
+}
+
+.focus-card .focus-badge {
+  background: #667eea;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Practice Problems */
+.diff-group {
+  margin-bottom: 16px;
+}
+
+.diff-label {
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 8px;
+}
+
+.problem-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.15s;
+  font-size: 0.9em;
+}
+
+.problem-item:hover {
+  background: #f0f0f0;
+  border-color: #ccc;
+}
+
+.problem-item .p-num {
+  color: #999;
+  font-size: 0.8em;
+  min-width: 32px;
+}
+
+.problem-item .p-name {
+  flex: 1;
+}
+
+.problem-item .p-diff-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Stats bar at top */
+.stats-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  background: #fff;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: center;
+  flex: 1;
+}
+
+.stat-item .stat-num {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.stat-item .stat-label {
+  font-size: 0.85em;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* Empty state */
+.empty-module {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+/* Nav dots */
+.nav-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar { width: 0; min-width: 0; overflow: hidden; }
+  .main { margin-left: 0; padding: 16px; }
+  .problem-grid { grid-template-columns: 1fr; }
+}
+
+/* Loading */
+.loading { text-align: center; padding: 60px; color: #999; font-size: 1.1em; }
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h2>USACO Bronze</h2>
+    <div style="font-size:0.9em;color:#aaa;">Learning Path / 学习路径</div>
+    <a href="index.html" style="display:inline-block;margin-top:8px;">← 返回题库搜索</a>
+  </div>
+  <nav class="sidebar-nav" id="sidebarNav"></nav>
+</aside>
+
+<!-- Main -->
+<main class="main" id="mainContent">
+  <div class="loading">Loading...</div>
+</main>
+
+<script>
+// ===== Data =====
+let guideData = null;
+let problemsDB = {};
+let activeModule = null;
+
+// ===== Load =====
+async function init() {
+  try {
+    const [gResp, pResp] = await Promise.all([
+      fetch('api/guide-modules'),
+      fetch('api/problems')
+    ]);
+    guideData = await gResp.json();
+    const pData = await pResp.json();
+    for (const p of pData.problems) {
+      problemsDB[p.cpid] = p;
+    }
+    buildSidebar();
+    buildMain();
+    // Scroll to hash
+    if (location.hash) {
+      scrollToModule(location.hash.slice(1));
+    }
+  } catch (e) {
+    document.getElementById('mainContent').innerHTML =
+      '<div class="loading">Failed to load. Please start the server.</div>';
+    console.error(e);
+  }
+}
+
+// ===== Sidebar =====
+function buildSidebar() {
+  const nav = document.getElementById('sidebarNav');
+  nav.innerHTML = guideData.modules.map((m, i) => {
+    const freq = guideData.frequency_info[m.frequency];
+    return `<a href="#${m.id}" onclick="scrollToModule('${m.id}');return false">
+      <span class="module-idx">${String(i+1).padStart(2,'0')}</span>
+      ${m.title.split(' / ')[1] || m.title}
+      ${freq ? `<span style="font-size:0.7em;margin-left:6px;color:${freq.color}">${freq.label}</span>` : ''}
+    </a>`;
+  }).join('');
+}
+
+// ===== Main Content =====
+function buildMain() {
+  const main = document.getElementById('mainContent');
+
+  // Total count
+  let totalProblems = 0;
+  let totalModules = guideData.modules.length;
+  guideData.modules.forEach(m => totalProblems += m.problems.length + m.focus_problems.length);
+
+  main.innerHTML = `
+    <div class="page-header">
+      <h1>${guideData.title}</h1>
+      <p>${guideData.subtitle} · 共 ${totalModules} 个模块 · ${totalProblems} 道例题</p>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-num">${totalModules}</div>
+        <div class="stat-label">学习模块</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">${totalProblems}</div>
+        <div class="stat-label">例题</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">${new Set(guideData.modules.flatMap(m => [...m.problems, ...m.focus_problems].map(p => p.cpid))).size}</div>
+        <div class="stat-label">USACO 题目</div>
+      </div>
+    </div>
+    ${guideData.modules.map(m => buildModuleSection(m)).join('')}
+  `;
+}
+
+// ===== Module Section =====
+function buildModuleSection(mod) {
+  const freq = guideData.frequency_info[mod.frequency];
+  const focusCpidSet = new Set(mod.focus_problems.map(p => p.cpid));
+
+  // Group practice problems by difficulty
+  const diffOrder = ['easy', 'normal', 'hard', 'very-hard'];
+  const byDiff = {};
+  for (const p of mod.problems) {
+    if (!byDiff[p.difficulty]) byDiff[p.difficulty] = [];
+    byDiff[p.difficulty].push(p);
+  }
+
+  let html = `
+    <div class="module-section" id="${mod.id}">
+      <div class="module-header">
+        <h2>${mod.title}</h2>
+        <div class="module-meta">
+          ${freq ? `<span class="freq-badge" style="background:${freq.bg};color:${freq.color}">${freq.label}</span>` : ''}
+          ${mod.problems.length + mod.focus_problems.length > 0
+            ? `<span style="font-size:0.85em;color:#999;">${mod.focus_problems.length + mod.problems.length} problems</span>`
+            : ''}
+        </div>
+      </div>
+      <div class="module-body">
+  `;
+
+  // Description
+  html += `<div class="module-desc">${mod.description}</div>`;
+
+  // Focus Problems
+  if (mod.focus_problems.length > 0) {
+    html += `<div class="focus-section">
+      <h3>📌 Focus Problems <span style="font-weight:400;font-size:0.85em;color:#888;">— Guide 重点讲解</span></h3>
+      <div class="focus-problems">
+        ${mod.focus_problems.map(fp => buildFocusCard(fp)).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Practice Problems
+  html += `<div class="practice-section"><h3>📚 Practice Problems</h3>`;
+
+  if (mod.problems.length === 0) {
+    html += `<div class="empty-module">暂无练习题目</div>`;
+  } else {
+    for (const d of diffOrder) {
+      if (!byDiff[d] || byDiff[d].length === 0) continue;
+      const di = guideData.difficulty_info[d];
+      html += `<div class="diff-group">
+        <div class="diff-label" style="background:${di.bg};color:${di.color}">${di.icon} ${di.label} (${byDiff[d].length})</div>
+        <div class="problem-grid">
+          ${byDiff[d].map(p => buildProblemItem(p)).join('')}
+        </div>
+      </div>`;
+    }
+  }
+
+  html += `</div></div></div>`;
+  return html;
+}
+
+function buildFocusCard(fp) {
+  const db = problemsDB[fp.cpid];
+  const url = db ? db.usaco_url : `https://usaco.org/index.php?page=viewproblem2&cpid=${fp.cpid}`;
+  return `<a href="${url}" target="_blank" class="focus-card">
+    <span class="focus-icon">📖</span>
+    <span>${fp.name}</span>
+    <span class="focus-badge">FOCUS</span>
+  </a>`;
+}
+
+function buildProblemItem(p) {
+  const db = problemsDB[p.cpid];
+  const di = guideData.difficulty_info[p.difficulty];
+  const url = db ? db.usaco_url : null;
+  const tag = url ? 'a' : 'span';
+  const hrefAttr = url ? ` href="${url}" target="_blank"` : '';
+
+  return `<${tag}${hrefAttr} class="problem-item">
+    <span class="p-diff-dot" style="background:${di.color}"></span>
+    <span class="p-name">${p.name}</span>
+    ${db ? `<span class="p-num">${db.year} ${db.contest}#${db.problem_num}</span>` : ''}
+  </${tag}>`;
+}
+
+// ===== Scroll =====
+function scrollToModule(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update active
+  document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+  const link = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
+  if (link) link.classList.add('active');
+}
+
+// ===== Intersection Observer for sidebar active =====
+function setupObserver() {
+  setTimeout(() => {
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+          const link = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
+          if (link) link.classList.add('active');
+        }
+      }
+    }, { rootMargin: '-80px 0px -70% 0px' });
+
+    document.querySelectorAll('.module-section').forEach(el => observer.observe(el));
+  }, 500);
+}
+
+// Start
+init().then(setupObserver);
+</script>
+</body>
+</html>

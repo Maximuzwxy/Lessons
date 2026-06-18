@@ -1,0 +1,221 @@
+{
+  "title": "USACO Bronze 学习路径",
+  "subtitle": "基于 USACO Guide 的模块化学习顺序",
+  "modules": [
+    {
+      "id": "simulation",
+      "title": "Simulation / 模拟法",
+      "frequency": "very-frequent",
+      "frequency_label": "Very Frequent",
+      "description": "直接按照题目描述模拟过程。没有固定算法，考察编程语言的熟练度和内置数据结构的使用能力。",
+      "prerequisites": ["intro-ds"],
+      "focus_problems": [
+        {"cpid": 891, "name": "Shell Game", "internal": true},
+        {"cpid": 855, "name": "Mixing Milk", "internal": true}
+      ],
+      "problems": [
+        {"cpid": 665, "name": "The Cow-Signal", "difficulty": "easy"},
+        {"cpid": 568, "name": "Speeding Ticket", "difficulty": "easy"},
+        {"cpid": 735, "name": "The Lost Cow", "difficulty": "easy"},
+        {"cpid": 760, "name": "The Bovine Shuffle", "difficulty": "easy"},
+        {"cpid": 856, "name": "The Bucket List", "difficulty": "easy"},
+        {"cpid": 917, "name": "Measuring Traffic", "difficulty": "normal"},
+        {"cpid": 616, "name": "Circular Barn", "difficulty": "normal"},
+        {"cpid": 664, "name": "Block Game", "difficulty": "normal"},
+        {"cpid": 831, "name": "Team Tic Tac Toe", "difficulty": "normal"},
+        {"cpid": 593, "name": "Mowing the Field", "difficulty": "normal"},
+        {"cpid": 1491, "name": "Reflection", "difficulty": "normal"},
+        {"cpid": 761, "name": "Milk Measurement", "difficulty": "hard"},
+        {"cpid": 1061, "name": "Stuck in a Rut", "difficulty": "very-hard"}
+      ]
+    },
+    {
+      "id": "complete-search",
+      "title": "Basic Complete Search / 基础暴力枚举",
+      "frequency": "very-frequent",
+      "frequency_label": "Very Frequent",
+      "description": "遍历整个解空间来寻找答案。在铜级中往往需要枚举所有元素、所有配对、所有子集或所有排列。",
+      "prerequisites": ["simulation"],
+      "focus_problems": [],
+      "problems": [
+        {"cpid": 615, "name": "Milk Pails", "difficulty": "easy"},
+        {"cpid": 639, "name": "Diamond Collector", "difficulty": "easy"},
+        {"cpid": 1060, "name": "Daisy Chains", "difficulty": "easy"},
+        {"cpid": 1228, "name": "Counting Liars", "difficulty": "normal"},
+        {"cpid": 963, "name": "Cow Gymnastics", "difficulty": "normal"},
+        {"cpid": 736, "name": "Bovine Genomics", "difficulty": "normal"},
+        {"cpid": 1011, "name": "Triangles", "difficulty": "normal"},
+        {"cpid": 784, "name": "Lifeguards", "difficulty": "normal"},
+        {"cpid": 712, "name": "Cow Cross the Road II", "difficulty": "normal"},
+        {"cpid": 893, "name": "Guess the Animal", "difficulty": "hard"},
+        {"cpid": 617, "name": "Load Balancing", "difficulty": "hard"},
+        {"cpid": 1203, "name": "Sleeping in Class", "difficulty": "hard"},
+        {"cpid": 1469, "name": "Cow Checkups", "difficulty": "hard"},
+        {"cpid": 569, "name": "Contaminated Milk", "difficulty": "very-hard"},
+        {"cpid": 1037, "name": "Cowntact Tracing", "difficulty": "very-hard"},
+        {"cpid": 640, "name": "Bull in a China Shop", "difficulty": "very-hard"},
+        {"cpid": 1324, "name": "Moo Language", "difficulty": "very-hard"}
+      ]
+    },
+    {
+      "id": "complete-rec",
+      "title": "Complete Search with Recursion / 递归暴力枚举",
+      "frequency": "rare",
+      "frequency_label": "Rare",
+      "description": "使用递归生成所有子集和排列来解决问题。虽然铜级不强制要求递归，但理解递归对后续学习很有帮助。",
+      "prerequisites": ["complete-search"],
+      "focus_problems": [],
+      "problems": [
+        {"cpid": 1276, "name": "Air Cownditioning II", "difficulty": "normal"},
+        {"cpid": 857, "name": "Back and Forth", "difficulty": "normal"},
+        {"cpid": 965, "name": "Livestock Lineup", "difficulty": "normal"},
+        {"cpid": 1493, "name": "Printing Sequences", "difficulty": "very-hard"}
+      ]
+    },
+    {
+      "id": "sorting",
+      "title": "Sorting / 排序",
+      "frequency": "not-frequent",
+      "frequency_label": "Not Frequent",
+      "description": "将元素按升序排列。铜级题目通常不需要 O(N log N) 排序算法——重复取最小值 O(N²) 即可。",
+      "prerequisites": ["intro-ds"],
+      "focus_problems": [],
+      "problems": [
+        {"cpid": 713, "name": "Cow Cross the Road III", "difficulty": "normal"},
+        {"cpid": 1251, "name": "Cow College", "difficulty": "normal"},
+        {"cpid": 592, "name": "Angry Cows", "difficulty": "hard"}
+      ]
+    },
+    {
+      "id": "sets-maps",
+      "title": "Sets & Maps / 集合与映射",
+      "frequency": "not-frequent",
+      "frequency_label": "Not Frequent",
+      "description": "使用集合(Set)存储不重复元素，使用映射(Map/Dict)存储键值对。Python 的内置 set 和 dict 基于哈希实现，操作 O(1)。",
+      "prerequisites": ["sorting"],
+      "focus_problems": [],
+      "problems": [
+        {"cpid": 964, "name": "Where Am I?", "difficulty": "easy"},
+        {"cpid": 687, "name": "Don't Be Last!", "difficulty": "normal"},
+        {"cpid": 1107, "name": "Year of the Cow", "difficulty": "normal"},
+        {"cpid": 1468, "name": "It's Mooin' Time II", "difficulty": "normal"},
+        {"cpid": 1445, "name": "It's Mooin' Time", "difficulty": "hard"}
+      ]
+    },
+    {
+      "id": "casework",
+      "title": "Casework / 分情况讨论",
+      "frequency": "not-frequent",
+      "frequency_label": "Not Frequent",
+      "description": "将问题拆分为不同情况，每种情况独立求解。需要多画图、多观察相似性。",
+      "prerequisites": [],
+      "focus_problems": [
+        {"cpid": 915, "name": "Sleepy Cow Herding", "internal": true}
+      ],
+      "problems": [
+        {"cpid": 567, "name": "Fence Painting", "difficulty": "normal"},
+        {"cpid": 1035, "name": "Social Distancing I", "difficulty": "normal"},
+        {"cpid": 1515, "name": "Hoof Paper Scissors Minus One", "difficulty": "normal"},
+        {"cpid": 1275, "name": "Leaders", "difficulty": "hard"}
+      ]
+    },
+    {
+      "id": "greedy",
+      "title": "Greedy Algorithms / 贪心算法",
+      "frequency": "somewhat-frequent",
+      "frequency_label": "Somewhat Frequent",
+      "description": "每一步都选择当前看起来最优的解，不回溯。虽然官方说贪心从银级开始，但许多铜级题也可用贪心解决。",
+      "prerequisites": ["sorting"],
+      "focus_problems": [
+        {"cpid": 1012, "name": "Mad Scientist", "internal": true}
+      ],
+      "problems": [
+        {"cpid": 1301, "name": "Watching Mooloo", "difficulty": "easy"},
+        {"cpid": 689, "name": "Cow Tipping", "difficulty": "normal"},
+        {"cpid": 1084, "name": "Even More Odd Photos", "difficulty": "normal"},
+        {"cpid": 785, "name": "Out of Place", "difficulty": "normal"},
+        {"cpid": 1467, "name": "Astral Superposition", "difficulty": "normal"},
+        {"cpid": 832, "name": "Milking Order", "difficulty": "hard"},
+        {"cpid": 1227, "name": "Photoshoot", "difficulty": "hard"},
+        {"cpid": 989, "name": "Race", "difficulty": "very-hard"},
+        {"cpid": 1323, "name": "FEB", "difficulty": "very-hard"}
+      ]
+    },
+    {
+      "id": "graphs",
+      "title": "Introduction to Graphs / 图论入门",
+      "frequency": "not-frequent",
+      "frequency_label": "Not Frequent",
+      "description": "理解图的基本概念和邻接表表示。铜级图论题通常只涉及树的遍历或简单的邻接关系处理。",
+      "prerequisites": ["intro-ds"],
+      "focus_problems": [
+        {"cpid": 965, "name": "Livestock Lineup", "internal": true}
+      ],
+      "problems": [
+        {"cpid": 916, "name": "The Great Revegetation", "difficulty": "hard"},
+        {"cpid": 940, "name": "Milk Factory", "difficulty": "hard"},
+        {"cpid": 808, "name": "Hoofball", "difficulty": "hard"},
+        {"cpid": 1013, "name": "Swapity Swap", "difficulty": "hard"},
+        {"cpid": 941, "name": "Cow Evolution", "difficulty": "very-hard"},
+        {"cpid": 833, "name": "Family Tree", "difficulty": "very-hard"}
+      ]
+    },
+    {
+      "id": "rect-geo",
+      "title": "Rectangle Geometry / 矩形几何",
+      "frequency": "rare",
+      "frequency_label": "Rare",
+      "description": "处理坐标轴平行的矩形问题（求面积、判断相交、求交集面积）。通常可用公式直接计算。",
+      "prerequisites": ["simulation"],
+      "focus_problems": [
+        {"cpid": 567, "name": "Fence Painting", "internal": true},
+        {"cpid": 759, "name": "Blocked Billboard", "internal": true}
+      ],
+      "problems": [
+        {"cpid": 663, "name": "Square Pasture", "difficulty": "easy"},
+        {"cpid": 783, "name": "Blocked Billboard II", "difficulty": "hard"}
+      ]
+    },
+    {
+      "id": "ad-hoc",
+      "title": "Ad Hoc / 杂题",
+      "frequency": "very-frequent",
+      "frequency_label": "Very Frequent",
+      "description": "不属于标准算法分类的问题。需要多画样例、多观察规律、多尝试不同角度。",
+      "prerequisites": [],
+      "focus_problems": [
+        {"cpid": 1204, "name": "Photoshoot 2", "internal": true}
+      ],
+      "problems": [
+        {"cpid": 591, "name": "Promotion Counting", "difficulty": "easy"},
+        {"cpid": 892, "name": "Sleepy Cow Sorting", "difficulty": "hard"},
+        {"cpid": 809, "name": "Taming the Herd", "difficulty": "hard"},
+        {"cpid": 737, "name": "Modern Art", "difficulty": "hard"}
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "Additional Practice / 补充练习",
+      "frequency": "",
+      "frequency_label": "",
+      "description": "完成所有模块后的额外练习，巩固铜级所有算法知识点。",
+      "prerequisites": [],
+      "focus_problems": [],
+      "problems": [
+        {"cpid": 1181, "name": "Drought", "difficulty": "hard"}
+      ]
+    }
+  ],
+  "frequency_info": {
+    "very-frequent": {"label": "Very Frequent", "bg": "#e8f5e9", "color": "#2e7d32"},
+    "somewhat-frequent": {"label": "Somewhat Frequent", "bg": "#fff3e0", "color": "#e65100"},
+    "not-frequent": {"label": "Not Frequent", "bg": "#e3f2fd", "color": "#1565c0"},
+    "rare": {"label": "Rare", "bg": "#fce4ec", "color": "#c62828"}
+  },
+  "difficulty_info": {
+    "easy": {"label": "Easy", "bg": "#e8f5e9", "color": "#2e7d32", "icon": "🟢"},
+    "normal": {"label": "Normal", "bg": "#fff8e1", "color": "#f9a825", "icon": "🟡"},
+    "hard": {"label": "Hard", "bg": "#fbe9e7", "color": "#d84315", "icon": "🟠"},
+    "very-hard": {"label": "Very Hard", "bg": "#fce4ec", "color": "#c62828", "icon": "🔴"}
+  }
+}

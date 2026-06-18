@@ -36,8 +36,13 @@ class USACOHandler(SimpleHTTPRequestHandler):
             self.send_json_api()
         elif path == "/api/tags":
             self.send_tags_api()
+        elif path == "/api/guide-modules":
+            self.send_guide_api()
         elif path == "/" or path == "/index.html":
             self.path = "/index.html"
+            super().do_GET()
+        elif path == "/learning-path.html" or path == "/learning-path":
+            self.path = "/learning-path.html"
             super().do_GET()
         else:
             super().do_GET()
@@ -67,6 +72,20 @@ class USACOHandler(SimpleHTTPRequestHandler):
         except Exception as e:
             self.send_error(500, f"Error loading tags: {e}")
 
+    def send_guide_api(self):
+        guide_path = os.path.join(os.path.dirname(__file__), "data", "guide_modules.json")
+        try:
+            with open(guide_path, "r", encoding="utf-8") as f:
+                guide = json.load(f)
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-cache")
+            self.end_headers()
+            self.wfile.write(json.dumps(guide, ensure_ascii=False).encode("utf-8"))
+        except Exception as e:
+            self.send_error(500, f"Error loading guide: {e}")
+
     def log_message(self, format, *args):
         print(f"[{self.log_date_time_string()}] {format % args}")
 
@@ -74,6 +93,7 @@ def main():
     local_ip = get_local_ip()
 
     # 绑定到所有网络接口
+    HTTPServer.allow_reuse_address = True
     server_address = ("0.0.0.0", PORT)
     server = HTTPServer(server_address, USACOHandler)
 

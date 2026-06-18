@@ -31,6 +31,7 @@
             border-radius: 10px;
             margin-bottom: 20px;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
@@ -40,6 +41,24 @@
 
         header p {
             opacity: 0.9;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255,255,255,0.25);
+            border-color: rgba(255,255,255,0.5);
         }
 
         .filters {
@@ -242,6 +261,7 @@
         <header>
             <h1>USACO Bronze 题库</h1>
             <p>2015-2026 所有 Bronze 组题目分类整理</p>
+            <a class="nav-btn" href="learning-path.html">📖 学习路径（按模块学习）</a>
         </header>
 
         <div class="filters">
