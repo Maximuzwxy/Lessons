@@ -220,6 +220,39 @@
         .problem-tag.greedy { background: #fff8f0; color: #a82; }
         .problem-tag.geometry { background: #f0e8ff; color: #72a; }
         .problem-tag.2d_grid { background: #e8f8ff; color: #28a; }
+        .problem-tag.ad_hoc { background: #ffe0e0; color: #c33; }
+
+        .solved-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #4caf50;
+            color: white;
+            border-radius: 3px;
+            font-size: 11px;
+            margin-left: 8px;
+        }
+
+        .solved-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            user-select: none;
+            padding: 10px 16px;
+            background: #f0f0f0;
+            border-radius: 6px;
+            transition: background 0.2s;
+            font-weight: normal;
+        }
+
+        .solved-toggle:hover {
+            background: #e0e0e0;
+        }
+
+        .solved-toggle input[type="checkbox"] {
+            width: auto;
+            cursor: pointer;
+        }
 
         .problem-link {
             display: inline-block;
@@ -289,6 +322,12 @@
                     <div class="tag-filter" id="tagFilter"></div>
                 </div>
             </div>
+            <div class="filter-row" style="border-top: 1px solid #eee; padding-top: 12px;">
+                <label class="solved-toggle" id="solvedToggle">
+                    <input type="checkbox" id="solvedFilter">
+                    仅显示已做过的题 (<span id="solvedCountLabel">0</span> 道)
+                </label>
+            </div>
         </div>
 
         <div class="stats">
@@ -303,6 +342,10 @@
             <div class="stat-card">
                 <div class="number" id="contestCount">0</div>
                 <div class="label">比赛场次</div>
+            </div>
+            <div class="stat-card" style="border-left: 3px solid #4caf50;">
+                <div class="number" id="solvedCount" style="color: #4caf50;">0</div>
+                <div class="label">已解决</div>
             </div>
         </div>
 
@@ -329,6 +372,7 @@
             'greedy': 'greedy',
             'geometry': 'geometry',
             '2d_grid': '2d_grid',
+            'ad_hoc': 'ad_hoc',
             'prefix_sum': 'prefix_sum',
             'recursion': 'recursion',
             'combinatorics': 'brute_force',
@@ -353,6 +397,7 @@
             'greedy': '贪心',
             'geometry': '几何',
             '2d_grid': '网格',
+            'ad_hoc': '临时特设',
             'prefix_sum': '前缀和',
             'recursion': '递归',
             'combinatorics': '组合',
@@ -412,6 +457,9 @@
 
             // 统计
             document.getElementById('totalCount').textContent = db.problems.length;
+            const solved = db.problems.filter(p => p.local_file).length;
+            document.getElementById('solvedCount').textContent = solved;
+            document.getElementById('solvedCountLabel').textContent = solved;
             document.getElementById('contestCount').textContent =
                 new Set(db.problems.map(p => `${p.year}-${p.contest}`)).size;
         }
@@ -436,11 +484,13 @@
             const year = document.getElementById('yearFilter').value;
             const contest = document.getElementById('contestFilter').value;
             const search = document.getElementById('searchFilter').value.toLowerCase();
+            const solvedOnly = document.getElementById('solvedFilter').checked;
 
             return db.problems.filter(p => {
                 if (year && p.year.toString() !== year) return false;
                 if (contest && p.contest !== contest) return false;
                 if (search && !p.name.toLowerCase().includes(search)) return false;
+                if (solvedOnly && !p.local_file) return false;
                 if (selectedTags.size > 0 && ![...selectedTags].some(t => p.tags.includes(t))) return false;
                 return true;
             });
@@ -460,7 +510,10 @@
             list.innerHTML = problems.map(p => `
                 <div class="problem-card">
                     <div class="problem-header">
-                        <div class="problem-title">${p.name}</div>
+                        <div class="problem-title">
+                            ${p.name}
+                            ${p.local_file ? '<span class="solved-badge">已解决</span>' : ''}
+                        </div>
                         <div class="problem-meta">
                             <span class="problem-contest">${p.year} ${p.contest}</span>
                             #${p.problem_num}
@@ -478,6 +531,7 @@
         document.getElementById('yearFilter').addEventListener('change', renderProblems);
         document.getElementById('contestFilter').addEventListener('change', renderProblems);
         document.getElementById('searchFilter').addEventListener('input', renderProblems);
+        document.getElementById('solvedFilter').addEventListener('change', renderProblems);
 
         // 启动
         loadData();

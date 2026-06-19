@@ -136,8 +136,10 @@
       "slug": "fence_painting",
       "cpid": 567,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=567",
-      "local_file": null,
+      "local_file": "2015/December/fence_painting.py",
       "tags": [
+        "ad_hoc",
+        "geometry",
         "simulation"
       ],
       "difficulty": null,
@@ -153,7 +155,7 @@
       "slug": "speeding_ticket",
       "cpid": 568,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=568",
-      "local_file": null,
+      "local_file": "2015/December/speeding_ticket.py",
       "tags": [
         "simulation"
       ],
@@ -205,10 +207,11 @@
       "slug": "angry_cows",
       "cpid": 592,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=592",
-      "local_file": null,
+      "local_file": "2016/January/angry_cows.py",
       "tags": [
         "brute_force",
-        "simulation"
+        "simulation",
+        "sorting"
       ],
       "difficulty": null,
       "notes": null
@@ -223,7 +226,7 @@
       "slug": "mowing_the_field",
       "cpid": 593,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=593",
-      "local_file": null,
+      "local_file": "2016/January/mowing_the_filed.py",
       "tags": [
         "simulation",
         "2d_grid"
@@ -241,7 +244,7 @@
       "slug": "milk_pails",
       "cpid": 615,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=615",
-      "local_file": null,
+      "local_file": "2016/February/milk_pails.py",
       "tags": [
         "brute_force"
       ],
@@ -293,7 +296,7 @@
       "slug": "diamond_collector",
       "cpid": 639,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=639",
-      "local_file": null,
+      "local_file": "2016/us_open/diamond_collector.py",
       "tags": [
         "brute_force"
       ],
@@ -310,7 +313,7 @@
       "slug": "bull_in_a_china_shop",
       "cpid": 640,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=640",
-      "local_file": null,
+      "local_file": "2016/us_open/bull_in_a_china_shop.py",
       "tags": [
         "brute_force",
         "2d_grid"
@@ -381,7 +384,7 @@
       "slug": "the_cow-signal",
       "cpid": 665,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=665",
-      "local_file": null,
+      "local_file": "2016/December/cow_signal.py",
       "tags": [
         "simulation",
         "2d_grid"
@@ -435,7 +438,7 @@
       "slug": "cow_tipping",
       "cpid": 689,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=689",
-      "local_file": null,
+      "local_file": "2017/January/cow_tipping.py",
       "tags": [
         "greedy",
         "2d_grid"
@@ -453,7 +456,7 @@
       "slug": "why_did_the_cow_cross_the_road",
       "cpid": 711,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=711",
-      "local_file": null,
+      "local_file": "2017/February/cross_the_road.py",
       "tags": [
         "simulation"
       ],
@@ -470,7 +473,7 @@
       "slug": "why_did_the_cow_cross_the_road_ii",
       "cpid": 712,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=712",
-      "local_file": null,
+      "local_file": "2017/February/cross_the_road2.py",
       "tags": [
         "brute_force"
       ],
@@ -487,7 +490,7 @@
       "slug": "why_did_the_cow_cross_the_road_iii",
       "cpid": 713,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=713",
-      "local_file": null,
+      "local_file": "2017/February/cross_the_road3.py",
       "tags": [
         "simulation",
         "sorting"
@@ -522,7 +525,7 @@
       "slug": "bovine_genomics",
       "cpid": 736,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=736",
-      "local_file": null,
+      "local_file": "2017/us_open/bovine_genomics.py",
       "tags": [
         "brute_force",
         "string"
@@ -540,7 +543,7 @@
       "slug": "modern_art",
       "cpid": 737,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=737",
-      "local_file": null,
+      "local_file": "2017/us_open/modern_art.py",
       "tags": [
         "brute_force",
         "2d_grid",
@@ -559,7 +562,7 @@
       "slug": "blocked_billboard",
       "cpid": 759,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=759",
-      "local_file": null,
+      "local_file": "2017/December/blocked_billboard.py",
       "tags": [
         "ad_hoc",
         "geometry"
@@ -647,8 +650,9 @@
       "slug": "out_of_place",
       "cpid": 785,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=785",
-      "local_file": null,
+      "local_file": "2018/January/out_of_place.py",
       "tags": [
+        "greedy",
         "sorting"
       ],
       "difficulty": null,
@@ -684,6 +688,7 @@
       "local_file": null,
       "tags": [
         "ad_hoc",
+        "graph",
         "simulation"
       ],
       "difficulty": null,
@@ -701,6 +706,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=809",
       "local_file": null,
       "tags": [
+        "ad_hoc",
         "greedy",
         "simulation"
       ],
@@ -717,10 +723,11 @@
       "slug": "team_tic_tac_toe",
       "cpid": 831,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=831",
-      "local_file": null,
+      "local_file": "2018/us_open/tic_tac_toe.py",
       "tags": [
         "brute_force",
-        "game"
+        "game",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -755,7 +762,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=833",
       "local_file": null,
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "graph"
       ],
       "difficulty": null,
       "notes": null
@@ -770,7 +778,7 @@
       "slug": "mixing_milk",
       "cpid": 855,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=855",
-      "local_file": null,
+      "local_file": "2018/December/mixing_milk.py",
       "tags": [
         "simulation"
       ],
@@ -807,7 +815,8 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "dfs"
+        "dfs",
+        "recursion"
       ],
       "difficulty": null,
       "notes": null
@@ -822,7 +831,7 @@
       "slug": "shell_game",
       "cpid": 891,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=891",
-      "local_file": null,
+      "local_file": "2019/January/shell_game.py",
       "tags": [
         "brute_force",
         "simulation"
@@ -909,7 +918,7 @@
       "slug": "measuring_traffic",
       "cpid": 917,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=917",
-      "local_file": null,
+      "local_file": "2019/February/measuring_traffic.py",
       "tags": [
         "ad_hoc",
         "simulation"
@@ -966,7 +975,8 @@
       "local_file": null,
       "tags": [
         "ad_hoc",
-        "brute_force"
+        "brute_force",
+        "graph"
       ],
       "difficulty": null,
       "notes": null
@@ -981,7 +991,7 @@
       "slug": "cow_gymnastics",
       "cpid": 963,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=963",
-      "local_file": null,
+      "local_file": "2019/December/cow_gymnastics.py",
       "tags": [
         "brute_force"
       ],
@@ -1018,7 +1028,9 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=965",
       "local_file": null,
       "tags": [
-        "brute_force"
+        "brute_force",
+        "graph",
+        "recursion"
       ],
       "difficulty": null,
       "notes": null
@@ -1069,6 +1081,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=989",
       "local_file": null,
       "tags": [
+        "greedy",
         "simulation"
       ],
       "difficulty": null,
@@ -1084,7 +1097,7 @@
       "slug": "triangles",
       "cpid": 1011,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1011",
-      "local_file": null,
+      "local_file": "2020/February/triangles.py",
       "tags": [
         "brute_force"
       ],
@@ -1101,7 +1114,7 @@
       "slug": "mad_scientist",
       "cpid": 1012,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1012",
-      "local_file": null,
+      "local_file": "2020/February/mad_scientist.py",
       "tags": [
         "greedy"
       ],
@@ -1120,6 +1133,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1013",
       "local_file": null,
       "tags": [
+        "graph",
         "simulation"
       ],
       "difficulty": null,
@@ -1203,7 +1217,7 @@
       "slug": "daisy_chains",
       "cpid": 1060,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1060",
-      "local_file": null,
+      "local_file": "2020/December/daisy_chains.py",
       "tags": [
         "brute_force"
       ],
@@ -1254,9 +1268,10 @@
       "slug": "even_more_odd_photos",
       "cpid": 1084,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1084",
-      "local_file": null,
+      "local_file": "2021/January/even_more_odd_photos.py",
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -1514,6 +1529,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1204",
       "local_file": null,
       "tags": [
+        "ad_hoc",
         "greedy"
       ],
       "difficulty": null,
@@ -1597,7 +1613,7 @@
       "slug": "cow_college",
       "cpid": 1251,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1251",
-      "local_file": null,
+      "local_file": "2022/December/cow_college.py",
       "tags": [
         "sorting"
       ],
@@ -1650,6 +1666,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1275",
       "local_file": null,
       "tags": [
+        "ad_hoc",
         "brute_force"
       ],
       "difficulty": null,
@@ -1667,7 +1684,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1276",
       "local_file": null,
       "tags": [
-        "brute_force"
+        "brute_force",
+        "recursion"
       ],
       "difficulty": null,
       "notes": null
@@ -1699,7 +1717,7 @@
       "slug": "hungry_cow",
       "cpid": 1299,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1299",
-      "local_file": null,
+      "local_file": "2023/February/hungry_cow.py",
       "tags": [
         "simulation"
       ],
@@ -1752,7 +1770,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1323",
       "local_file": null,
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -2005,7 +2024,7 @@
       "slug": "roundabout_rounding",
       "cpid": 1443,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1443",
-      "local_file": null,
+      "local_file": "2024/December/roundabout_rounding.py",
       "tags": [
         "ad_hoc"
       ],
@@ -2107,9 +2126,10 @@
       "slug": "reflection",
       "cpid": 1491,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1491",
-      "local_file": null,
+      "local_file": "2025/February/reflection.py",
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -2143,7 +2163,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1493",
       "local_file": null,
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "recursion"
       ],
       "difficulty": null,
       "notes": null
@@ -2160,6 +2181,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1515",
       "local_file": null,
       "tags": [
+        "ad_hoc",
         "brute_force"
       ],
       "difficulty": null,
