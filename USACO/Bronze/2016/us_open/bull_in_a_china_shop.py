@@ -86,116 +86,48 @@ def get_num(piece):
     return ret
 
 
+def shift(grid, di, dj):
+    """
+    Return a new grid shifted by di rows and dj columns.
+    di, dj should be -1, 0, or 1 for a single-step shift.
+    Only used internally for single-step directions.
+    """
+    new_grid = [['.'] * n for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            ni, nj = i + di, j + dj
+            if 0 <= ni < n and 0 <= nj < n:
+                new_grid[ni][nj] = grid[i][j]
+    return new_grid
+
+
 def move_figurine(fig):
     """
     Generate all valid shifted configurations of a piece by recursively
-    sliding it in four direction combinations (left+up, right+down, left+down,
-    right+up). A shift is valid only if no '#' character is pushed outside
-    the N x N grid — checked by verifying the '#' count stays the same.
+    trying left, right, up, down one step at a time. A shift is valid only
+    if no '#' falls outside the N x N grid — checked by verifying the '#'
+    count stays the same. Uses a set of tuples for O(1) deduplication.
 
     Returns a list of all reachable shifted grids.
     """
-    fs = [fig]            # list of all shifted configurations
-    count = get_num(fig)  # number of '#' cells in the piece (used for validity check)
+    count = get_num(fig)      # number of '#' cells, used for validity check
+    fs = []                   # all reachable configurations
+    seen = set()              # visited states (hashable tuple representation)
 
-    def left_up(f):
-        """Recursively shift the piece left and up."""
-        # Shift left: move each '#' one column to the left
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n):
-            for j in range(n - 1):
-                l[i][j] = f[i][j + 1]
-        if get_num(l) == count:    # valid only if no '#' fell off the grid
-            fs.append(l)
-            left_up(l)             # try shifting further left/up
+    def dfs(f):
+        key = tuple(tuple(row) for row in f)
+        if key in seen:
+            return
+        seen.add(key)
+        fs.append(f)
 
-        # Shift up: move each '#' one row up
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n - 1):
-            for j in range(n):
-                l[i][j] = f[i + 1][j]
-        if get_num(l) == count:
-            if l not in fs:        # avoid duplicates
-                fs.append(l)
-            left_up(l)             # try shifting further left/up
+        # Try shifting in each of the 4 directions
+        for di, dj in [(-1, 0), (1, 0), (0, -1), (0, 1)]:  # up, down, left, right
+            nxt = shift(f, di, dj)
+            if get_num(nxt) == count:   # valid: no '#' fell off the grid
+                dfs(nxt)
 
-
-    def right_down(f):
-        """Recursively shift the piece right and down."""
-        # Shift right: move each '#' one column to the right
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n):
-            for j in range(n - 1):
-                l[i][j + 1] = f[i][j]
-
-        if get_num(l) == count:
-            if l not in fs:
-                fs.append(l)
-            right_down(l)          # try shifting further right/down
-
-        # Shift down: move each '#' one row down
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n - 1):
-            for j in range(n):
-                l[i + 1][j] = f[i][j]
-        if get_num(l) == count:
-            if l not in fs:
-                fs.append(l)
-            right_down(l)          # try shifting further right/down
-
-
-    def left_down(f):
-        """Recursively shift the piece left and down."""
-        # Shift left
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n):
-            for j in range(n - 1):
-                l[i][j] = f[i][j + 1]
-        if get_num(l) == count:
-            fs.append(l)
-            left_down(l)
-
-        # Shift down
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n - 1):
-            for j in range(n):
-                l[i + 1][j] = f[i][j]
-        if get_num(l) == count:
-            if l not in fs:
-                fs.append(l)
-            left_down(l)
-
-
-    def right_up(f):
-        """Recursively shift the piece right and up."""
-        # Shift right
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n):
-            for j in range(n - 1):
-                l[i][j + 1] = f[i][j]
-
-        if get_num(l) == count:
-            if l not in fs:
-                fs.append(l)
-            right_up(l)
-
-        # Shift up
-        l = [['.'] * n for _ in range(n)]
-        for i in range(n - 1):
-            for j in range(n):
-                l[i][j] = f[i + 1][j]
-        if get_num(l) == count:
-            if l not in fs:
-                fs.append(l)
-            right_up(l)
-
-
-    # Explore all four diagonal shift directions from the starting configuration
-    left_up(fig)
-    right_down(fig)
-    left_down(fig)
-    right_up(fig)
-
+    dfs(fig)
     return fs
 
 
