@@ -116,6 +116,12 @@
         "name": "Geometry",
         "name_zh": "几何",
         "description": "涉及几何计算"
+      },
+      {
+        "id": "ad_hoc",
+        "name": "Ad Hoc",
+        "name_zh": "临时特设",
+        "description": "无固定算法模板，依赖逻辑推理和问题特定的解法"
       }
     ]
   },
@@ -132,10 +138,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=567",
       "local_file": null,
       "tags": [
-        "simulation",
-        "2d_grid",
-        "recursion",
-        "geometry"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -152,8 +155,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=568",
       "local_file": null,
       "tags": [
-        "simulation",
-        "prefix_sum"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -177,7 +179,7 @@
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "January",
       "contest_id": "jan",
@@ -188,13 +190,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=591",
       "local_file": null,
       "tags": [
-        "math"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "January",
       "contest_id": "jan",
@@ -212,7 +214,7 @@
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "January",
       "contest_id": "jan",
@@ -223,14 +225,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=593",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "simulation",
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "February",
       "contest_id": "feb",
@@ -241,14 +243,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=615",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "dp"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "February",
       "contest_id": "feb",
@@ -260,13 +261,13 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "geometry"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "February",
       "contest_id": "feb",
@@ -283,7 +284,7 @@
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "US Open",
       "contest_id": "open",
@@ -294,14 +295,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=639",
       "local_file": null,
       "tags": [
-        "two_pointers",
-        "sorting"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "US Open",
       "contest_id": "open",
@@ -319,7 +319,7 @@
       "notes": null
     },
     {
-      "year": 2015,
+      "year": 2016,
       "year_season": "2015-16",
       "contest": "US Open",
       "contest_id": "open",
@@ -330,8 +330,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=641",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "geometry"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -348,8 +347,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=663",
       "local_file": null,
       "tags": [
-        "geometry",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -366,8 +364,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=664",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "simulation",
+        "string"
       ],
       "difficulty": null,
       "notes": null
@@ -391,7 +389,7 @@
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "January",
       "contest_id": "jan",
@@ -402,14 +400,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=687",
       "local_file": null,
       "tags": [
-        "sorting",
-        "brute_force"
+        "simulation",
+        "sorting"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "January",
       "contest_id": "jan",
@@ -427,7 +425,7 @@
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "January",
       "contest_id": "jan",
@@ -438,14 +436,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=689",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "greedy",
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "February",
       "contest_id": "feb",
@@ -456,14 +454,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=711",
       "local_file": null,
       "tags": [
-        "simulation",
-        "brute_force"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "February",
       "contest_id": "feb",
@@ -474,14 +471,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=712",
       "local_file": null,
       "tags": [
-        "simulation",
         "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "February",
       "contest_id": "feb",
@@ -493,13 +489,13 @@
       "local_file": null,
       "tags": [
         "simulation",
-        "brute_force"
+        "sorting"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "US Open",
       "contest_id": "open",
@@ -510,14 +506,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=735",
       "local_file": null,
       "tags": [
-        "brute_force",
         "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "US Open",
       "contest_id": "open",
@@ -535,7 +530,7 @@
       "notes": null
     },
     {
-      "year": 2016,
+      "year": 2017,
       "year_season": "2016-17",
       "contest": "US Open",
       "contest_id": "open",
@@ -547,7 +542,7 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "simulation"
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
@@ -564,8 +559,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=759",
       "local_file": null,
       "tags": [
-        "2d_grid",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -582,8 +576,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=760",
       "local_file": null,
       "tags": [
-        "simulation",
-        "array"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
@@ -600,14 +593,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=761",
       "local_file": null,
       "tags": [
-        "brute_force",
         "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "January",
       "contest_id": "jan",
@@ -618,14 +610,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=783",
       "local_file": null,
       "tags": [
-        "2d_grid",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "January",
       "contest_id": "jan",
@@ -637,13 +628,13 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "interval"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "January",
       "contest_id": "jan",
@@ -654,14 +645,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=785",
       "local_file": null,
       "tags": [
-        "sorting",
-        "brute_force"
+        "sorting"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "February",
       "contest_id": "feb",
@@ -672,14 +662,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=807",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "February",
       "contest_id": "feb",
@@ -690,14 +679,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=808",
       "local_file": null,
       "tags": [
-        "brute_force",
+        "ad_hoc",
         "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "February",
       "contest_id": "feb",
@@ -715,7 +704,7 @@
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "US Open",
       "contest_id": "open",
@@ -727,14 +716,13 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "simulation",
         "game"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "US Open",
       "contest_id": "open",
@@ -746,13 +734,13 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "simulation"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2017,
+      "year": 2018,
       "year_season": "2017-18",
       "contest": "US Open",
       "contest_id": "open",
@@ -763,8 +751,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=833",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -781,7 +768,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=855",
       "local_file": null,
       "tags": [
-        "greedy",
         "simulation"
       ],
       "difficulty": null,
@@ -799,7 +785,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=856",
       "local_file": null,
       "tags": [
-        "brute_force",
         "simulation"
       ],
       "difficulty": null,
@@ -818,13 +803,13 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "simulation"
+        "dfs"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "January",
       "contest_id": "jan",
@@ -842,7 +827,7 @@
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "January",
       "contest_id": "jan",
@@ -853,14 +838,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=892",
       "local_file": null,
       "tags": [
-        "sorting",
-        "simulation"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "January",
       "contest_id": "jan",
@@ -871,14 +855,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=893",
       "local_file": null,
       "tags": [
-        "string",
         "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "February",
       "contest_id": "feb",
@@ -889,14 +872,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=915",
       "local_file": null,
       "tags": [
-        "greedy",
-        "two_pointers"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "February",
       "contest_id": "feb",
@@ -907,14 +889,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=916",
       "local_file": null,
       "tags": [
-        "greedy",
-        "simulation"
+        "graph",
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "February",
       "contest_id": "feb",
@@ -925,14 +907,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=917",
       "local_file": null,
       "tags": [
-        "simulation",
-        "prefix_sum"
+        "ad_hoc",
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "US Open",
       "contest_id": "open",
@@ -943,14 +925,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=939",
       "local_file": null,
       "tags": [
-        "simulation",
-        "string"
+        "ad_hoc",
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "US Open",
       "contest_id": "open",
@@ -962,13 +944,13 @@
       "local_file": null,
       "tags": [
         "graph",
-        "simulation"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2018,
+      "year": 2019,
       "year_season": "2018-19",
       "contest": "US Open",
       "contest_id": "open",
@@ -979,8 +961,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=941",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "ad_hoc",
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -997,7 +979,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=963",
       "local_file": null,
       "tags": [
-        "two_pointers",
         "brute_force"
       ],
       "difficulty": null,
@@ -1015,8 +996,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=964",
       "local_file": null,
       "tags": [
-        "string",
-        "brute_force"
+        "brute_force",
+        "string"
       ],
       "difficulty": null,
       "notes": null
@@ -1033,14 +1014,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=965",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "sorting"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "January",
       "contest_id": "jan",
@@ -1051,14 +1031,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=987",
       "local_file": null,
       "tags": [
-        "string",
         "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "January",
       "contest_id": "jan",
@@ -1069,14 +1048,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=988",
       "local_file": null,
       "tags": [
-        "math",
-        "combinatorics"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "January",
       "contest_id": "jan",
@@ -1087,14 +1065,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=989",
       "local_file": null,
       "tags": [
-        "two_pointers",
-        "math"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "February",
       "contest_id": "feb",
@@ -1105,14 +1082,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1011",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "geometry"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "February",
       "contest_id": "feb",
@@ -1123,14 +1099,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1012",
       "local_file": null,
       "tags": [
-        "string",
-        "brute_force"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "February",
       "contest_id": "feb",
@@ -1141,14 +1116,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1013",
       "local_file": null,
       "tags": [
-        "simulation",
-        "sorting"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "US Open",
       "contest_id": "open",
@@ -1159,14 +1133,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1035",
       "local_file": null,
       "tags": [
-        "greedy",
-        "sorting"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "US Open",
       "contest_id": "open",
@@ -1177,14 +1150,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1036",
       "local_file": null,
       "tags": [
-        "greedy",
-        "interval"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2019,
+      "year": 2020,
       "year_season": "2019-20",
       "contest": "US Open",
       "contest_id": "open",
@@ -1195,8 +1167,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1037",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -1213,8 +1184,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1059",
       "local_file": null,
       "tags": [
-        "math",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -1231,8 +1201,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1060",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "two_pointers"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -1249,14 +1218,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1061",
       "local_file": null,
       "tags": [
-        "geometry",
         "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "January",
       "contest_id": "jan",
@@ -1267,14 +1235,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1083",
       "local_file": null,
       "tags": [
-        "string",
-        "greedy"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "January",
       "contest_id": "jan",
@@ -1285,14 +1252,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1084",
       "local_file": null,
       "tags": [
-        "math",
-        "combinatorics"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "January",
       "contest_id": "jan",
@@ -1303,14 +1269,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1085",
       "local_file": null,
       "tags": [
-        "brute_force",
         "sorting"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "February",
       "contest_id": "feb",
@@ -1321,14 +1286,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1107",
       "local_file": null,
       "tags": [
-        "string",
-        "math"
+        "simulation",
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "February",
       "contest_id": "feb",
@@ -1340,13 +1305,13 @@
       "local_file": null,
       "tags": [
         "simulation",
-        "math"
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "February",
       "contest_id": "feb",
@@ -1357,14 +1322,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1109",
       "local_file": null,
       "tags": [
-        "geometry",
-        "math"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "US Open",
       "contest_id": "open",
@@ -1375,14 +1339,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1131",
       "local_file": null,
       "tags": [
-        "sorting",
-        "math"
+        "sorting"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "US Open",
       "contest_id": "open",
@@ -1393,14 +1356,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1132",
       "local_file": null,
       "tags": [
-        "sorting",
-        "math"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2020,
+      "year": 2021,
       "year_season": "2020-21",
       "contest": "US Open",
       "contest_id": "open",
@@ -1411,8 +1373,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1133",
       "local_file": null,
       "tags": [
-        "sorting",
-        "math"
+        "greedy",
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
@@ -1429,8 +1391,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1155",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -1447,7 +1408,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1156",
       "local_file": null,
       "tags": [
-        "sorting",
         "greedy"
       ],
       "difficulty": null,
@@ -1465,14 +1425,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1157",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "January",
       "contest_id": "jan",
@@ -1483,14 +1442,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1179",
       "local_file": null,
       "tags": [
-        "string",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "January",
       "contest_id": "jan",
@@ -1501,14 +1459,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1180",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "game"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "January",
       "contest_id": "jan",
@@ -1519,13 +1476,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1181",
       "local_file": null,
       "tags": [
-        "brute_force"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "February",
       "contest_id": "feb",
@@ -1536,14 +1493,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1203",
       "local_file": null,
       "tags": [
-        "simulation",
-        "math"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "February",
       "contest_id": "feb",
@@ -1554,14 +1510,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1204",
       "local_file": null,
       "tags": [
-        "math",
-        "sorting"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "February",
       "contest_id": "feb",
@@ -1572,14 +1527,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1205",
       "local_file": null,
       "tags": [
-        "2d_grid",
         "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "US Open",
       "contest_id": "open",
@@ -1590,14 +1544,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1227",
       "local_file": null,
       "tags": [
-        "math",
-        "combinatorics"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "US Open",
       "contest_id": "open",
@@ -1608,14 +1561,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1228",
       "local_file": null,
       "tags": [
-        "sorting",
         "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2021,
+      "year": 2022,
       "year_season": "2021-22",
       "contest": "US Open",
       "contest_id": "open",
@@ -1626,7 +1578,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1229",
       "local_file": null,
       "tags": [
-        "brute_force",
         "simulation"
       ],
       "difficulty": null,
@@ -1644,7 +1595,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1251",
       "local_file": null,
       "tags": [
-        "math",
         "sorting"
       ],
       "difficulty": null,
@@ -1662,8 +1612,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1252",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "string"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -1686,7 +1635,7 @@
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "January",
       "contest_id": "jan",
@@ -1697,14 +1646,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1275",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "sorting"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "January",
       "contest_id": "jan",
@@ -1715,14 +1663,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1276",
       "local_file": null,
       "tags": [
-        "sorting",
-        "greedy"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "January",
       "contest_id": "jan",
@@ -1733,14 +1680,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1277",
       "local_file": null,
       "tags": [
-        "math",
-        "string"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "February",
       "contest_id": "feb",
@@ -1751,14 +1697,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1299",
       "local_file": null,
       "tags": [
-        "simulation",
-        "prefix_sum"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "February",
       "contest_id": "feb",
@@ -1769,14 +1714,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1300",
       "local_file": null,
       "tags": [
-        "2d_grid",
         "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "February",
       "contest_id": "feb",
@@ -1787,14 +1731,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1301",
       "local_file": null,
       "tags": [
-        "math",
-        "two_pointers"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "US Open",
       "contest_id": "open",
@@ -1805,14 +1748,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1323",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "US Open",
       "contest_id": "open",
@@ -1823,14 +1765,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1324",
       "local_file": null,
       "tags": [
-        "string",
         "brute_force"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2022,
+      "year": 2023,
       "year_season": "2022-23",
       "contest": "US Open",
       "contest_id": "open",
@@ -1841,8 +1782,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1325",
       "local_file": null,
       "tags": [
-        "2d_grid",
-        "simulation"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -1859,7 +1799,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1365",
       "local_file": null,
       "tags": [
-        "brute_force",
         "simulation"
       ],
       "difficulty": null,
@@ -1877,8 +1816,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1366",
       "local_file": null,
       "tags": [
-        "simulation",
-        "greedy"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -1895,14 +1833,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1367",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "2d_grid"
+        "sorting"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "January",
       "contest_id": "jan",
@@ -1913,14 +1850,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1371",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "sorting"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "January",
       "contest_id": "jan",
@@ -1931,14 +1867,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1372",
       "local_file": null,
       "tags": [
-        "math",
-        "geometry"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "January",
       "contest_id": "jan",
@@ -1949,14 +1884,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1373",
       "local_file": null,
       "tags": [
-        "prefix_sum",
-        "greedy"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "February",
       "contest_id": "feb",
@@ -1967,14 +1901,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1395",
       "local_file": null,
       "tags": [
-        "string",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "February",
       "contest_id": "feb",
@@ -1985,14 +1918,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1396",
       "local_file": null,
       "tags": [
-        "simulation",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "February",
       "contest_id": "feb",
@@ -2003,14 +1935,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1397",
       "local_file": null,
       "tags": [
-        "sorting",
-        "greedy"
+        "sorting"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "US Open",
       "contest_id": "open",
@@ -2021,14 +1952,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1419",
       "local_file": null,
       "tags": [
-        "string",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "US Open",
       "contest_id": "open",
@@ -2039,14 +1969,13 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1420",
       "local_file": null,
       "tags": [
-        "simulation",
-        "geometry"
+        "simulation"
       ],
       "difficulty": null,
       "notes": null
     },
     {
-      "year": 2023,
+      "year": 2024,
       "year_season": "2023-24",
       "contest": "US Open",
       "contest_id": "open",
@@ -2057,7 +1986,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1421",
       "local_file": null,
       "tags": [
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -2074,8 +2003,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1443",
       "local_file": null,
       "tags": [
-        "math",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -2092,8 +2020,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1444",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "2d_grid"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -2110,8 +2037,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1445",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "string"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -2128,8 +2054,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1467",
       "local_file": null,
       "tags": [
-        "greedy",
-        "simulation"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
@@ -2146,8 +2071,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1468",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "string"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -2164,8 +2088,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1469",
       "local_file": null,
       "tags": [
-        "sorting",
-        "math"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -2182,8 +2105,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1491",
       "local_file": null,
       "tags": [
-        "2d_grid",
-        "geometry"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -2200,8 +2122,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1492",
       "local_file": null,
       "tags": [
-        "math",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -2218,8 +2139,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1493",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "simulation"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -2236,8 +2156,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1515",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "game"
+        "brute_force"
       ],
       "difficulty": null,
       "notes": null
@@ -2254,7 +2173,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1516",
       "local_file": null,
       "tags": [
-        "math",
         "greedy"
       ],
       "difficulty": null,
@@ -2272,7 +2190,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1517",
       "local_file": null,
       "tags": [
-        "two_pointers",
         "brute_force"
       ],
       "difficulty": null,
@@ -2280,7 +2197,7 @@
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "First",
       "contest_id": "first",
       "problem_num": 1,
@@ -2290,15 +2207,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1539",
       "local_file": null,
       "tags": [
-        "math",
-        "greedy"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "First",
       "contest_id": "first",
       "problem_num": 2,
@@ -2308,15 +2224,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1540",
       "local_file": null,
       "tags": [
-        "brute_force",
-        "string"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "First",
       "contest_id": "first",
       "problem_num": 3,
@@ -2326,15 +2241,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1541",
       "local_file": null,
       "tags": [
-        "math",
-        "combinatorics"
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "Second",
       "contest_id": "second",
       "problem_num": 1,
@@ -2344,15 +2258,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1563",
       "local_file": null,
       "tags": [
-        "simulation",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "Second",
       "contest_id": "second",
       "problem_num": 2,
@@ -2362,7 +2275,6 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1564",
       "local_file": null,
       "tags": [
-        "simulation",
         "brute_force"
       ],
       "difficulty": null,
@@ -2370,7 +2282,7 @@
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "Second",
       "contest_id": "second",
       "problem_num": 3,
@@ -2380,15 +2292,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1565",
       "local_file": null,
       "tags": [
-        "simulation",
-        "brute_force"
+        "greedy"
       ],
       "difficulty": null,
       "notes": null
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "Third",
       "contest_id": "third",
       "problem_num": 1,
@@ -2398,15 +2309,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1587",
       "local_file": null,
       "tags": [
-        "simulation",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "Third",
       "contest_id": "third",
       "problem_num": 2,
@@ -2416,15 +2326,14 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1588",
       "local_file": null,
       "tags": [
-        "simulation",
-        "brute_force"
+        "math"
       ],
       "difficulty": null,
       "notes": null
     },
     {
       "year": 2026,
-      "year_season": "2026",
+      "year_season": "2025-26",
       "contest": "Third",
       "contest_id": "third",
       "problem_num": 3,
@@ -2434,8 +2343,7 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1589",
       "local_file": null,
       "tags": [
-        "simulation",
-        "brute_force"
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
