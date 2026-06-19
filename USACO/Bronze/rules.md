@@ -3,9 +3,9 @@
 ## 工作流程
 
 ### 1. 获取题目信息
-- **必须**从 Python 文件开头的 URL 读取 USACO 官网链接
-- **必须**访问该链接获取题目原文描述
-- **必须**从官网获取正确的输入输出格式、数据范围、示例
+- **必须**从 USACO 官网获取题目原文描述、输入输出格式、数据范围、示例
+- **必须**在文件顶部 docstring 中包含题目链接（如 `http://www.usaco.org/index.php?page=viewproblem2&cpid=XXX`）
+- **必须**在 docstring 中标注 Tags 标签（如 Ad Hoc, Geometry, 2D Grid 等）
 
 ### 2. 理解题目和算法
 - 仔细阅读官网的题目描述
@@ -17,53 +17,98 @@
 - Example 必须与官网完全一致
 - 数据范围必须与官网完全一致
 
+### 4. 同步 Dashboard 数据库
+完成代码注释后，**必须**检查并更新同路径下的 `dashboard/data/usaco_bronze_db.json`：
+- 检查该题目的 `tags` 标签是否需要**新增**或**修改**（例如：根据算法特点补充 `geometry`、`ad_hoc`、`2d_grid` 等标签）
+- 检查 `local_file` 字段是否需要更新为实际的 `.py` 文件路径
+- 如有其他元数据需要同步（如 `difficulty`、`notes`），也应一并处理
+- 确保 `.py` 文件头部的 Tags 与数据库中的 tags 保持一致
+
+## 文件结构模板
+
+每个题目的 `.py` 文件应包含以下三个部分：
+
+```python
+"""
+USACO [年份] [比赛] Contest, Bronze - Problem [编号]. [题目名称]
+===================================================================
+Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=XXX
+
+Tags: [标签1], [标签2], ...
+
+Problem Description:
+-------------------
+[题目核心描述，包括输入输出格式、数据范围]
+
+Sample Input:              Sample Output:
+[官网示例输入]              [官网示例输出]
+
+Explanation:
+[样例解释，如有必要]
+
+====================================================================
+Solution 1: [用户解法的简要标题]
+====================================================================
+[描述用户解法的核心思路和步骤]
+
+Time Complexity: O(...)
+"""
+
+import sys
+sys.stdin = open('xxx.in', 'r')
+sys.stdout = open('xxx.out', 'w')
+
+# [用户代码，每段加上中文/英文注释]
+
+# =====================================================================
+# Solution 2: Official USACO Solution (by [作者]) — Python Translation
+# =====================================================================
+# [官方解法的思路描述]
+#
+# Time Complexity: O(...)
+
+# [官方代码的 Python 翻译版本，整体注释掉]
+# import sys
+# sys.stdin = open('xxx.in', 'r')
+# sys.stdout = open('xxx.out', 'w')
+# ...
+```
+
+## 各部分详细要求
+
+### Part 1: 题目解析（文件顶部 docstring）
+- 题目名称、编号、比赛信息
+- **题目链接**（USACO 官网 cpid）
+- **Tags 标签**（英文，如 Ad Hoc, Geometry, Simulation, Brute Force, 2D Grid 等）
+- 题目描述、输入输出格式、数据范围
+- 官网 Sample Input/Output（必须与官网完全一致）
+- 如有必要，附带样例解释
+
+### Part 2: 用户解法（Solution 1）
+- **必须**给出算法名称或简短标题
+- **必须**描述核心思路和关键步骤
+- **必须**标注时间复杂度
+- **必须**给代码中的关键部分加上注释
+- 这是**激活状态**的代码（非注释），可直接运行
+
+### Part 3: 官方解法（Solution 2）
+- 从 USACO 官网获取官方题解
+- **如果官方已有 Python 代码**：直接复制，加上注释
+- **如果官方是 C++/Java**：翻译成等价的 Python 代码，加上注释
+- 官方解法的代码整体**注释掉**（每行前加 `#`），只作为参考
+- **必须**描述官方解法的思路和与用户解法的差异
+
 ## 禁止事项
 
 - ❌ 不得自行编造数据范围
 - ❌ 不得自行编造示例输入输出
 - ❌ 不得在示例中出现中文（除非题目本身是中文）
 - ❌ 不得在未访问官网的情况下写解析
+- ❌ 不得遗漏题目链接
 
-## 注释模板
+## 参考示例
 
-```python
-# =============================================================================
-# USACO [年份] [比赛] Contest, Bronze
-# Problem [编号]. [题目名称]
-# https://usaco.org/index.php?page=viewproblem2&cpid=XXX
-# =============================================================================
-
-"""
-【Problem Description】
-- 从官网复制或概括题目核心要求
-
-【Input】
-- 从官网获取的输入格式
-
-【Output】
-- 从官网获取的输出格式
-
-【Example】
-Input:
-[官网示例]
-Output:
-[官网输出]
-
-【Solution】
-- 说明算法的核心思路
-- 说明时间/空间复杂度
-"""
-```
-
-## 示例
-
-正确做法：
-1. 读取 `bovine_genomics.py` 头部 URL: `https://usaco.org/index.php?page=viewproblem2&cpid=736`
-2. 访问该 URL 获取题目信息
-3. 确认 N, M ≤ 100（而非自行臆测的 500）
-4. 使用官网的 SAMPLE INPUT/OUTPUT
-
-错误做法：
-1. 直接假设 N ≤ 500
-2. 编造一个错误的 Example
-3. 不访问官网自行编写解析
+参见以下已完成的文件：
+- `2017/December/blocked_billboard.py` — 包含用户像素标记法 + 官方矩形求交法
+- `2017/us_open/modern_art.py` — 包含依赖图计数法 + 排列暴力法 + 官方解法
+- `2016/us_open/bull_in_a_china_shop.py` — 包含 DFS 位移法 + 官方暴力枚举法

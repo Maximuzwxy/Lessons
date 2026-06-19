@@ -347,7 +347,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=663",
       "local_file": null,
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "geometry"
       ],
       "difficulty": null,
       "notes": null
@@ -542,7 +543,8 @@
       "local_file": null,
       "tags": [
         "brute_force",
-        "2d_grid"
+        "2d_grid",
+        "ad_hoc"
       ],
       "difficulty": null,
       "notes": null
@@ -559,7 +561,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=759",
       "local_file": null,
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "geometry"
       ],
       "difficulty": null,
       "notes": null
@@ -610,7 +613,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=783",
       "local_file": null,
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "geometry"
       ],
       "difficulty": null,
       "notes": null
@@ -923,7 +927,7 @@
       "slug": "bucket_brigade",
       "cpid": 939,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=939",
-      "local_file": null,
+      "local_file": "2019/us_open/bucket_bridge.py",
       "tags": [
         "ad_hoc",
         "2d_grid"
