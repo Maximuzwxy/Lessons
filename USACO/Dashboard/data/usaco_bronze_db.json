@@ -190,7 +190,7 @@
       "slug": "promotion_counting",
       "cpid": 591,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=591",
-      "local_file": null,
+      "local_file": "2016/January/promotion_counting.py",
       "tags": [
         "ad_hoc"
       ],
@@ -261,7 +261,7 @@
       "slug": "circular_barn",
       "cpid": 616,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=616",
-      "local_file": null,
+      "local_file": "2016/February/circular_barn.py",
       "tags": [
         "brute_force",
         "simulation"
@@ -279,9 +279,10 @@
       "slug": "load_balancing",
       "cpid": 617,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=617",
-      "local_file": null,
+      "local_file": "2016/February/load_balancing.py",
       "tags": [
-        "brute_force"
+        "brute_force",
+        "2d_grid"
       ],
       "difficulty": null,
       "notes": null
@@ -331,9 +332,11 @@
       "slug": "field_reduction",
       "cpid": 641,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=641",
-      "local_file": null,
+      "local_file": "2016/us_open/field_reduction.py",
       "tags": [
-        "brute_force"
+        "brute_force",
+        "ad_hoc",
+        "geometry"
       ],
       "difficulty": null,
       "notes": null
