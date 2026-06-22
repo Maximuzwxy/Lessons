@@ -369,9 +369,9 @@
       "slug": "block_game",
       "cpid": 664,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=664",
-      "local_file": null,
+      "local_file": "2016/December/block_game.py",
       "tags": [
-        "simulation",
+        "ad_hoc",
         "string"
       ],
       "difficulty": null,
