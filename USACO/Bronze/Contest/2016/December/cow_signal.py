@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=665
 
 Tags: Simulation, 2D Grid
 
+Difficulty: easy
+
 Problem Description:
 -------------------
 Bessie has drawn a signal on an M × N grid using '.' and 'X' characters. She
@@ -84,8 +86,6 @@ for i in amplify:
 #     curr_row = input().strip()
 #     # Repeat this row K times vertically
 #     for _ in range(k):
-#         # Expand each character K times horizontally and print
-#         for ch in curr_row:
-#             for _ in range(k):
-#                 sys.stdout.write(ch)
-#         sys.stdout.write('\n')
+#         # Expand each character K times horizontally, print the row
+#         expanded = ''.join(ch * k for ch in curr_row)
+#         print(expanded)

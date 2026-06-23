@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=663
 
 Tags: Geometry, Ad Hoc
 
+Difficulty: easy
+
 Problem Description:
 -------------------
 Two axis-aligned rectangular pastures (non-overlapping, non-touching) need to

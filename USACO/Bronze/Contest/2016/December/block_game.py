@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=664
 
 Tags: Ad Hoc, String Processing, Brute Force
 
+Difficulty: normal
+
 Problem Description:
 -------------------
 N boards (1 ≤ N ≤ 100), each with two words (one per side, each ≤ 10 lowercase

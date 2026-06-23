@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=592
 
 Tags: Simulation, Brute Force
 
+Difficulty: normal
+
 Problem Description:
 -------------------
 N hay bales are placed at distinct integer positions on a number line. When a

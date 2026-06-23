@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=568
 
 Tags: Simulation
 
+Difficulty: easy
+
 Problem Description:
 -------------------
 The road is exactly 100 miles long, divided into N segments. Each segment has

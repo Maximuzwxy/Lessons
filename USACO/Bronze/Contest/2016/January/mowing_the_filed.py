@@ -2,6 +2,8 @@
 USACO 2016 January Contest, Bronze - Problem 3: Mowing the Field
 https://usaco.org/index.php?page=viewproblem2&cpid=593
 
+Difficulty: normal
+
 Problem Description:
   FJ mows grass on a large 2D grid. He starts at t=0. Each statement "D S"
   means he takes S steps in direction D (N/E/S/W), one step per unit of time.

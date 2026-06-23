@@ -2,6 +2,7 @@
 # USACO 2016 US Open Contest, Bronze
 # Problem 1. Diamond Collector
 # https://usaco.org/index.php?page=viewproblem2&cpid=639
+# Difficulty: easy
 # =============================================================================
 
 # [Problem Summary]

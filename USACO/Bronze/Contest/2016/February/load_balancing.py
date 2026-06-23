@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=617
 
 Tags: Brute Force, 2D Grid
 
+Difficulty: normal
+
 Problem Description:
 -------------------
 N cows are at distinct positions (x_i, y_i) on a 2D farm (N ≤ 100, x_i and

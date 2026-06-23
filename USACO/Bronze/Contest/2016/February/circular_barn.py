@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=616
 
 Tags: Brute Force, Simulation
 
+Difficulty: easy
+
 Problem Description:
 -------------------
 A circular barn has n rooms (3 ≤ n ≤ 1,000) arranged clockwise. Each room i

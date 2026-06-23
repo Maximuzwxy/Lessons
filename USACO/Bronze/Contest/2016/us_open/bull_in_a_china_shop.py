@@ -3,6 +3,8 @@ USACO 2016 US Open Contest, Bronze - Problem 2: Bull in a China Shop
 ====================================================================
 Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=640
 
+Difficulty: normal
+
 Problem Description:
 -------------------
 Farmer John buys a glass cow figurine represented by an N x N grid (3 <= N <= 8),

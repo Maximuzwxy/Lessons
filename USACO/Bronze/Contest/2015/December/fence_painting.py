@@ -2,6 +2,8 @@
 USACO 2015 December Contest, Bronze - Problem 1: Fence Painting
 https://usaco.org/index.php?page=viewproblem2&cpid=567
 
+Difficulty: easy
+
 Problem Description:
   Farmer John and Bessie each paint a segment of a fence.
   The fence is a 1D number line: John paints [a, b), Bessie paints [c, d).

@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=641
 
 Tags: Brute Force, Ad Hoc, Geometry
 
+Difficulty: normal
+
 Problem Description:
 -------------------
 N cows (3 ≤ N ≤ 50,000) are at distinct positions in a 2D field. FJ wants to

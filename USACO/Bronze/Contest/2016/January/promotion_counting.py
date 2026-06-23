@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=591
 
 Tags: Ad Hoc, Mathematics
 
+Difficulty: easy
+
 Problem Description:
 -------------------
 USACO has four divisions: bronze, silver, gold, platinum. All new participants

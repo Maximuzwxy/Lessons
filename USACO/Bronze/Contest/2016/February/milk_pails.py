@@ -2,6 +2,7 @@
 # USACO 2016 February Contest, Bronze
 # Problem 1. Milk Pails
 # https://usaco.org/index.php?page=viewproblem2&cpid=615
+# Difficulty: easy
 # =============================================================================
 
 # [Problem Summary]

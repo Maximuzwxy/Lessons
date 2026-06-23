@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=569
 
 Tags: Brute Force, Simulation, Set Operations
 
+Difficulty: normal
+
 Problem Description:
 -------------------
 N people (1 ≤ N ≤ 50) attend a milk-tasting party with M types of milk
