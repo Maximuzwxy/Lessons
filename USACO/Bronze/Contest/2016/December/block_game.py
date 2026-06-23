@@ -3,7 +3,7 @@ USACO 2016 December Contest, Bronze - Problem 2: Block Game
 ==============================================================
 Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=664
 
-Tags: Ad Hoc, String Processing
+Tags: Ad Hoc, String Processing, Brute Force
 
 Problem Description:
 -------------------
@@ -38,22 +38,62 @@ This times out because it explores 2^N cases (N ≤ 100 → up to 2^100 ≈ 10^3
 
 Time Complexity: O(2^N × total_letters), Space Complexity: O(2^N) recursion depth.
 This approach does NOT pass.
-
-====================================================================
-Solution 2: Per-Board Max Direct Accumulation (User's Solution)
-====================================================================
-Key insight: each board contributes independently. For a given letter, the
-worst-case number of times it appears is the max of its count in word A vs
-word B on that board. Accumulate directly into the answer.
-
-  1. For each board's two words, count letter frequencies separately.
-  2. For each letter, take max(count_in_A, count_in_B) and add directly to
-     the running total.
-
-This avoids enumerating all 2^N combinations.
-
-Time Complexity: O(N), Space Complexity: O(1) beyond input.
 """
+
+# Solution 1 — commented out (timeout)
+# import sys
+# sys.stdin = open('blocks.in', 'r')
+# sys.stdout = open('blocks.out', 'w')
+#
+# final = [0] * 26
+# board = []
+#
+# n = int(input())
+# for i in range(n):
+#     board.append(input().split())
+#
+# def refresh(ss):
+#     tmp = [0] * 26
+#     for c in ss:
+#         index = ord(c) - ord('a')
+#         tmp[index] += 1
+#     for x in range(26):
+#         final[x] = max(final[x], tmp[x])
+#
+# def get_list(l, d):
+#     if d == 0:
+#         s = ''
+#         for q in range(n):
+#             s += board[q][l[q]]
+#         refresh(s)
+#         l.pop()
+#         return
+#     for j in range(2):
+#         l.append(j)
+#         get_list(l, d - 1)
+#     if l:
+#         l.pop()
+#
+# get_list([], n)
+#
+# for _ in final:
+#     print(_)
+
+
+# =====================================================================
+# Solution 2: Per-Board Max Direct Accumulation (User's Solution)
+# =====================================================================
+# Key insight: each board contributes independently. For a given letter, the
+# worst-case number of times it appears is the max of its count in word A vs
+# word B on that board. Accumulate directly into the answer.
+#
+#   1. For each board's two words, count letter frequencies separately.
+#   2. For each letter, take max(count_in_A, count_in_B) and add directly to
+#      the running total.
+#
+# This avoids enumerating all 2^N combinations.
+#
+# Time Complexity: O(N), Space Complexity: O(1) beyond input.
 
 import sys
 

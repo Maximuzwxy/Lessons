@@ -142,7 +142,7 @@
         "geometry",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -159,7 +159,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -177,7 +177,7 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -194,7 +194,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -213,7 +213,7 @@
         "simulation",
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -231,7 +231,7 @@
         "simulation",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -248,7 +248,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -266,7 +266,7 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -284,7 +284,7 @@
         "brute_force",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -301,7 +301,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -319,7 +319,7 @@
         "brute_force",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -338,7 +338,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -356,7 +356,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -372,10 +372,11 @@
       "local_file": "2016/December/block_game.py",
       "tags": [
         "ad_hoc",
-        "string"
+        "string",
+        "brute_force"
       ],
-      "difficulty": null,
-      "notes": null
+      "difficulty": "normal",
+      "notes": "初看容易想到完全搜索（DFS 枚举所有 2^N 种组合），但 N≤100 时必然超时，不过仍可拿约 40% 分数。当没有思路时完全搜索是保底策略；本题的 Ad Hoc 解法（每块板独立取 max 再累加）非常巧妙。"
     },
     {
       "year": 2016,
@@ -392,7 +393,7 @@
         "simulation",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -405,13 +406,13 @@
       "slug": "dont_be_last",
       "cpid": 687,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=687",
-      "local_file": null,
+      "local_file": "2017/January/dont_be_last.py",
       "tags": [
         "simulation",
         "sorting"
       ],
-      "difficulty": null,
-      "notes": null
+      "difficulty": "easy",
+      "notes": "用到了字典和集合，使用 Python 的 Counter 做频率统计，简洁易用。"
     },
     {
       "year": 2017,
@@ -428,7 +429,7 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -446,7 +447,7 @@
         "greedy",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -463,7 +464,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -480,7 +481,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -498,7 +499,7 @@
         "simulation",
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -515,7 +516,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -533,7 +534,7 @@
         "brute_force",
         "string"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -552,7 +553,7 @@
         "2d_grid",
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -570,7 +571,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -587,7 +588,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -604,7 +605,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -622,7 +623,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -640,7 +641,7 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -658,7 +659,7 @@
         "greedy",
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -675,7 +676,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -694,7 +695,7 @@
         "graph",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -713,7 +714,7 @@
         "greedy",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -732,7 +733,7 @@
         "game",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -750,7 +751,7 @@
         "brute_force",
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -768,7 +769,7 @@
         "ad_hoc",
         "graph"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -785,7 +786,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -802,7 +803,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -821,7 +822,7 @@
         "dfs",
         "recursion"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -839,7 +840,7 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -856,7 +857,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -873,7 +874,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -890,7 +891,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -908,7 +909,7 @@
         "graph",
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -926,7 +927,7 @@
         "ad_hoc",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -944,7 +945,7 @@
         "ad_hoc",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -962,7 +963,7 @@
         "graph",
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -981,7 +982,7 @@
         "brute_force",
         "graph"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -998,7 +999,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1016,7 +1017,7 @@
         "brute_force",
         "string"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1035,7 +1036,7 @@
         "graph",
         "recursion"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1052,7 +1053,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1069,7 +1070,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1087,7 +1088,7 @@
         "greedy",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1104,7 +1105,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1121,7 +1122,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1139,7 +1140,7 @@
         "graph",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1156,7 +1157,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1173,7 +1174,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1190,7 +1191,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1207,7 +1208,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1224,7 +1225,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1241,7 +1242,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1258,7 +1259,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1276,7 +1277,7 @@
         "ad_hoc",
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1293,7 +1294,7 @@
       "tags": [
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1311,7 +1312,7 @@
         "simulation",
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1329,7 +1330,7 @@
         "simulation",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1346,7 +1347,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1363,7 +1364,7 @@
       "tags": [
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1380,7 +1381,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1398,7 +1399,7 @@
         "greedy",
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1415,7 +1416,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1432,7 +1433,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1449,7 +1450,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1466,7 +1467,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1483,7 +1484,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1500,7 +1501,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1517,7 +1518,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1535,7 +1536,7 @@
         "ad_hoc",
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1552,7 +1553,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1569,7 +1570,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1586,7 +1587,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1603,7 +1604,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1620,7 +1621,7 @@
       "tags": [
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1637,7 +1638,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1654,7 +1655,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1672,7 +1673,7 @@
         "ad_hoc",
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1690,7 +1691,7 @@
         "brute_force",
         "recursion"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1707,7 +1708,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1724,7 +1725,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1741,7 +1742,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1758,7 +1759,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1776,7 +1777,7 @@
         "ad_hoc",
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1793,7 +1794,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1810,7 +1811,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1827,7 +1828,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1844,7 +1845,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1861,7 +1862,7 @@
       "tags": [
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1878,7 +1879,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1895,7 +1896,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1912,7 +1913,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1929,7 +1930,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1946,7 +1947,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1963,7 +1964,7 @@
       "tags": [
         "sorting"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1980,7 +1981,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -1997,7 +1998,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2014,7 +2015,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2031,7 +2032,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2048,7 +2049,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2065,7 +2066,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2082,7 +2083,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2099,7 +2100,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2116,7 +2117,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2134,7 +2135,7 @@
         "ad_hoc",
         "simulation"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2151,7 +2152,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2169,7 +2170,7 @@
         "ad_hoc",
         "recursion"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2187,7 +2188,7 @@
         "ad_hoc",
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2204,7 +2205,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2221,7 +2222,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2238,7 +2239,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2255,7 +2256,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2272,7 +2273,7 @@
       "tags": [
         "2d_grid"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2289,7 +2290,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2306,7 +2307,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2323,7 +2324,7 @@
       "tags": [
         "greedy"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2340,7 +2341,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2357,7 +2358,7 @@
       "tags": [
         "math"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     },
     {
@@ -2374,7 +2375,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": null,
+      "difficulty": "NA",
       "notes": null
     }
   ]
