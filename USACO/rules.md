@@ -25,6 +25,28 @@
 - 如有其他元数据需要同步（如 `difficulty`、`notes`），也应一并处理
 - 确保 `.py` 文件头部的 Tags 与数据库中的 tags 保持一致
 
+**重要：编辑 JSON 数据库时的注意事项**
+
+由于 JSON 文件中有多个题目，同一年份、同一月份的不同题目往往有相同的 `year`、`contest`、`difficulty` 等字段，`SearchReplace` 只会替换**第一个**匹配的片段。为避免编辑到错误的题目：
+
+- `old_str` **必须包含 `"name"` 或 `"slug"` 字段**，这是唯一能区分同一月份不同题目的标识
+- `old_str` 应至少覆盖从 `"name"` 到目标修改字段（如 `notes`）的范围，确保匹配到正确的题目
+- 编辑前先用 `Grep` 带 `-C` 上下文查看目标题目在 JSON 中的确切位置
+
+反例（可能匹配到其他题目）：
+```json
+      "difficulty": "easy",
+      "notes": null
+```
+正例（带 `"name"` 唯一标识）：
+```json
+      "name": "Circular Barn",
+      "slug": "circular_barn",
+      ...
+      "difficulty": "easy",
+      "notes": null
+```
+
 ### 5. Notes 字段处理
 - 用户提供的 notes 可能比较口语化，**可以**在不改变原意的前提下进行润色和修饰
 - 润色原则：

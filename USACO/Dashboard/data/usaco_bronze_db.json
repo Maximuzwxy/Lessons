@@ -214,7 +214,7 @@
         "sorting"
       ],
       "difficulty": "normal",
-      "notes": null
+      "notes": "典型的完全搜索问题，遍历所有可能的起点找出最优解。完全搜索本身不难，如何做条件判断来模拟爆炸的连锁过程才是这道题最复杂的点——需要结合模拟，每轮爆炸半径递增，逐步向左右扩散。"
     },
     {
       "year": 2016,
@@ -249,7 +249,7 @@
         "brute_force"
       ],
       "difficulty": "easy",
-      "notes": null
+      "notes": "一道很简单的题。思路就是完全搜索加不等式，或者用小学方程的思维。非常简单，可以作为完全搜索的入门例题。"
     },
     {
       "year": 2016,
@@ -267,7 +267,7 @@
         "simulation"
       ],
       "difficulty": "easy",
-      "notes": null
+      "notes": "切片旋转数组是一种偷懒做法，更优雅的解法是用取模 (unlock+offset)%n 处理环形数组的绕回，到末尾自动从头接上，无需额外空间。这道题的环形遍历有点类似约瑟夫环的思路。"
     },
     {
       "year": 2016,
@@ -282,10 +282,11 @@
       "local_file": "2016/February/load_balancing.py",
       "tags": [
         "brute_force",
-        "2d_grid"
+        "2d_grid",
+        "geometry"
       ],
       "difficulty": "normal",
-      "notes": null
+      "notes": "比较简单的题目。遍历所有可能的栅栏位置（每个牛的坐标+1），统计四个象限的牛数取最大值，再取所有尝试中的最小值即可。典型的完全搜索问题，带有一点二维网格和几何。"
     },
     {
       "year": 2016,

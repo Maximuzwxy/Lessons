@@ -3,7 +3,7 @@ USACO 2016 February Contest, Bronze - Problem 3: Load Balancing
 =================================================================
 Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=617
 
-Tags: Brute Force, 2D Grid
+Tags: Brute Force, 2D Grid, Geometry
 
 Difficulty: normal
 

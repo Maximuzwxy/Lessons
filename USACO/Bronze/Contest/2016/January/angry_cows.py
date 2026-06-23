@@ -54,7 +54,7 @@ directions:
 
 This mirrors the official USACO solution by Nick Wu.
 
-Time Complexity: O(N³) worst-case, but N ≤ 100, so fine.
+Time Complexity: O(N²)
 """
 
 import sys
