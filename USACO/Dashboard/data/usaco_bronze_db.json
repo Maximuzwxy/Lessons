@@ -142,7 +142,7 @@
         "geometry",
         "simulation"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
@@ -159,7 +159,7 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
@@ -177,7 +177,7 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": "NA",
+      "difficulty": "normal",
       "notes": null
     },
     {
@@ -194,7 +194,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
@@ -213,7 +213,7 @@
         "simulation",
         "sorting"
       ],
-      "difficulty": "NA",
+      "difficulty": "normal",
       "notes": null
     },
     {
@@ -231,7 +231,7 @@
         "simulation",
         "2d_grid"
       ],
-      "difficulty": "NA",
+      "difficulty": "normal",
       "notes": null
     },
     {
@@ -248,7 +248,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
@@ -266,7 +266,7 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
@@ -284,7 +284,7 @@
         "brute_force",
         "2d_grid"
       ],
-      "difficulty": "NA",
+      "difficulty": "normal",
       "notes": null
     },
     {
@@ -301,7 +301,7 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
@@ -319,7 +319,7 @@
         "brute_force",
         "2d_grid"
       ],
-      "difficulty": "NA",
+      "difficulty": "normal",
       "notes": null
     },
     {
@@ -338,7 +338,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": "NA",
+      "difficulty": "normal",
       "notes": null
     },
     {
@@ -356,7 +356,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
@@ -393,7 +393,7 @@
         "simulation",
         "2d_grid"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
