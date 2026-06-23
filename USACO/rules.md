@@ -6,7 +6,7 @@
 - **必须**从 USACO 官网获取题目原文描述、输入输出格式、数据范围、示例
 - **必须**在文件顶部 docstring 中包含题目链接（如 `http://www.usaco.org/index.php?page=viewproblem2&cpid=XXX`）
 - **必须**在 docstring 中标注 Tags 标签（如 Ad Hoc, Geometry, 2D Grid 等）
-- **必须**在 docstring 中标注 Difficulty（取值 easy / normal / hard，与数据库中一致）
+- **必须**在 docstring 中标注 Difficulty（取值 very_easy / easy / normal / hard / very_hard，与数据库中一致）
 
 ### 2. 理解题目和算法
 - 仔细阅读官网的题目描述
@@ -122,7 +122,7 @@ sys.stdout = open('xxx.out', 'w')
 - 题目名称、编号、比赛信息
 - **题目链接**（USACO 官网 cpid）
 - **Tags 标签**（英文，如 Ad Hoc, Geometry, Simulation, Brute Force, 2D Grid 等）
-- **Difficulty**（取值 easy / normal / hard，从数据库中同步）
+- **Difficulty**（取值 very_easy / easy / normal / hard / very_hard，从数据库中同步）
 - 题目描述、输入输出格式、数据范围
 - 官网 Sample Input/Output（必须与官网完全一致）
 - 如有必要，附带样例解释

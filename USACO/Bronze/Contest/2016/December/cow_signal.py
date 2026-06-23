@@ -5,7 +5,7 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=665
 
 Tags: Simulation, 2D Grid
 
-Difficulty: easy
+Difficulty: very_easy
 
 Problem Description:
 -------------------

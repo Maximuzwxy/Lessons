@@ -240,9 +240,11 @@
             margin-left: 8px;
             font-weight: 600;
         }
-        .difficulty-badge.easy { background: #e8f5e9; color: #2e7d32; }
+        .difficulty-badge.very_easy { background: #e8f5e9; color: #2e7d32; }
+        .difficulty-badge.easy { background: #e3f2fd; color: #1565c0; }
         .difficulty-badge.normal { background: #fff3e0; color: #e65100; }
-        .difficulty-badge.difficult { background: #fce4ec; color: #c62828; }
+        .difficulty-badge.hard { background: #fce4ec; color: #c62828; }
+        .difficulty-badge.very_hard { background: #ffebee; color: #b71c1c; }
         .difficulty-badge.na { background: #f5f5f5; color: #999; }
 
         .problem-notes {
@@ -339,9 +341,11 @@
                     <label>难度</label>
                     <select id="difficultyFilter">
                         <option value="">全部难度</option>
+                        <option value="very_easy">Very Easy</option>
                         <option value="easy">Easy</option>
                         <option value="normal">Normal</option>
-                        <option value="difficult">Difficult</option>
+                        <option value="hard">Hard</option>
+                        <option value="very_hard">Very Hard</option>
                         <option value="NA">NA</option>
                     </select>
                 </div>
@@ -545,7 +549,7 @@
 
             list.innerHTML = problems.map(p => {
                 const diff = p.difficulty || 'NA';
-                const diffLabel = { easy: 'Easy', normal: 'Normal', difficult: 'Difficult', NA: 'NA' }[diff] || diff;
+                const diffLabel = { very_easy: 'Very Easy', easy: 'Easy', normal: 'Normal', hard: 'Hard', very_hard: 'Very Hard', NA: 'NA' }[diff] || diff;
                 return `
                 <div class="problem-card">
                     <div class="problem-header">

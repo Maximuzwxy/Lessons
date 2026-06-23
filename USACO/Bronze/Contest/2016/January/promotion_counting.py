@@ -5,7 +5,7 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=591
 
 Tags: Ad Hoc, Mathematics
 
-Difficulty: easy
+Difficulty: very_easy
 
 Problem Description:
 -------------------

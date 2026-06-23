@@ -3,7 +3,9 @@ USACO 2016 US Open Contest, Bronze - Problem 2: Bull in a China Shop
 ====================================================================
 Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=640
 
-Difficulty: hard
+Tags: Recursion, 2D Grid
+
+Difficulty: very_hard
 
 Problem Description:
 -------------------

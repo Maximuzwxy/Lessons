@@ -26,6 +26,13 @@
         "name_zh": "美国公开赛"
       }
     ],
+    "difficulty_levels": [
+      {"id": "very_easy", "name": "Very Easy", "name_zh": "极简"},
+      {"id": "easy", "name": "Easy", "name_zh": "简单"},
+      {"id": "normal", "name": "Normal", "name_zh": "普通"},
+      {"id": "hard", "name": "Hard", "name_zh": "困难"},
+      {"id": "very_hard", "name": "Very Hard", "name_zh": "极难"}
+    ],
     "tags": [
       {
         "id": "simulation",
@@ -142,7 +149,7 @@
         "geometry",
         "simulation"
       ],
-      "difficulty": "easy",
+      "difficulty": "very_easy",
       "notes": "超级简单。用边界比较的数学方法可行，但用数组标记法更推荐——坐标范围才 100，直接画出来再数，完全不用考虑特殊情况和边界条件，快速且不可能出错。"
     },
     {
@@ -194,7 +201,7 @@
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": "easy",
+      "difficulty": "very_easy",
       "notes": "非常简单的一道题，其实就是数学题，算是临时特设（Ad Hoc）。"
     },
     {
@@ -302,8 +309,8 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": "easy",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "一道非常简单的完全搜索问题。"
     },
     {
       "year": 2016,
@@ -317,11 +324,11 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=640",
       "local_file": "2016/us_open/bull_in_a_china_shop.py",
       "tags": [
-        "brute_force",
+        "recursion",
         "2d_grid"
       ],
-      "difficulty": "hard",
-      "notes": null
+      "difficulty": "very_hard",
+      "notes": "这道题会用到递归，同时是二维网格问题，结合起来之后就会显得这道题很难。"
     },
     {
       "year": 2016,
@@ -339,7 +346,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": "normal",
+      "difficulty": "hard",
       "notes": null
     },
     {
@@ -357,7 +364,7 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": "easy",
+      "difficulty": "very_easy",
       "notes": "本题是一道简单的几何题。只需在纸上画几个坐标就能找到解法——用一个正方形把两个不相交的矩形囊括在内，取外包矩形长宽中较大的作为正方形边长即可。"
     },
     {
@@ -394,7 +401,7 @@
         "simulation",
         "2d_grid"
       ],
-      "difficulty": "easy",
+      "difficulty": "very_easy",
       "notes": "非常简单的一道题。运用了最基础的字符串操作和列表知识点，字符重复 K 倍水平扩展，行重复 K 次垂直扩展即可。"
     },
     {
