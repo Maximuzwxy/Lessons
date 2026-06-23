@@ -195,7 +195,7 @@
         "ad_hoc"
       ],
       "difficulty": "easy",
-      "notes": "非常简单的一道题。运用了最基础的字符串操作和列表知识点，字符重复 K 倍水平扩展，行重复 K 次垂直扩展即可。"
+      "notes": "非常简单的一道题，其实就是数学题，算是临时特设（Ad Hoc）。"
     },
     {
       "year": 2016,
@@ -232,7 +232,7 @@
         "2d_grid"
       ],
       "difficulty": "normal",
-      "notes": null
+      "notes": "用户的解法是贪食蛇算法，每步刷新所有已访问点的年龄，不是很高效但很容易理解。官方解法用时间戳记录每次访问的绝对时间，回访时直接减法即可，更高效。"
     },
     {
       "year": 2016,
@@ -320,7 +320,7 @@
         "brute_force",
         "2d_grid"
       ],
-      "difficulty": "normal",
+      "difficulty": "hard",
       "notes": null
     },
     {
