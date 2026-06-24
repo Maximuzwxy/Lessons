@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=759
 
 Tags: Geometry, 2D Grid, Rectangle Intersection
 
+Difficulty: very_easy
+
 Problem Description:
 -------------------
 Two rectangular billboards (Alex's and Greg's) are visible in Bessie's
@@ -85,10 +87,6 @@ for i in range(greg_y1, greg_y2):
 for i in range(truck_y1, truck_y2):
     for j in range(truck_x1, truck_x2):
         area[i][j] = 0
-
-# (Optional debug: print the grid to see the pixel layout)
-# for _ in area:
-#     print(_)
 
 # Step 5: Count all remaining visible pixels (cells still marked 1)
 cnt = 0

@@ -5,6 +5,8 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=687
 
 Tags: Simulation, Sorting
 
+Difficulty: very_easy
+
 Problem Description:
 -------------------
 FJ owns 7 cows: Bessie, Elsie, Daisy, Gertie, Annabelle, Maggie, Henrietta.

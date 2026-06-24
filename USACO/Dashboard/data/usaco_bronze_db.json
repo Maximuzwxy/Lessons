@@ -419,8 +419,8 @@
         "simulation",
         "sorting"
       ],
-      "difficulty": "easy",
-      "notes": "用到了字典和集合，使用 Python 的 Counter 做频率统计，简洁易用。"
+      "difficulty": "very_easy",
+      "notes": "典型的使用字典以及 Counter，代码看起来简洁程度要优于官方答案。"
     },
     {
       "year": 2017,
@@ -438,7 +438,7 @@
         "simulation"
       ],
       "difficulty": "very_easy",
-      "notes": "Enumerate all 3! = 6 permutations of gesture mappings, count first cow's wins under each, and take the maximum. Straightforward brute force."
+      "notes": "枚举 3! = 6 种手势映射的全排列，对每种映射统计第一头奶牛的获胜次数取最大值。非常直观的暴力枚举。"
     },
     {
       "year": 2017,
@@ -455,8 +455,8 @@
         "greedy",
         "2d_grid"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "normal",
+      "notes": "典型的贪心算法，但是融合了二维网格。"
     },
     {
       "year": 2017,
@@ -472,8 +472,8 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "追踪每头牛的上次位置。list 版本用 -1 做哨兵值，dict 版本用 in 判断首次出现。官方解法将 side 偏移 +1 使 0 表示未出现。均为 O(N)，核心思路一致。"
     },
     {
       "year": 2017,
@@ -487,10 +487,10 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=712",
       "local_file": "2017/February/cross_the_road2.py",
       "tags": [
-        "brute_force"
+        "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "normal",
+      "notes": "用函数进出栈的思想去模拟这个过程，官方解法也是同一个思路，但更简洁。"
     },
     {
       "year": 2017,
@@ -505,10 +505,11 @@
       "local_file": "2017/February/cross_the_road3.py",
       "tags": [
         "simulation",
-        "sorting"
+        "sorting",
+        "greedy"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "先排序再做，会比较简单。算法优于官方答案。"
     },
     {
       "year": 2017,
@@ -520,12 +521,13 @@
       "slug": "the_lost_cow",
       "cpid": 735,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=735",
-      "local_file": null,
+      "local_file": "2017/us_open/the_lost_cow.py",
       "tags": [
-        "simulation"
+        "simulation",
+        "math"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "纯运用模拟法加上数学的坐标轴计算。官方更数学一些，利用对称性。是一道典型的模拟法的题。"
     },
     {
       "year": 2017,
@@ -542,8 +544,8 @@
         "brute_force",
         "string"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "easy",
+      "notes": "这道题使用集合代码会非常的简洁，比官方代码易读性要强。"
     },
     {
       "year": 2017,
@@ -561,8 +563,8 @@
         "2d_grid",
         "ad_hoc"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "hard",
+      "notes": "Solution 1 通过遍历输入数据，巧妙地得出每种颜色有哪些其他颜色必须在它之前画。遍历字典，只要一个颜色前面没有被其他颜色画过，就可以加一。比官方答案的易读性要强。"
     },
     {
       "year": 2017,
@@ -579,8 +581,8 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "典型的几何加二维网格问题。我的做法是取巧的，直接利用画布来做。由于分值还好，复杂度并没有超时，但推荐使用官方的几何做法更优雅。"
     },
     {
       "year": 2017,

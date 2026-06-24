@@ -3,23 +3,24 @@ USACO 2017 US Open Contest, Bronze - Problem 3: Modern Art
 ===========================================================
 Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=737
 
-Tags: Ad Hoc, Dependency Graph, Bounding Box
-      — Pure brute-force permutation enumeration O(N!) is insufficient:
-        you must discover the "minimal bounding box + dependency" insight
-        to reduce the problem to counting colors with no dependencies.
+Tags: Ad Hoc, Brute Force, 2D Grid
+
+Difficulty: hard
 
 Problem Description:
 -------------------
-The great bovine artist Picowso has created a modern masterpiece. She
-painted an N x N canvas (1 <= N <= 10) using exactly one brush stroke per
-color. Each brush stroke is an axis-aligned rectangle painted in one of
-9 colors (digits 1-9). The canvas starts completely blank (color 0).
+The great bovine artist Picowso paints on an N x N canvas (1 ≤ N ≤ 10).
+She starts with a blank canvas (all 0s) and paints exactly 9 axis-aligned
+rectangles, one in each color 1..9. Each rectangle can be as small as a
+single cell or as large as the whole canvas. Later rectangles can cover
+earlier ones, so some colors may be partially or completely hidden.
 
-Because some rectangles may be painted on top of others, later rectangles
-can completely or partially cover earlier ones. Given the final appearance
-of the painting, determine how many colors could have been the first one
-painted (i.e., which colors could have been painted first in some valid
-ordering of the rectangles).
+Given the final painting, count how many colors still visible on the canvas
+could possibly have been painted FIRST in some valid painting order.
+
+Key insight: A color C could have been the first painted if and only if
+no other visible color S has a bounding box that contains a cell of color C.
+If C appears inside S's bounding box, S must have been painted before C.
 
 Sample Input:              Sample Output:
 4                          1
@@ -28,47 +29,31 @@ Sample Input:              Sample Output:
 2777
 0000
 
-Explanation: The painting has colors 2, 3, 7. Color 3 appears within the
-bounding box of color 2, so 3 must have been painted after 2. Color 7 also
-appears within color 2's box. So only color 2 could have been first.
-
-Key Insight:
-------------
-A color C could have been the first painted if and only if there is NO other
-color S whose bounding box contains a cell of color C. If C appears inside
-S's bounding box, then S must have been painted before C (otherwise S would
-have covered C in that cell).
-
+Explanation: Colors 2, 3, 7 are visible. Color 3 appears within color 2's
+bounding box → 2 must be before 3. Color 7 also appears within 2's box.
+Only color 2 could have been painted first.
 
 ====================================================================
-Solution 1: Dependency Graph Counting (Most Elegant)
+Solution 1: Dependency Graph Counting (User's Solution)
 ====================================================================
-Step 1: For each color, find its minimal bounding box (top/bottom/left/right
+Step 1: For each color, compute its minimal bounding box (top/bottom/left/right
         based on where that color's cells appear in the final painting).
 
 Step 2: Build a dependency graph: for each color x, look inside x's bounding
         box. Any OTHER color y that appears inside x's box must have been
-        painted AFTER x (because y covers x in that spot). So x → y means
-        "x must be painted before y".
-
+        painted AFTER x. So x → y means "x must be painted before y".
         Equivalently, `before[y]` = set of all colors that must come before y.
 
-Step 3: A color can be the FIRST one painted ⟺ `before[color]` is empty
-        (no other color needs to be painted before it).
+Step 3: A color can be the first painted iff `before[color]` is empty.
+        Count how many colors have an empty dependency set.
 
-        Simply count how many colors have an empty dependency set.
-
-This is much more elegant than both the permutation enumeration (Solution 1b)
-and the official USACO solution (Solution 2) because it reuses the dependency
-graph already built for free, avoiding both O(N!) permutation loops and
-redundant pairwise bounding box scans.
-
-Time Complexity: O(C * N^2) where C ≤ 9, N ≤ 10.
+Time Complexity: O(C × N²) where C ≤ 9, N ≤ 10.
 """
 
 import sys
-# sys.stdin = open('art.in', 'r')
-# sys.stdout = open('art.out', 'w')
+
+sys.stdin = open('art.in', 'r')
+sys.stdout = open('art.out', 'w')
 
 n = int(input())
 colors = set()       # all colors that appear in the painting
@@ -87,7 +72,6 @@ def get_boundary(m):
     """
     Find the bounding box of color m in the painting.
     Returns ((top_row, left_col), (bottom_row, right_col)).
-    Initial values are inverted so the first match triggers min/max correctly.
     """
     i1 = j1 = n - 1    # min row, min col
     i2 = j2 = 0         # max row, max col
@@ -105,7 +89,7 @@ def get_boundary(m):
 
 # Build dependency graph:
 #   before[x] = set of colors that must be painted BEFORE x.
-#   If color y appears inside color x's bounding box, then x was painted before y.
+#   If color y appears inside color x's bounding box, x was painted before y.
 before = {x: set() for x in colors}
 for x in colors:
     (x1, y1), (x2, y2) = get_boundary(x)
@@ -115,68 +99,63 @@ for x in colors:
             if after != x:
                 before[after].add(x)  # x must be painted before `after`
 
-# --- Solution 1: Count colors with no dependencies ---
-# A color can be the first one painted iff nothing must come before it,
-# i.e., its `before` set is empty.
+# Count colors with no dependencies — these can be painted first
 cnt = 0
 for k, v in before.items():
     if len(v) == 0:       # no color needs to be painted before k
-        cnt += 1          # k is a candidate for being the first color
+        cnt += 1          # k is a candidate for first color
 print(cnt)
 
 
 # =====================================================================
-# Solution 1b: Permutation-based Brute Force Enumeration (commented out)
+# Solution 2: Permutation Brute Force Enumeration (User's Solution)
 # =====================================================================
-# Range: line ~115 to ~145
+# Generate ALL permutations of the visible colors and check each one against
+# the dependency constraints built in Solution 1. The first color in any
+# valid permutation is counted as a candidate.
 #
-# This is an alternative approach: generate ALL permutations of the colors
-# and check each one against the dependency constraints in `before`.
-# The first color in any valid permutation is counted as a candidate.
+# This method is more intuitive — it directly simulates painting orders —
+# but slower (O(C! × N²)). Useful for brute-force verification.
 #
-# This method also simulates painting the canvas in that order and verifies
-# the result matches the original. It's more intuitive but much slower
-# (O(C! * N^2)), useful for understanding the problem but unwieldy compared
-# to the dependency counting approach above.
-
+# Time Complexity: O(C! × N²)
+#
 # from itertools import permutations
-
-# # Precompute boundaries for all 9 possible colors (needed by paint_canvas)
-# boundry = [((0, 0), (0, 0))]  # dummy at index 0
+#
+# # Precompute bounding boxes for all colors 1..9 (needed by paint_canvas)
+# boundaries = [((0, 0), (0, 0))]  # dummy at index 0
 # for i in range(1, 10):
-#     boundry.append(get_boundry(str(i)))
+#     boundaries.append(get_boundary(str(i)))
+#
 #
 # def paint_canvas(col, c):
-#     begin, end = boundry[int(col)]
+#     """Paint a rectangle of color `col` onto canvas `c`."""
+#     begin, end = boundaries[int(col)]
 #     for i in range(begin[0], end[0] + 1):
 #         for j in range(begin[1], end[1] + 1):
 #             c[i][j] = col
 #
+#
 # possible = set()
 #
-# # Try all permutations of colors
 # for seq in permutations(colors, len(colors)):
 #     # Check if this permutation respects all dependency constraints
-#     flag = False  # becomes True if a constraint is violated
+#     valid = True
 #     for e in seq:
 #         for d in before[e]:
-#             # d must come before e, so if d appears after e in seq, invalid
-#             if seq.index(d) > seq.index(e):
-#                 flag = True
+#             if seq.index(d) > seq.index(e):  # d must come before e
+#                 valid = False
 #                 break
-#         if flag:
+#         if not valid:
 #             break
 #
-#     if flag:
+#     if not valid:
 #         continue
 #
-#     # This permutation is valid. Simulate painting in this order
-#     # and verify it matches the original painting.
-#     canvas = [['0'] * n for _ in range(n)]
-#     if seq[0] not in possible:  # optimization: only check if not yet found
+#     # Simulate painting in this order and verify it matches the original
+#     if seq[0] not in possible:
+#         canvas = [['0'] * n for _ in range(n)]
 #         for color in seq:
 #             paint_canvas(color, canvas)
-#
 #         if canvas == paint:
 #             possible.add(seq[0])
 #
@@ -184,28 +163,31 @@ print(cnt)
 
 
 # =====================================================================
-# Solution 2: Official USACO Solution (by Brian Dean) — Python Translation
+# Solution 3: Official USACO Solution (by Brian Dean) — Python Translation
 # =====================================================================
-# Range: line ~165 to ~250
+# For each visible color i, check whether any other visible color j has a
+# bounding box that contains a cell of color i. If so, j must be painted
+# before i → i cannot be first. Otherwise i is a candidate.
 #
-# The official O(N^3) approach: for each color i, check whether any other
-# color j's bounding box contains a cell of color i. If so, j must be
-# painted before i, so i cannot be first. Otherwise i is a candidate.
+# Comparison with user's solutions:
+#   - Solution 1: precomputes bounding boxes and builds a dependency graph
+#                 once, then counts colors with no dependencies. O(C × N²).
+#   - Solution 2: generates all permutations and simulates painting.
+#                 O(C! × N²), intuitive but slower.
+#   - Solution 3: for each pair of colors, computes bounding boxes on the
+#                 fly and checks containment. O(C² × N²), more verbose
+#                 because bounding boxes are recomputed per pair instead
+#                 of cached.
 #
-# Compared to Solution 1 above, this method finds bounding boxes for EACH
-# pairwise check (no precomputed dependency graph), leading to redundant
-# O(N^2) scans per pair.
-
+# Time Complexity: O(C² × N²)
+#
 # import sys
+#
 # sys.stdin = open('art.in', 'r')
 # sys.stdout = open('art.out', 'w')
 #
 # n = int(input())
-# B = []  # 2D grid of integers 0-9
-#
-# for _ in range(n):
-#     s = input().strip()
-#     B.append([int(ch) for ch in s])
+# B = [list(map(int, list(input().strip()))) for _ in range(n)]
 #
 #
 # def color_appears(c):
@@ -219,10 +201,11 @@ print(cnt)
 #
 # def on_top_of(c1, c2):
 #     """
-#     Is c1 "on top of" c2? Returns True if any cell of color c1 falls within
-#     the bounding box of c2. If so, c2 must have been painted before c1.
+#     Is c1 "on top of" c2? Returns True if any cell of color c1 falls
+#     within the bounding box of c2. If so, c2 must have been painted
+#     before c1 → c1 cannot be first.
 #     """
-#     # Step 1: Find c2's bounding box
+#     # Find c2's bounding box
 #     top, bottom = n, 0
 #     left, right = n, 0
 #     for i in range(n):
@@ -233,7 +216,7 @@ print(cnt)
 #                 left = min(left, j)
 #                 right = max(right, j)
 #
-#     # Step 2: Check if any c1 cell falls within this bounding box
+#     # Check if any c1 cell falls within this bounding box
 #     for i in range(top, bottom + 1):
 #         for j in range(left, right + 1):
 #             if B[i][j] == c1:
@@ -249,8 +232,6 @@ print(cnt)
 #     could_be_first = True
 #     for j in range(1, 10):
 #         if j != i and color_appears(j) and on_top_of(i, j):
-#             # i appears inside j's bounding box, so j must be before i
-#             # Therefore i cannot be first
 #             could_be_first = False
 #             break
 #
