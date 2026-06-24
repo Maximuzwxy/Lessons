@@ -432,13 +432,13 @@
       "slug": "hoof_paper_scissors",
       "cpid": 688,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=688",
-      "local_file": null,
+      "local_file": "2017/January/hoof_paper_scissors.py",
       "tags": [
         "brute_force",
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "Enumerate all 3! = 6 permutations of gesture mappings, count first cow's wins under each, and take the maximum. Straightforward brute force."
     },
     {
       "year": 2017,
