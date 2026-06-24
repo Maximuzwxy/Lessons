@@ -594,12 +594,12 @@
       "slug": "the_bovine_shuffle",
       "cpid": 760,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=760",
-      "local_file": null,
+      "local_file": "2017/December/the_bovine_shuffle.py",
       "tags": [
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "easy",
+      "notes": "这道题要求对索引的理解很好才可以，本身不难，纸上推演一下过程即可"
     },
     {
       "year": 2017,
@@ -611,12 +611,12 @@
       "slug": "milk_measurement",
       "cpid": 761,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=761",
-      "local_file": null,
+      "local_file": "2017/December/milk_measurement.py",
       "tags": [
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "normal",
+      "notes": "典型的模拟法，结合集合和字典会非常简单，优于官方答案。"
     },
     {
       "year": 2018,
