@@ -581,8 +581,8 @@
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": "very_easy",
-      "notes": "典型的几何加二维网格问题。我的做法是取巧的，直接利用画布来做。由于分值还好，复杂度并没有超时，但推荐使用官方的几何做法更优雅。"
+      "difficulty": "easy",
+      "notes": "这道题用了三种解法。第一种用像素的方式，我觉得这是最快的，比几何法要快，因为几何法你还是要想一下，当然有公式，但几何法要写的东西也会比较多。第二种解法是用集合去求出相交的线段，第三种解法是官方解法，用一个一维的公式，其实本质上和第二种是一样的。所以这道题比较典型的几何，或者可以把它变成二维网格来做，挺典型的一道题。"
     },
     {
       "year": 2017,
@@ -628,13 +628,13 @@
       "slug": "blocked_billboard_ii",
       "cpid": 783,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=783",
-      "local_file": null,
+      "local_file": "2018/January/blocked_billboard2.py",
       "tags": [
         "ad_hoc",
         "geometry"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "hard",
+      "notes": "这道题有三种解法：二维矩阵像素法最直观，但数据大了会超时（本题1秒即可，超时4秒也还好）。几何法更优雅，省空间省时间。我的几何法通过数角分情况直接算露出矩形的长宽，官方几何法用交集面积相减，我的更容易理解，官方的更抽象一些。"
     },
     {
       "year": 2018,
@@ -646,13 +646,13 @@
       "slug": "lifeguards",
       "cpid": 784,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=784",
-      "local_file": null,
+      "local_file": "2018/January/life_guards.py",
       "tags": [
         "brute_force",
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "normal",
+      "notes": "这是一道典型的完全搜索问题。官方答案要更巧妙一些，但是和我这个差别也不是很大。"
     },
     {
       "year": 2018,
