@@ -669,8 +669,8 @@
         "greedy",
         "sorting"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "normal",
+      "notes": "这道题要先排序再处理。官方答案非常巧妙：将原数组与排序后对比，统计有多少位置不一致，答案是 K-1（每次交换最多修复一个位置，最后一次修两个），一行公式解决。"
     },
     {
       "year": 2018,
@@ -682,12 +682,12 @@
       "slug": "teleportation",
       "cpid": 807,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=807",
-      "local_file": null,
+      "local_file": "2018/February/teleportation.py",
       "tags": [
         "ad_hoc"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "这道题是数学（数轴+绝对值），临时特设问题，可以作为临时特设的例题。"
     },
     {
       "year": 2018,
@@ -740,11 +740,10 @@
       "local_file": "2018/us_open/tic_tac_toe.py",
       "tags": [
         "brute_force",
-        "game",
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "easy",
+      "notes": "这道题使用集合是很方便的。"
     },
     {
       "year": 2018,
@@ -796,8 +795,8 @@
       "tags": [
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "典型的入门级模拟法。"
     },
     {
       "year": 2018,
@@ -809,12 +808,12 @@
       "slug": "the_bucket_list",
       "cpid": 856,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=856",
-      "local_file": null,
+      "local_file": "2018/December/the_bucket_list.py",
       "tags": [
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "非常简单的模拟法题，可以作为入门题练习。"
     },
     {
       "year": 2018,
@@ -826,14 +825,14 @@
       "slug": "back_and_forth",
       "cpid": 857,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=857",
-      "local_file": null,
+      "local_file": "2018/December/back_and_forth.py",
       "tags": [
         "brute_force",
         "dfs",
         "recursion"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "hard",
+      "notes": "方法二（官方Brian Dean）是模拟法+完全搜索，比较容易理解。我的方法一和方法三（官方Dhruv）是DFS递归，可以作为递归的案例和练习题，代码看起来很优雅。官方答案用的标准回溯的做法，把删掉的又插回去了，这个更好些。"
     },
     {
       "year": 2019,
