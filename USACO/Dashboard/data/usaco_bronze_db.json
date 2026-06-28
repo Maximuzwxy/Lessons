@@ -718,14 +718,14 @@
       "slug": "taming_the_herd",
       "cpid": 809,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=809",
-      "local_file": null,
+      "local_file": "2018/February/taming_the_herd.py",
       "tags": [
         "ad_hoc",
         "greedy",
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "hard",
+      "notes": "典型的临时特设问题，这道题读题一定要认真，我开始就是读题读错理解错了，第一天是0，从0开始。"
     },
     {
       "year": 2018,

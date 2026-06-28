@@ -61,27 +61,28 @@ greg_x1, greg_y1, greg_x2, greg_y2 = map(int, input().split())
 truck_x1, truck_y1, truck_x2, truck_y2 = map(int, input().split())
 
 # Step 1: Find the overall bounding rectangle containing everything
-x1 = min(alex_x1, greg_x1, truck_x1)
-x2 = max(alex_x2, greg_x2, truck_x2)
-y1 = min(alex_y1, greg_y1, truck_y1)
-y2 = max(alex_y2, greg_y2, truck_y2)
+# x1 = min(alex_x1, greg_x1, truck_x1)
+# x2 = max(alex_x2, greg_x2, truck_x2)
+# y1 = min(alex_y1, greg_y1, truck_y1)
+# y2 = max(alex_y2, greg_y2, truck_y2)
 
 # Step 2: Create a 2D grid — area[y][x], initially all 0
-area = [[0] * (x2 + 1) for _ in range(y2 + 1)]
-
+# area = [[0] * (x2 + 1) for _ in range(y2 + 1)]
+area = [[0] * 2000 for _ in range(2000)]
+offset = 1000
 # Step 3: Paint billboard 1 (Alex) onto the grid
-for i in range(alex_y1, alex_y2):     # i = y-coordinate (row)
-    for j in range(alex_x1, alex_x2): # j = x-coordinate (column)
+for i in range(alex_y1 + offset, alex_y2 + offset):     # i = y-coordinate (row)
+    for j in range(alex_x1 + offset, alex_x2 + offset): # j = x-coordinate (column)
         area[i][j] = 1
 
 # Step 3 (cont.): Paint billboard 2 (Greg) onto the grid
-for i in range(greg_y1, greg_y2):
-    for j in range(greg_x1, greg_x2):
+for i in range(greg_y1 + offset, greg_y2 + offset):
+    for j in range(greg_x1 + offset, greg_x2 + offset):
         area[i][j] = 1
 
 # Step 4: Erase the truck — any cell under the truck gets set to 0
-for i in range(truck_y1, truck_y2):
-    for j in range(truck_x1, truck_x2):
+for i in range(truck_y1 + offset, truck_y2 + offset):
+    for j in range(truck_x1 + offset, truck_x2 + offset):
         area[i][j] = 0
 
 # Step 5: Count all remaining visible pixels (cells still marked 1)

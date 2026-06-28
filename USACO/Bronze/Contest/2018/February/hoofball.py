@@ -68,13 +68,12 @@ for i in range(n):
     else:
         diff.append(min(line[i + 1] - line[i], line[i] - line[i - 1]))
 
-def kick(l, start):
-    """Simulate ball from cow 'start'. Mark visited cows in l[]. Returns 1."""
-    p = start
 
+def kick(l, start):
+    """Simulate ball from cow 'start'. Mark visited cows in l[]."""
+    p = start
     while True:
         l[p] = 1
-
         if p == 0:                    # leftmost cow
             if l[1] == 1:
                 break
@@ -90,11 +89,10 @@ def kick(l, start):
                 p += 1
             else:
                 p -= 1
-
             if l[p] == 1:             # cycle detected — stop
                 break
-
     return 1
+
 
 cnt = 0
 while sum(hold) != n:
@@ -105,14 +103,70 @@ while sum(hold) != n:
             if diff[i] >= a:
                 a = diff[i]
                 index = i
-
     cnt += kick(hold, index)
 
 print(cnt)
 
 
 # =====================================================================
-# Solution 2: DFS Exhaustive Search (User's — Too Slow, Preserved)
+# Solution 2: Graph In-Degree + Isolated 2-Cycle (User's Solution)
+# =====================================================================
+# Same core insight as official: count sources (pass_in == 0) and
+# isolated 2-cycles (adjacent cows that ONLY pass to each other).
+#
+# Uses O(N) neighbor finding: since cows are sorted, the nearest
+# neighbor is always either the left or right adjacent cow.
+#   - pass_out[i] = who cow i passes to
+#   - pass_in[i] = how many cows pass to cow i
+#
+# Then:
+#   - pass_in[i] == 0 → must receive initial ball (source)
+#   - pass_in[i]==pass_in[i+1]==1 and pass_out[i]==i+1 and pass_out[i+1]==i
+#     → isolated 2-cycle, also needs a ball
+#
+# Time Complexity: O(N)
+#
+# import sys
+#
+# sys.stdin = open('hoofball.in', 'r')
+# sys.stdout = open('hoofball.out', 'w')
+#
+# n = int(input())
+# line = list(map(int, input().split()))
+# line.sort()
+# pass_in = [0] * n
+# pass_out = [0] * n
+#
+# pass_out[0] = 1
+# pass_in[1] = 1
+# pass_out[n - 1] = n - 2
+# pass_in[n - 2] = 1
+#
+# for i in range(1, n - 1):
+#     if line[i] - line[i - 1] <= line[i + 1] - line[i]:
+#         pass_out[i] = i - 1
+#         pass_in[i - 1] += 1
+#     else:
+#         pass_out[i] = i + 1
+#         pass_in[i + 1] += 1
+#
+# cnt = 0
+# for i in range(n):
+#     if pass_in[i] == 0:
+#         cnt += 1
+#
+#     if (i != n - 1
+#             and pass_in[i] == 1
+#             and pass_in[i + 1] == 1
+#             and pass_out[i] == i + 1
+#             and pass_out[i + 1] == i):
+#         cnt += 1
+#
+# print(cnt)
+
+
+# =====================================================================
+# Solution 3: DFS Exhaustive Search (User's — Too Slow, Preserved)
 # =====================================================================
 # Recursively tries every possible starting cow combination to find the
 # minimum number of balls. Each recursion picks an unvisited cow, kicks
@@ -168,7 +222,7 @@ print(cnt)
 
 
 # =====================================================================
-# Solution 3: Official USACO Solution (Brian Dean) — Python Translation
+# Solution 4: Official USACO Solution (Brian Dean) — Python Translation
 # =====================================================================
 # Elegant in-degree approach:
 #   1. For each cow i, compute target(i) — the cow she passes to.
@@ -186,16 +240,17 @@ print(cnt)
 #     a source flowing through them.
 #
 # Comparison:
-#   - Solution 1 (greedy by gap): picks the most isolated cow first,
-#     simulates the entire path, repeats. Intuitive — "start from
-#     outliers." O(N²) with simulation.
-#   - Official Solution 3: pure in-degree analysis, no simulation.
-#     Counts how many sources + isolated pairs. O(N²) but much simpler
-#     code. The key insight: a ball can only start at a source or in
-#     an isolated 2-cycle. Everything else is reached transitively.
-#   - The user's greedy approach is equivalent in result — picking by
-#     largest gap ends up picking exactly the sources and isolated
-#     pairs, just in a different order. Both are correct.
+#   - Solution 1 (greedy by gap): simulates the full passing chain each
+#     time. Intuitive but needs O(N²) per run.
+#   - Solution 2 (user's graph): same in-degree logic as official, but
+#     uses O(N) neighbor finding (adjacent cows are always the closest
+#     on a sorted line).
+#   - Solution 3 (DFS): brute-force, exponential. Infeasible for N=100.
+#   - Solution 4 (official): also in-degree, but finds nearest neighbor
+#     by O(N) scan per cow → O(N²) total. Slightly less optimized than
+#     Solution 2's O(N) but same core idea.
+#   - Solutions 2 and 4 are equivalent in concept; Solution 2 is more
+#     efficient due to exploiting the sorted-line property.
 #
 # Time Complexity: O(N²) for computing targets.
 #
