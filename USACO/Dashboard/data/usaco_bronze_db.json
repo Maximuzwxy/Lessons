@@ -699,14 +699,14 @@
       "slug": "hoofball",
       "cpid": 808,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=808",
-      "local_file": null,
+      "local_file": "2018/February/hoofball.py",
       "tags": [
-        "ad_hoc",
         "graph",
+        "greedy",
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_hard",
+      "notes": "这道题如果没有学过图论的入度出度概念，几乎解不了。我花了很多时间，一开始想了一种遍历方法但只能过部分数据，又尝试了递归（N=100深度太深，优化后也不达标）。后来想到通过找邻接距离最大的点作为入口、用贪心模拟的方式解了出来，方法也很巧妙。看了官方答案才知道，标准做法是用图论入度+出度（关系构成的函数图），从数学上可证明只需统计入度为0的点和孤立2-元环即可。这道题可以作为讲图论时的极佳例题，理解图论后难度是hard，没学过就是very hard。讲课时要强调函数图的入度出度证明。"
     },
     {
       "year": 2018,
@@ -1764,11 +1764,11 @@
       "slug": "watching_mooloo",
       "cpid": 1301,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1301",
-      "local_file": null,
+      "local_file": "2023/February/watching_mooloo.py",
       "tags": [
         "greedy"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
