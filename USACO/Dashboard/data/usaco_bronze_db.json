@@ -755,12 +755,13 @@
       "slug": "milking_order",
       "cpid": 832,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=832",
-      "local_file": null,
+      "local_file": "2018/us_open/milking_order.py",
       "tags": [
         "brute_force",
-        "greedy"
+        "greedy",
+        "simulation"
       ],
-      "difficulty": "NA",
+      "difficulty": "easy",
       "notes": null
     },
     {
