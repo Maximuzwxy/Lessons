@@ -35,18 +35,18 @@ Explanation:
 ====================================================================
 Solution 1: 2D Grid Pixel Marking (User's Solution)
 ====================================================================
-The idea is to draw the entire scene onto a 2D grid:
+The idea is to draw the entire scene onto a 2D grid with offset:
 
-  1. Find the bounding rectangle that contains both billboards and the truck.
-  2. Create a 2D array (grid[y][x]) covering this range.
+  1. Create a 2000×2000 grid (covers coordinates from -1000 to 1000).
+  2. Use offset = 1000 to shift negative coordinates into array indices.
   3. Mark all cells covered by each billboard as 1.
   4. Mark all cells covered by the truck as 0 (overwriting billboard cells).
   5. Count all remaining 1 cells — that's the total visible area.
 
-This is a brute-force "pixel counting" approach. Since N ≤ 2000, the grid
-has at most 4 million cells, well within time/memory limits for Bronze.
+This is a brute-force "pixel counting" approach. The grid has
+4 million cells, well within time/memory limits for Bronze.
 
-Time Complexity: O(N^2) where N = max coordinate range (≤ 2000).
+Time Complexity: O(R²) where R = 2000 (coordinate range).
 """
 
 import sys
@@ -60,22 +60,16 @@ alex_x1, alex_y1, alex_x2, alex_y2 = map(int, input().split())
 greg_x1, greg_y1, greg_x2, greg_y2 = map(int, input().split())
 truck_x1, truck_y1, truck_x2, truck_y2 = map(int, input().split())
 
-# Step 1: Find the overall bounding rectangle containing everything
-# x1 = min(alex_x1, greg_x1, truck_x1)
-# x2 = max(alex_x2, greg_x2, truck_x2)
-# y1 = min(alex_y1, greg_y1, truck_y1)
-# y2 = max(alex_y2, greg_y2, truck_y2)
-
-# Step 2: Create a 2D grid — area[y][x], initially all 0
-# area = [[0] * (x2 + 1) for _ in range(y2 + 1)]
+# Step 1: Create a 2000×2000 grid with offset to handle negative coords
 area = [[0] * 2000 for _ in range(2000)]
 offset = 1000
-# Step 3: Paint billboard 1 (Alex) onto the grid
+
+# Step 2: Paint billboard 1 (Alex) onto the grid
 for i in range(alex_y1 + offset, alex_y2 + offset):     # i = y-coordinate (row)
     for j in range(alex_x1 + offset, alex_x2 + offset): # j = x-coordinate (column)
         area[i][j] = 1
 
-# Step 3 (cont.): Paint billboard 2 (Greg) onto the grid
+# Step 3: Paint billboard 2 (Greg) onto the grid
 for i in range(greg_y1 + offset, greg_y2 + offset):
     for j in range(greg_x1 + offset, greg_x2 + offset):
         area[i][j] = 1
