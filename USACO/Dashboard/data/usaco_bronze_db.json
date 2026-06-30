@@ -1042,14 +1042,13 @@
       "slug": "livestock_lineup",
       "cpid": 965,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=965",
-      "local_file": null,
+      "local_file": "2019/December/livestock_lineup.py",
       "tags": [
         "brute_force",
-        "graph",
-        "recursion"
+        "ad_hoc"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "easy",
+      "notes": "这道题看到只有8头牛，刚好8! = 40320种排列，暴力枚举完全够用。解法利用了 Python permutations 的生成顺序：先对8头牛的名字按字母序排序，再生成的全排列本身就是有序的，所以第一个通过 beside 约束检查的就是答案，不需要额外处理字典序（alphabetical order）。官方解法用临时特设+一点图论思路（数邻居度数、强制跟随），但如果用那种方式做的话，复杂度堪比 Milking Order 那道题，属于最难一档。考试时如果暴力枚举时间够，直接暴力更快更稳，不需要花时间分析各种边界条件。"
     },
     {
       "year": 2020,
