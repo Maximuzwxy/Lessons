@@ -3,7 +3,7 @@ USACO 2019 December Contest, Bronze - Problem 2. Where Am I?
 =============================================================
 Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=964
 
-Tags: Brute Force, String, Set
+Tags: Brute Force, String, Set, Dict
 
 Difficulty: easy
 

@@ -27,11 +27,31 @@
       }
     ],
     "difficulty_levels": [
-      {"id": "very_easy", "name": "Very Easy", "name_zh": "极简"},
-      {"id": "easy", "name": "Easy", "name_zh": "简单"},
-      {"id": "normal", "name": "Normal", "name_zh": "普通"},
-      {"id": "hard", "name": "Hard", "name_zh": "困难"},
-      {"id": "very_hard", "name": "Very Hard", "name_zh": "极难"}
+      {
+        "id": "very_easy",
+        "name": "Very Easy",
+        "name_zh": "极简"
+      },
+      {
+        "id": "easy",
+        "name": "Easy",
+        "name_zh": "简单"
+      },
+      {
+        "id": "normal",
+        "name": "Normal",
+        "name_zh": "普通"
+      },
+      {
+        "id": "hard",
+        "name": "Hard",
+        "name_zh": "困难"
+      },
+      {
+        "id": "very_hard",
+        "name": "Very Hard",
+        "name_zh": "极难"
+      }
     ],
     "tags": [
       {
@@ -129,6 +149,18 @@
         "name": "Ad Hoc",
         "name_zh": "临时特设",
         "description": "无固定算法模板，依赖逻辑推理和问题特定的解法"
+      },
+      {
+        "id": "set",
+        "name": "Set",
+        "name_zh": "集合",
+        "description": "使用集合(set)检测重复/判重"
+      },
+      {
+        "id": "dict",
+        "name": "Dict",
+        "name_zh": "字典",
+        "description": "使用字典(dict)存储键值映射"
       }
     ]
   },
@@ -164,7 +196,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=568",
       "local_file": "2015/December/speeding_ticket.py",
       "tags": [
-        "simulation"
+        "simulation",
+        "dict"
       ],
       "difficulty": "easy",
       "notes": "更模拟法的思路：把 Bessie 每英里的车速写到一个数组，限速写到另一个数组，两数组长度相同（都是 100），直接逐英里相减取最大值即为最大超速。简单直观，不易出错。"
@@ -182,7 +215,9 @@
       "local_file": "2015/December/contaminated_milk.py",
       "tags": [
         "brute_force",
-        "simulation"
+        "simulation",
+        "set",
+        "dict"
       ],
       "difficulty": "normal",
       "notes": "巧妙运用了集合的思维：利用 set 去重和取交集。对每个生病者收集可疑牛奶集合，再取所有生病者的交集即为可能坏掉的牛奶。比官方逐个枚举牛奶的方式更简洁直观。"
@@ -199,7 +234,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=591",
       "local_file": "2016/January/promotion_counting.py",
       "tags": [
-        "ad_hoc"
+        "ad_hoc",
+        "dict"
       ],
       "difficulty": "very_easy",
       "notes": "非常简单的一道题，其实就是数学题，算是临时特设（Ad Hoc）。"
@@ -236,7 +272,9 @@
       "local_file": "2016/January/mowing_the_filed.py",
       "tags": [
         "simulation",
-        "2d_grid"
+        "2d_grid",
+        "set",
+        "dict"
       ],
       "difficulty": "normal",
       "notes": "用户的解法是贪食蛇算法，每步刷新所有已访问点的年龄，不是很高效但很容易理解。官方解法用时间戳记录每次访问的绝对时间，回访时直接减法即可，更高效。"
@@ -325,7 +363,9 @@
       "local_file": "2016/us_open/bull_in_a_china_shop.py",
       "tags": [
         "recursion",
-        "2d_grid"
+        "2d_grid",
+        "set",
+        "dict"
       ],
       "difficulty": "very_hard",
       "notes": "这道题会用到递归，同时是二维网格问题，结合起来之后就会显得这道题很难。"
@@ -381,7 +421,8 @@
       "tags": [
         "ad_hoc",
         "string",
-        "brute_force"
+        "brute_force",
+        "dict"
       ],
       "difficulty": "normal",
       "notes": "初看容易想到完全搜索（DFS 枚举所有 2^N 种组合），但 N≤100 时必然超时，不过仍可拿约 40% 分数。当没有思路时完全搜索是保底策略；本题的 Ad Hoc 解法（每块板独立取 max 再累加）非常巧妙。"
@@ -417,7 +458,9 @@
       "local_file": "2017/January/dont_be_last.py",
       "tags": [
         "simulation",
-        "sorting"
+        "sorting",
+        "set",
+        "dict"
       ],
       "difficulty": "very_easy",
       "notes": "典型的使用字典以及 Counter，代码看起来简洁程度要优于官方答案。"
@@ -453,7 +496,8 @@
       "local_file": "2017/January/cow_tipping.py",
       "tags": [
         "greedy",
-        "2d_grid"
+        "2d_grid",
+        "dict"
       ],
       "difficulty": "normal",
       "notes": "典型的贪心算法，但是融合了二维网格。"
@@ -470,7 +514,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=711",
       "local_file": "2017/February/cross_the_road.py",
       "tags": [
-        "simulation"
+        "simulation",
+        "dict"
       ],
       "difficulty": "very_easy",
       "notes": "追踪每头牛的上次位置。list 版本用 -1 做哨兵值，dict 版本用 in 判断首次出现。官方解法将 side 偏移 +1 使 0 表示未出现。均为 O(N)，核心思路一致。"
@@ -487,7 +532,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=712",
       "local_file": "2017/February/cross_the_road2.py",
       "tags": [
-        "simulation"
+        "simulation",
+        "dict"
       ],
       "difficulty": "normal",
       "notes": "用函数进出栈的思想去模拟这个过程，官方解法也是同一个思路，但更简洁。"
@@ -506,7 +552,8 @@
       "tags": [
         "simulation",
         "sorting",
-        "greedy"
+        "greedy",
+        "dict"
       ],
       "difficulty": "very_easy",
       "notes": "先排序再做，会比较简单。算法优于官方答案。"
@@ -542,7 +589,8 @@
       "local_file": "2017/us_open/bovine_genomics.py",
       "tags": [
         "brute_force",
-        "string"
+        "string",
+        "set"
       ],
       "difficulty": "easy",
       "notes": "这道题使用集合代码会非常的简洁，比官方代码易读性要强。"
@@ -561,7 +609,9 @@
       "tags": [
         "brute_force",
         "2d_grid",
-        "ad_hoc"
+        "ad_hoc",
+        "set",
+        "dict"
       ],
       "difficulty": "hard",
       "notes": "Solution 1 通过遍历输入数据，巧妙地得出每种颜色有哪些其他颜色必须在它之前画。遍历字典，只要一个颜色前面没有被其他颜色画过，就可以加一。比官方答案的易读性要强。"
@@ -579,7 +629,8 @@
       "local_file": "2017/December/blocked_billboard.py",
       "tags": [
         "ad_hoc",
-        "geometry"
+        "geometry",
+        "set"
       ],
       "difficulty": "easy",
       "notes": "这道题用了三种解法。第一种用像素的方式，我觉得这是最快的，比几何法要快，因为几何法你还是要想一下，当然有公式，但几何法要写的东西也会比较多。第二种解法是用集合去求出相交的线段，第三种解法是官方解法，用一个一维的公式，其实本质上和第二种是一样的。所以这道题比较典型的几何，或者可以把它变成二维网格来做，挺典型的一道题。"
@@ -613,7 +664,9 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=761",
       "local_file": "2017/December/milk_measurement.py",
       "tags": [
-        "simulation"
+        "simulation",
+        "set",
+        "dict"
       ],
       "difficulty": "normal",
       "notes": "典型的模拟法，结合集合和字典会非常简单，优于官方答案。"
@@ -667,7 +720,8 @@
       "local_file": "2018/January/out_of_place.py",
       "tags": [
         "greedy",
-        "sorting"
+        "sorting",
+        "dict"
       ],
       "difficulty": "normal",
       "notes": "这道题要先排序再处理。官方答案非常巧妙：将原数组与排序后对比，统计有多少位置不一致，答案是 K-1（每次交换最多修复一个位置，最后一次修两个），一行公式解决。"
@@ -703,7 +757,8 @@
       "tags": [
         "graph",
         "greedy",
-        "simulation"
+        "simulation",
+        "dict"
       ],
       "difficulty": "very_hard",
       "notes": "这道题如果没有学过图论的入度出度概念，几乎解不了。我花了很多时间，一开始想了一种遍历方法但只能过部分数据，又尝试了递归（N=100深度太深，优化后也不达标）。后来想到通过找邻接距离最大的点作为入口、用贪心模拟的方式解了出来，方法也很巧妙。看了官方答案才知道，标准做法是用图论入度+出度（关系构成的函数图），从数学上可证明只需统计入度为0的点和孤立2-元环即可。这道题可以作为讲图论时的极佳例题，理解图论后难度是hard，没学过就是very hard。讲课时要强调函数图的入度出度证明。"
@@ -740,7 +795,8 @@
       "local_file": "2018/us_open/tic_tac_toe.py",
       "tags": [
         "brute_force",
-        "simulation"
+        "simulation",
+        "set"
       ],
       "difficulty": "easy",
       "notes": "这道题使用集合是很方便的。"
@@ -778,7 +834,8 @@
       "tags": [
         "graph",
         "tree",
-        "ad_hoc"
+        "ad_hoc",
+        "dict"
       ],
       "difficulty": "very_hard",
       "notes": "这是一道典型的图论+树结构题目，用到了DFS，可以作为图论的经典例题。虽然官方答案用临时特设(ad hoc)方法解决，但常规思路应该是图论建树来处理。需要特别注意英文cousin的定义与中文不同，涵盖所有共享共同祖先但不是sibling/直系/姨母的关系（包括跨代）。如果对图论和树结构比较熟悉，可以较快得出答案，但如何设计树节点的数据结构（depth、mother、children、root）需要一定经验。"
@@ -831,7 +888,8 @@
       "tags": [
         "brute_force",
         "dfs",
-        "recursion"
+        "recursion",
+        "set"
       ],
       "difficulty": "hard",
       "notes": "方法二（官方Brian Dean）是模拟法+完全搜索，比较容易理解。我的方法一和方法三（官方Dhruv）是DFS递归，可以作为递归的案例和练习题，代码看起来很优雅。官方答案用的标准回溯的做法，把删掉的又插回去了，这个更好些。"
@@ -936,7 +994,8 @@
       "local_file": "2019/February/measuring_traffic.py",
       "tags": [
         "ad_hoc",
-        "simulation"
+        "simulation",
+        "dict"
       ],
       "difficulty": "NA",
       "notes": null
@@ -1027,7 +1086,8 @@
       "tags": [
         "brute_force",
         "string",
-        "set"
+        "set",
+        "dict"
       ],
       "difficulty": "easy",
       "notes": "这道题是完全搜索+集合的经典例题。官方做法更简洁：从 K=1 遍历到 N，把序列中按顺序截取的每个长度为 K 的子串放入集合，如果集合中已存在则说明当前 K 不行，试下一个。我的做法是判断子串在字符串中出现了几次，但 Python 的 count() 不识别重叠（如 AAA 中 AA 的 count 返回 1 而实际重叠有 2 次），所以重写了计数函数，但不如直接用集合来得简洁。整体难度不大。"
@@ -1630,7 +1690,8 @@
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=1251",
       "local_file": "2022/December/cow_college.py",
       "tags": [
-        "sorting"
+        "sorting",
+        "dict"
       ],
       "difficulty": "NA",
       "notes": null

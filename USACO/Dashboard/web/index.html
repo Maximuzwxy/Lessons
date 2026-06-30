@@ -214,13 +214,24 @@
         .problem-tag.graph { background: #fff8e8; color: #a64; }
         .problem-tag.sorting { background: #ffeff8; color: #a4a; }
         .problem-tag.string { background: #e8ffff; color: #4aa; }
-        .problem-tag.bfs { background: #f8f8ff; color: #448; }
-        .problem-tag.dp { background: #fff0e8; color: #a64; }
+        .problem-tag.bfs { background: #f0f0f8; color: #448; }
+        .problem-tag.dfs { background: #d4f0d4; color: #3a3; }
+        .problem-tag.dp { background: #ffe8f0; color: #a46; }
         .problem-tag.two_pointers { background: #e8fff0; color: #2a7; }
         .problem-tag.greedy { background: #fff8f0; color: #a82; }
         .problem-tag.geometry { background: #f0e8ff; color: #72a; }
         .problem-tag[class*="2d_grid"] { background: #e8f8ff; color: #28a; }
         .problem-tag.ad_hoc { background: #ffe0e0; color: #c33; }
+        .problem-tag.prefix_sum { background: #fff2d4; color: #b85; }
+        .problem-tag.recursion { background: #ffd4e8; color: #a58; }
+        .problem-tag.set { background: #e8d4ff; color: #64a; }
+        .problem-tag.dict { background: #d4e8ff; color: #468; }
+        .problem-tag.tree { background: #e0f8d4; color: #4a2; }
+        .problem-tag.combinatorics { background: #ffe4d4; color: #c54; }
+        .problem-tag.game { background: #d4fff4; color: #388; }
+        .problem-tag.interval { background: #f4e4d4; color: #974; }
+        .problem-tag.array { background: #d4d4ff; color: #446; }
+        .problem-tag.bitwise { background: #ffd4d4; color: #b44; }
 
         .solved-badge {
             display: inline-block;
@@ -413,12 +424,14 @@
             'ad_hoc': 'ad_hoc',
             'prefix_sum': 'prefix_sum',
             'recursion': 'recursion',
-            'combinatorics': 'brute_force',
-            'game': 'brute_force',
-            'interval': 'brute_force',
-            'tree': 'graph',
-            'array': 'brute_force',
-            'bitwise': 'math'
+            'set': 'set',
+            'dict': 'dict',
+            'tree': 'tree',
+            'combinatorics': 'combinatorics',
+            'game': 'game',
+            'interval': 'interval',
+            'array': 'array',
+            'bitwise': 'bitwise'
         };
 
         const tagNames = {
@@ -443,7 +456,9 @@
             'interval': '区间',
             'tree': '树',
             'array': '数组',
-            'bitwise': '位运算'
+            'bitwise': '位运算',
+            'set': '集合',
+            'dict': '字典'
         };
 
         async function loadData() {
