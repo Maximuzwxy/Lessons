@@ -1070,8 +1070,8 @@
       "tags": [
         "brute_force"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "easy",
+      "notes": "这是一道典型的暴力枚举(完全搜索)例题，同时用到了排列组合库(itertools.permutations/combinations)。当然也可以不用，但搭配 Python 的排列组合工具非常好用。可以作为讲完全搜索和排列组合时的例题。"
     },
     {
       "year": 2019,
