@@ -5,7 +5,7 @@ Problem Link: http://www.usaco.org/index.php?page=viewproblem2&cpid=832
 
 Tags: Greedy, Simulation, Brute Force
 
-Difficulty: easy
+Difficulty: very_hard
 
 Problem Description:
 -------------------

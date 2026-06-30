@@ -8,6 +8,21 @@
 - **必须**在 docstring 中标注 Tags 标签（如 Ad Hoc, Geometry, 2D Grid 等）
 - **必须**在 docstring 中标注 Difficulty（取值 very_easy / easy / normal / hard / very_hard，与数据库中一致）
 
+### USACO 资源链接速查
+
+题目、题解、测试数据均可通过 cpid 和题目简称定位：
+
+| 资源 | URL 格式 |
+|---|---|
+| 题目页面 | `https://www.usaco.org/index.php?page=viewproblem2&cpid={cpid}` |
+| 官方题解 | `https://www.usaco.org/current/data/sol_{shortname}_bronze_{contest}18.html` |
+| 测试数据 (zip) | `https://www.usaco.org/current/data/{shortname}_bronze_{contest}18.zip` |
+| 比赛结果页（含所有题目链接） | `https://www.usaco.org/current/index.php?page={contest}18results` |
+
+其中 `{contest}` 为 `open`（US Open）、`dec`（December）、`jan`（January）、`feb`（February）之一；`{shortname}` 为题目英文名的简短形式（如 milking order → `milkorder`，family tree → `family`）。具体名称可从比赛结果页的链接中确认。
+
+测试数据 zip 解压后为若干 `.in` / `.out` 文件对（如 `1.in`、`1.out`、...），可用 `cp` 将单个 case 复制为 `family.in` 后运行程序调试。
+
 ### 2. 理解题目和算法
 - 仔细阅读官网的题目描述
 - 结合用户提供的代码，理解算法思路
