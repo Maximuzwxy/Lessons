@@ -774,13 +774,14 @@
       "slug": "family_tree",
       "cpid": 833,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=833",
-      "local_file": null,
+      "local_file": "2018/us_open/family_tree.py",
       "tags": [
-        "ad_hoc",
-        "graph"
+        "graph",
+        "tree",
+        "ad_hoc"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_hard",
+      "notes": "这是一道典型的图论+树结构题目，用到了DFS，可以作为图论的经典例题。虽然官方答案用临时特设(ad hoc)方法解决，但常规思路应该是图论建树来处理。需要特别注意英文cousin的定义与中文不同，涵盖所有共享共同祖先但不是sibling/直系/姨母的关系（包括跨代）。如果对图论和树结构比较熟悉，可以较快得出答案，但如何设计树节点的数据结构（depth、mother、children、root）需要一定经验。"
     },
     {
       "year": 2018,
