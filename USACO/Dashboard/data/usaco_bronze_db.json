@@ -922,12 +922,13 @@
       "slug": "sleepy_cow_sorting",
       "cpid": 892,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=892",
-      "local_file": null,
+      "local_file": "2019/January/sleepy_cow_sorting.py",
       "tags": [
+        "sorting",
         "ad_hoc"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "easy",
+      "notes": "一道临时特设问题。我的做法是完完全全模拟排序过程（找后缀→取队头→插入→重新排序后缀→循环），更好理解。官方解法更巧妙：直接数后面已经排好序的牛，剩下的就是要操作的次数。其实底层逻辑是一样的，只不过我多做了一步模拟操作。两种作法时间上都OK，讲临时特设或排序时可以用这道题作为例题。"
     },
     {
       "year": 2019,
