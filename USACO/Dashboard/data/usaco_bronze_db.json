@@ -1023,13 +1023,14 @@
       "slug": "where_am_i",
       "cpid": 964,
       "usaco_url": "https://usaco.org/index.php?page=viewproblem2&cpid=964",
-      "local_file": null,
+      "local_file": "2019/December/where_am_i.py",
       "tags": [
         "brute_force",
-        "string"
+        "string",
+        "set"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "easy",
+      "notes": "这道题是完全搜索+集合的经典例题。官方做法更简洁：从 K=1 遍历到 N，把序列中按顺序截取的每个长度为 K 的子串放入集合，如果集合中已存在则说明当前 K 不行，试下一个。我的做法是判断子串在字符串中出现了几次，但 Python 的 count() 不识别重叠（如 AAA 中 AA 的 count 返回 1 而实际重叠有 2 次），所以重写了计数函数，但不如直接用集合来得简洁。整体难度不大。"
     },
     {
       "year": 2019,
