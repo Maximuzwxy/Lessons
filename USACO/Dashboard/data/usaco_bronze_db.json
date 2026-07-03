@@ -909,8 +909,8 @@
         "brute_force",
         "simulation"
       ],
-      "difficulty": "NA",
-      "notes": null
+      "difficulty": "very_easy",
+      "notes": "这是我们模拟法的第一道例题，属于非常简单的一道题。解法一和解法二会有一些想法上的不同，都可以讲一下，但是在课堂上讲解的时候通常想到的是按照正常模拟这个过程，应该是解法一的思路。"
     },
     {
       "year": 2019,
